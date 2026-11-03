@@ -1,0 +1,28 @@
+diff --git a/mechanistic_systems/measurement/native_irg_providers.py b/mechanistic_systems/measurement/native_irg_providers.py
+index 31ada6fe2..65b9d807a 100644
+--- a/mechanistic_systems/measurement/native_irg_providers.py
++++ b/mechanistic_systems/measurement/native_irg_providers.py
+@@ -205,6 +205,10 @@ def _provider_loss_weighting(provider):
+     return getattr(provider, "loss_weighting", loss_weighting())
+ 
+ 
++# Iteration ceiling for Firth decision fits (see the provider constructor).
++FIRTH_DECISION_MAX_ITERATIONS = 2000
++
++
+ @contextmanager
+ def _substituted_reporting_context(provider):
+     """Give scalar reporting its own weights without changing walk state.
+@@ -6838,6 +6842,12 @@ class NativeTorchCalibratedBCEOracleProvider:
+         if penalty == "firth":
+             self.calibration_options["calibration_penalty"] = "firth"
+             self.calibration_fold_ownership = False
++            # Firth decision fits on sharply separated readouts (two of the first four ResNet-50 P circuits stopped
++            # on "device calibration fit failed: deployment_done") can need more
++            # than the default 64 iterations. The CUDA kernel freezes converged cells and the host loop stops at
++            # convergence, so every fit that converges within 64 iterations is unchanged; only fits that would have
++            # failed get room to finish.
++            self.calibration_options["iters"] = max(FIRTH_DECISION_MAX_ITERATIONS, int(self.calibration_options["iters"]))
+         if self.pruning_functional == "substituted_softmax":
+             if penalty != "firth" or self.loss_weighting != "per_image":
+                 raise ValueError("substituted_softmax requires per_image loss weighting and Firth calibration")

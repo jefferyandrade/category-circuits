@@ -1,0 +1,13 @@
+estimate,ci_low,ci_high,p,p_holm,family,unit,scope,n_categories,n_units,n_blocks,method,effect_unit,partial,metric,contrast,network,status,reason
+0.08853554367776145,0.08328246594636084,0.09409825028543105,,,descriptive,category,G,100,100,51,percentile category bootstrap,fraction,True,native_density,network mean,alexnet,done,
+0.050346963181579454,0.04866695200446789,0.052037448726660857,,,descriptive,category,G,100,100,51,percentile category bootstrap,fraction,True,native_density,network mean,vgg11,done,
+0.2716765380774372,0.26359175547205105,0.28020490935376313,,,descriptive,category,G,100,100,51,percentile category bootstrap,fraction,True,native_density,network mean,resnet18,done,
+0.305415360616508,0.2984008051777911,0.31269410869196707,,,descriptive,category,G,100,100,51,percentile category bootstrap,fraction,True,native_density,network mean,resnet50v1,done,
+0.3141045696339796,0.3052188638606837,0.3229688847823781,,,descriptive,category,G,99,99,50,percentile category bootstrap,fraction,True,native_density,network mean,resnet50v2,done,
+-0.008708271923524113,-0.01665654204327181,-0.0004901992070198468,0.036896310368963105,0.07379262073792621,resnet50v1 - resnet50v2:table1:resnet50v1_minus_resnet50v2:density_accuracy,category,G,99,99,50,percentile category bootstrap; category sign-flip,fraction,True,native_density,resnet50v1 - resnet50v2,resnet50v1 - resnet50v2,done,
+4.686086086089209,3.6790925925959375,5.707333833837088,,,descriptive,category,G,100,100,51,percentile category bootstrap,corrected-accuracy points,True,corrected_accuracy_drop,network mean,alexnet,done,
+5.010890890894382,3.8287522522555966,6.233159659663133,,,descriptive,category,G,100,100,51,percentile category bootstrap,corrected-accuracy points,True,corrected_accuracy_drop,network mean,vgg11,done,
+4.115555555557751,3.408926426428658,4.838177677679694,,,descriptive,category,G,100,100,51,percentile category bootstrap,corrected-accuracy points,True,corrected_accuracy_drop,network mean,resnet18,done,
+5.004424424427299,4.169117617620383,5.84591841842142,,,descriptive,category,G,100,100,51,percentile category bootstrap,corrected-accuracy points,True,corrected_accuracy_drop,network mean,resnet50v1,done,
+5.406618739954684,4.561140938921121,6.294108755222656,,,descriptive,category,G,99,99,50,percentile category bootstrap,corrected-accuracy points,True,corrected_accuracy_drop,network mean,resnet50v2,done,
+-0.36693258915453153,-1.330051768940535,0.5444297833189821,0.45635436456354367,0.45635436456354367,resnet50v1 - resnet50v2:table1:resnet50v1_minus_resnet50v2:density_accuracy,category,G,99,99,50,percentile category bootstrap; category sign-flip,corrected-accuracy points,True,corrected_accuracy_drop,resnet50v1 - resnet50v2,resnet50v1 - resnet50v2,done,

@@ -1,0 +1,46 @@
+--- a/mechanistic_systems/circuits/device_mask_plane.py
++++ b/mechanistic_systems/circuits/device_mask_plane.py
+@@ -281,29 +281,35 @@
+         self.device = None
+ 
+     def host(self) -> np.ndarray:
++        device = self.device
+         if self._host is None:
+-            (values,) = self.plane.fetch(self.device)
++            (values,) = self.plane.fetch(device)
+             self.set_host(values)
+         return self._host  # type: ignore[return-value]
+ 
+     def tensor(self) -> Any:
+         """The device values (re-uploaded from the host copy once released)."""
+ 
+-        if self.device is None:
++        device = self.device
++        if device is None:
+             return self.plane.upload_indices(self._host)  # type: ignore[arg-type]
+-        return self.device
++        return device
+ 
+ 
+ def fetch_removed(holders) -> None:
+     """Fetch every pending device holder, one transfer per plane."""
+ 
+-    pending: dict[int, tuple[MaskPlane, list[DeviceRemoved]]] = {}
++    pending: dict[int, tuple[MaskPlane, list[tuple[DeviceRemoved, Any]]]] = {}
+     for holder in holders:
+-        if isinstance(holder, DeviceRemoved) and not holder.fetched:
+-            pending.setdefault(id(holder.plane), (holder.plane, []))[1].append(holder)
++        if isinstance(holder, DeviceRemoved):
++            # A shared holder may publish its host copy and release its device
++            # tensor while another consumer is collecting this batch.
++            device = holder.device
++            if device is not None:
++                pending.setdefault(id(holder.plane), (holder.plane, []))[1].append((holder, device))
+     for plane, items in pending.values():
+-        values = plane.fetch(*(item.device for item in items))
+-        for item, array in zip(items, values, strict=True):
++        values = plane.fetch(*(device for _, device in items))
++        for (item, _), array in zip(items, values, strict=True):
+             item.set_host(array)
+ 
+ 

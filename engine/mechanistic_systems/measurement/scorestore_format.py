@@ -1,0 +1,41 @@
+"""Compatibility facade for the scoring-owned exact ScoreStore contract."""
+
+from scoring.scorestore_format import (
+    SCORESTORE_CANONICAL_LAYOUT,
+    SCORESTORE_SCHEMA_NAME,
+    SCORESTORE_SCHEMA_VERSION,
+    SCORESTORE_URI_PREFIX,
+    ScoreStoreWriteReport,
+    canonical_target_scorestore_dir,
+    is_canonical_target_scorestore_dir,
+    is_scorestore_reference,
+    iter_canonical_target_scorestores,
+    load_scorestore_target_payload,
+    load_scorestore_tensor,
+    parse_scorestore_locator,
+    parse_scorestore_reference,
+    scorestore_reference_exists,
+    sha256_array,
+    sha256_file,
+    write_exact_score_store,
+)
+
+__all__ = [
+    "SCORESTORE_CANONICAL_LAYOUT",
+    "SCORESTORE_SCHEMA_NAME",
+    "SCORESTORE_SCHEMA_VERSION",
+    "SCORESTORE_URI_PREFIX",
+    "ScoreStoreWriteReport",
+    "canonical_target_scorestore_dir",
+    "is_canonical_target_scorestore_dir",
+    "is_scorestore_reference",
+    "iter_canonical_target_scorestores",
+    "load_scorestore_target_payload",
+    "load_scorestore_tensor",
+    "parse_scorestore_locator",
+    "parse_scorestore_reference",
+    "scorestore_reference_exists",
+    "sha256_array",
+    "sha256_file",
+    "write_exact_score_store",
+]

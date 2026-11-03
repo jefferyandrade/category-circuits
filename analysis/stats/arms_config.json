@@ -1,0 +1,779 @@
+{
+ "version": 1,
+ "workspace_root": ".",
+ "note": "Where the paper's circuits are. The results folders that hold circuits start with $CAMPAIGN, the circuit library's root; point it at your copy of the library. Paths in inputs are relative to this file's folder. For each network, pruning method (arm) and set of circuits (price), a run names its results folder (results_root), the folder of each category's circuit (arm_folder) and the categories it covers (cohort, which a method or a network can also set). A null folder or receipt field is not available. price v66 is the paper's circuits, at each network's loss threshold (Table 1); v64 and v65 are earlier extractions. The repeat extractions on the shared 100 categories are AlexNet's P-redraw arm and the retest run of P in VGG-11, ResNet-18 and ResNet-50 V2 (retest_pairs names each network's pair). The P circuits of VGG-11 and ResNet-50 and the SA-H circuits of VGG-11 and ResNet-18 cover the shared 100 categories.",
+ "inputs": {
+  "taxonomy": "inputs/category_taxonomy.csv",
+  "shared_categories": "inputs/shared100.txt",
+  "sign_per_category": "compact/results/sign_density_test/per_category_sign_density.csv",
+  "hitrej_per_category": "inputs/hitrej_per_category.csv",
+  "kv_routes": null,
+  "s2as_lenses": null
+ },
+ "receipt_fields": {
+  "native_density": "retained_fraction",
+  "kernel_unit_density": null,
+  "corrected_accuracy_drop": {
+   "difference": [
+    "terminal_dense_bce.class_balanced_binary_accuracy",
+    "terminal_final_bce.class_balanced_binary_accuracy"
+   ],
+   "scale": 200
+  },
+  "heldout_delta_bce": "terminal_bce_delta",
+  "loss_window_share": null,
+  "hit_loss": {
+   "difference": [
+    "terminal_dense_bce.terminal_statistics_v1.probability_0_5.tpr",
+    "terminal_final_bce.terminal_statistics_v1.probability_0_5.tpr"
+   ]
+  },
+  "rejection_loss": {
+   "difference": [
+    "terminal_final_bce.terminal_statistics_v1.probability_0_5.fpr",
+    "terminal_dense_bce.terminal_statistics_v1.probability_0_5.fpr"
+   ]
+  }
+ },
+ "networks": {
+  "alexnet": {
+   "category_pattern": "alexnet_tap_query{category}",
+   "arms": {
+    "P": {
+     "runs": {
+      "v64": {
+       "primary": {
+        "results_root": "$CAMPAIGN/out_v64/results",
+        "arm_folder": "v0_local_attribution_sign_plain_t5e7_v64"
+       },
+       "diagnostic": {
+        "results_root": "$CAMPAIGN/diagnostics",
+        "arm_folder": null
+       }
+      },
+      "v65": {
+       "primary": {
+        "results_root": "$CAMPAIGN/out_v65/results",
+        "arm_folder": null
+       },
+       "diagnostic": {
+        "results_root": "$CAMPAIGN/diagnostics",
+        "arm_folder": null
+       }
+      },
+      "v66": {
+       "primary": {
+        "results_root": "$CAMPAIGN/out_v66/results",
+        "arm_folder": "v0_local_attribution_sign_plain_t1p5e7_v64"
+       },
+       "diagnostic": {
+        "results_root": "$CAMPAIGN/diagnostics",
+        "arm_folder": null
+       }
+      }
+     },
+     "cohort": "all1000"
+    },
+    "P-redraw": {
+     "runs": {
+      "v64": {
+       "primary": {
+        "results_root": "$CAMPAIGN/out_v64/results",
+        "arm_folder": "v0_local_attribution_sign_plain_p_redraw_t5e7_v64"
+       },
+       "retest": {
+        "results_root": "inputs/out_v64_second/results",
+        "arm_folder": null,
+        "cohort": "shared100"
+       },
+       "diagnostic": {
+        "results_root": "$CAMPAIGN/diagnostics",
+        "arm_folder": null
+       }
+      },
+      "v65": {
+       "primary": {
+        "results_root": "$CAMPAIGN/out_v65/results",
+        "arm_folder": null
+       },
+       "retest": {
+        "results_root": "inputs/out_v65_second/results",
+        "arm_folder": null,
+        "cohort": "shared100"
+       },
+       "diagnostic": {
+        "results_root": "$CAMPAIGN/diagnostics",
+        "arm_folder": null
+       }
+      },
+      "v66": {
+       "primary": {
+        "results_root": "$CAMPAIGN/out_v66/results",
+        "arm_folder": "v0_local_attribution_sign_plain_p_redraw_t1p5e7_v64"
+       },
+       "diagnostic": {
+        "results_root": "$CAMPAIGN/diagnostics",
+        "arm_folder": null
+       }
+      }
+     },
+     "cohort": "shared100"
+    },
+    "SA-H": {
+     "runs": {
+      "v64": {
+       "primary": {
+        "results_root": "$CAMPAIGN/out_v64/results",
+        "arm_folder": "v0_single_population_plain_sah_t5e7_v64"
+       },
+       "retest": {
+        "results_root": "inputs/out_v64_second/results",
+        "arm_folder": null,
+        "cohort": "shared100"
+       },
+       "diagnostic": {
+        "results_root": "$CAMPAIGN/diagnostics",
+        "arm_folder": null
+       }
+      },
+      "v65": {
+       "primary": {
+        "results_root": "$CAMPAIGN/out_v65/results",
+        "arm_folder": null
+       },
+       "retest": {
+        "results_root": "inputs/out_v65_second/results",
+        "arm_folder": null,
+        "cohort": "shared100"
+       },
+       "diagnostic": {
+        "results_root": "$CAMPAIGN/diagnostics",
+        "arm_folder": null
+       }
+      },
+      "v66": {
+       "primary": {
+        "results_root": "$CAMPAIGN/out_v66/results",
+        "arm_folder": "v0_single_population_plain_sah_t1p5e7_v64"
+       },
+       "diagnostic": {
+        "results_root": "$CAMPAIGN/diagnostics",
+        "arm_folder": null
+       }
+      }
+     },
+     "cohort": "all1000"
+    },
+    "SA-G": {
+     "runs": {
+      "v64": {
+       "primary": {
+        "results_root": "$CAMPAIGN/out_v64/results",
+        "arm_folder": null
+       },
+       "retest": {
+        "results_root": "inputs/out_v64_second/results",
+        "arm_folder": null,
+        "cohort": "shared100"
+       },
+       "diagnostic": {
+        "results_root": "$CAMPAIGN/diagnostics",
+        "arm_folder": null
+       }
+      },
+      "v65": {
+       "primary": {
+        "results_root": "$CAMPAIGN/out_v65/results",
+        "arm_folder": null
+       },
+       "retest": {
+        "results_root": "inputs/out_v65_second/results",
+        "arm_folder": null,
+        "cohort": "shared100"
+       },
+       "diagnostic": {
+        "results_root": "$CAMPAIGN/diagnostics",
+        "arm_folder": null
+       }
+      },
+      "v66": {
+       "primary": {
+        "results_root": "$CAMPAIGN/out_v66/results",
+        "arm_folder": "v0_single_population_plain_sag_t1p5e7_global_lwm_v64"
+       },
+       "diagnostic": {
+        "results_root": "$CAMPAIGN/diagnostics",
+        "arm_folder": null
+       }
+      }
+     },
+     "cohort": "all1000"
+    },
+    "SG": {
+     "runs": {
+      "v64": {
+       "primary": {
+        "results_root": "$CAMPAIGN/out_v64/results",
+        "arm_folder": null
+       },
+       "retest": {
+        "results_root": "inputs/out_v64_second/results",
+        "arm_folder": null,
+        "cohort": "shared100"
+       },
+       "diagnostic": {
+        "results_root": "$CAMPAIGN/diagnostics",
+        "arm_folder": null
+       }
+      },
+      "v65": {
+       "primary": {
+        "results_root": "$CAMPAIGN/out_v65/results",
+        "arm_folder": null
+       },
+       "retest": {
+        "results_root": "inputs/out_v65_second/results",
+        "arm_folder": null,
+        "cohort": "shared100"
+       },
+       "diagnostic": {
+        "results_root": "$CAMPAIGN/diagnostics",
+        "arm_folder": null
+       }
+      },
+      "v66": {
+       "primary": {
+        "results_root": "$CAMPAIGN/out_v66/results",
+        "arm_folder": "v0_local_attribution_sign_plain_sg_t1p5e7_global_lwm_v64"
+       },
+       "diagnostic": {
+        "results_root": "$CAMPAIGN/diagnostics",
+        "arm_folder": null
+       }
+      }
+     },
+     "cohort": "all1000"
+    },
+    "SF": {
+     "runs": {
+      "v64": {
+       "primary": {
+        "results_root": "$CAMPAIGN/out_v64/results",
+        "arm_folder": null
+       },
+       "retest": {
+        "results_root": "inputs/out_v64_second/results",
+        "arm_folder": null,
+        "cohort": "shared100"
+       },
+       "diagnostic": {
+        "results_root": "$CAMPAIGN/diagnostics",
+        "arm_folder": null
+       }
+      },
+      "v65": {
+       "primary": {
+        "results_root": "$CAMPAIGN/out_v65/results",
+        "arm_folder": null
+       },
+       "retest": {
+        "results_root": "inputs/out_v65_second/results",
+        "arm_folder": null,
+        "cohort": "shared100"
+       },
+       "diagnostic": {
+        "results_root": "$CAMPAIGN/diagnostics",
+        "arm_folder": null
+       }
+      },
+      "v66": {
+       "primary": {
+        "results_root": "$CAMPAIGN/out_v66/results",
+        "arm_folder": "v0_local_attribution_sign_plain_saf_t1p5e7_v64"
+       },
+       "diagnostic": {
+        "results_root": "$CAMPAIGN/diagnostics",
+        "arm_folder": null
+       }
+      }
+     },
+     "cohort": "all1000"
+    },
+    "RP1": {
+     "runs": {
+      "v64": {
+       "primary": {
+        "results_root": "$CAMPAIGN/out_v64/results",
+        "arm_folder": "v0_randomized_count_matched_plain_rp1_t5e7_v64"
+       },
+       "retest": {
+        "results_root": "inputs/out_v64_second/results",
+        "arm_folder": null,
+        "cohort": "shared100"
+       },
+       "diagnostic": {
+        "results_root": "$CAMPAIGN/diagnostics",
+        "arm_folder": null
+       }
+      },
+      "v65": {
+       "primary": {
+        "results_root": "$CAMPAIGN/out_v65/results",
+        "arm_folder": null
+       },
+       "retest": {
+        "results_root": "inputs/out_v65_second/results",
+        "arm_folder": null,
+        "cohort": "shared100"
+       },
+       "diagnostic": {
+        "results_root": "$CAMPAIGN/diagnostics",
+        "arm_folder": null
+       }
+      },
+      "v66": {
+       "primary": {
+        "results_root": "$CAMPAIGN/out_v66/results",
+        "arm_folder": "v0_randomized_count_matched_plain_rp1_t1p5e7_v64",
+        "cohort": "shared100"
+       },
+       "diagnostic": {
+        "results_root": "$CAMPAIGN/diagnostics",
+        "arm_folder": null
+       }
+      }
+     },
+     "cohort": "all1000"
+    }
+   },
+   "cohort": "all1000",
+   "retest_pairs": {
+    "v64": {
+     "primary": {
+      "arm": "P",
+      "run": "primary"
+     },
+     "retest": {
+      "arm": "P-redraw",
+      "run": "primary"
+     },
+     "cohort": "shared100"
+    },
+    "v65": {
+     "primary": {
+      "arm": "P",
+      "run": "primary"
+     },
+     "retest": {
+      "arm": "P-redraw",
+      "run": "primary"
+     },
+     "cohort": "shared100"
+    },
+    "v66": {
+     "primary": {
+      "arm": "P",
+      "run": "primary"
+     },
+     "retest": {
+      "arm": "P-redraw",
+      "run": "primary"
+     },
+     "cohort": "shared100"
+    }
+   }
+  },
+  "vgg11": {
+   "category_pattern": "vgg11_tap_query{category}",
+   "arms": {
+    "P": {
+     "runs": {
+      "v64": {
+       "primary": {
+        "results_root": "$CAMPAIGN/out_v64/results",
+        "arm_folder": "v0_local_attribution_sign_vgg11_plain_t2p21e7_v64"
+       },
+       "retest": {
+        "results_root": "inputs/out_v64_second/results",
+        "arm_folder": null,
+        "cohort": "shared100"
+       },
+       "diagnostic": {
+        "results_root": "$CAMPAIGN/diagnostics",
+        "arm_folder": null
+       }
+      },
+      "v65": {
+       "primary": {
+        "results_root": "$CAMPAIGN/out_v65/results",
+        "arm_folder": null
+       },
+       "retest": {
+        "results_root": "inputs/out_v65_second/results",
+        "arm_folder": null,
+        "cohort": "shared100"
+       },
+       "diagnostic": {
+        "results_root": "$CAMPAIGN/diagnostics",
+        "arm_folder": null
+       }
+      },
+      "v66": {
+       "primary": {
+        "results_root": "$CAMPAIGN/out_v66/results",
+        "arm_folder": "v0_local_attribution_sign_vgg11_plain_t1p77e7_v64",
+        "cohort": "shared100"
+       },
+       "retest": {
+        "results_root": "$CAMPAIGN/out_v66/results",
+        "arm_folder": "v0_local_attribution_sign_vgg11_plain_p_redraw_t1p77e7_v64",
+        "cohort": "shared100"
+       },
+       "diagnostic": {
+        "results_root": "$CAMPAIGN/diagnostics",
+        "arm_folder": null
+       }
+      }
+     },
+     "cohort": "all1000"
+    },
+    "SA-H": {
+     "runs": {
+      "v66": {
+       "primary": {
+        "results_root": "$CAMPAIGN/diagnostics/p1c_fix8b_v11sah66/out/results",
+        "arm_folder": "v0_single_population_vgg11_plain_sah_t1p77e7_v64",
+        "cohort": "shared100"
+       }
+      }
+     },
+     "cohort": "shared100"
+    }
+   },
+   "cohort": "all1000",
+   "retest_pairs": {
+    "v64": {
+     "primary": {
+      "arm": "P",
+      "run": "primary"
+     },
+     "retest": {
+      "arm": "P",
+      "run": "retest"
+     },
+     "cohort": "shared100"
+    },
+    "v65": {
+     "primary": {
+      "arm": "P",
+      "run": "primary"
+     },
+     "retest": {
+      "arm": "P",
+      "run": "retest"
+     },
+     "cohort": "shared100"
+    },
+    "v66": {
+     "primary": {
+      "arm": "P",
+      "run": "primary"
+     },
+     "retest": {
+      "arm": "P",
+      "run": "retest"
+     },
+     "cohort": "shared100"
+    }
+   }
+  },
+  "resnet18": {
+   "category_pattern": "resnet18_tap_query{category}",
+   "arms": {
+    "P": {
+     "runs": {
+      "v64": {
+       "primary": {
+        "results_root": "$CAMPAIGN/out_v64/results",
+        "arm_folder": "v0_local_attribution_sign_resnet18_plain_t2p55e6_v64"
+       },
+       "retest": {
+        "results_root": "inputs/out_v64_second/results",
+        "arm_folder": null,
+        "cohort": "shared100"
+       },
+       "diagnostic": {
+        "results_root": "$CAMPAIGN/diagnostics",
+        "arm_folder": null
+       }
+      },
+      "v65": {
+       "primary": {
+        "results_root": "$CAMPAIGN/out_v65/results",
+        "arm_folder": null
+       },
+       "retest": {
+        "results_root": "inputs/out_v65_second/results",
+        "arm_folder": null,
+        "cohort": "shared100"
+       },
+       "diagnostic": {
+        "results_root": "$CAMPAIGN/diagnostics",
+        "arm_folder": null
+       }
+      },
+      "v66": {
+       "primary": {
+        "results_root": "$CAMPAIGN/diagnostics/r18_v66_view/results",
+        "arm_folder": "v0_local_attribution_sign_resnet18_plain_t5e7_v64"
+       },
+       "retest": {
+        "results_root": "$CAMPAIGN/out_v66/results",
+        "arm_folder": "v0_local_attribution_sign_resnet18_plain_p_redraw_t5e7_v64",
+        "cohort": "shared100"
+       },
+       "diagnostic": {
+        "results_root": "$CAMPAIGN/diagnostics",
+        "arm_folder": null
+       }
+      }
+     },
+     "cohort": "all1000"
+    },
+    "SA-H": {
+     "runs": {
+      "v66": {
+       "primary": {
+        "results_root": "$CAMPAIGN/diagnostics/p1c_fix8b_r18sah66/out/results",
+        "arm_folder": "v0_single_population_resnet18_plain_sah_t5e7_v64",
+        "cohort": "shared100"
+       }
+      }
+     },
+     "cohort": "shared100"
+    }
+   },
+   "cohort": "all1000",
+   "retest_pairs": {
+    "v64": {
+     "primary": {
+      "arm": "P",
+      "run": "primary"
+     },
+     "retest": {
+      "arm": "P",
+      "run": "retest"
+     },
+     "cohort": "shared100"
+    },
+    "v65": {
+     "primary": {
+      "arm": "P",
+      "run": "primary"
+     },
+     "retest": {
+      "arm": "P",
+      "run": "retest"
+     },
+     "cohort": "shared100"
+    },
+    "v66": {
+     "primary": {
+      "arm": "P",
+      "run": "primary"
+     },
+     "retest": {
+      "arm": "P",
+      "run": "retest"
+     },
+     "cohort": "shared100"
+    }
+   }
+  },
+  "resnet50v1": {
+   "category_pattern": "resnet50v1_tap_query{category}",
+   "arms": {
+    "P": {
+     "runs": {
+      "v64": {
+       "primary": {
+        "results_root": "$CAMPAIGN/out_v64/results",
+        "arm_folder": null
+       },
+       "retest": {
+        "results_root": "inputs/out_v64_second/results",
+        "arm_folder": null,
+        "cohort": "shared100"
+       },
+       "diagnostic": {
+        "results_root": "$CAMPAIGN/diagnostics",
+        "arm_folder": null
+       }
+      },
+      "v65": {
+       "primary": {
+        "results_root": "$CAMPAIGN/out_v65/results",
+        "arm_folder": null
+       },
+       "retest": {
+        "results_root": "inputs/out_v65_second/results",
+        "arm_folder": null,
+        "cohort": "shared100"
+       },
+       "diagnostic": {
+        "results_root": "$CAMPAIGN/diagnostics",
+        "arm_folder": null
+       }
+      },
+      "v66": {
+       "primary": {
+        "results_root": "$CAMPAIGN/diagnostics/r50_v66_view/results",
+        "arm_folder": "v0_local_attribution_sign_resnet50v1_plain_t4p03e7_v64",
+        "cohort": "shared100"
+       },
+       "diagnostic": {
+        "results_root": "$CAMPAIGN/diagnostics",
+        "arm_folder": null
+       }
+      }
+     },
+     "cohort": "all1000"
+    }
+   },
+   "cohort": "all1000",
+   "retest_pairs": {
+    "v64": {
+     "primary": {
+      "arm": "P",
+      "run": "primary"
+     },
+     "retest": {
+      "arm": "P",
+      "run": "retest"
+     },
+     "cohort": "shared100"
+    },
+    "v65": {
+     "primary": {
+      "arm": "P",
+      "run": "primary"
+     },
+     "retest": {
+      "arm": "P",
+      "run": "retest"
+     },
+     "cohort": "shared100"
+    },
+    "v66": {
+     "primary": {
+      "arm": "P",
+      "run": "primary"
+     },
+     "retest": {
+      "arm": "P",
+      "run": "retest"
+     },
+     "cohort": "shared100"
+    }
+   }
+  },
+  "resnet50v2": {
+   "category_pattern": "resnet50v2_tap_query{category}",
+   "arms": {
+    "P": {
+     "runs": {
+      "v64": {
+       "primary": {
+        "results_root": "$CAMPAIGN/out_v64/results",
+        "arm_folder": "v0_local_attribution_sign_resnet50v2_plain_t1p21e6_v64"
+       },
+       "retest": {
+        "results_root": "inputs/out_v64_second/results",
+        "arm_folder": null,
+        "cohort": "shared100"
+       },
+       "diagnostic": {
+        "results_root": "$CAMPAIGN/diagnostics",
+        "arm_folder": null
+       }
+      },
+      "v65": {
+       "primary": {
+        "results_root": "$CAMPAIGN/out_v65/results",
+        "arm_folder": null
+       },
+       "retest": {
+        "results_root": "inputs/out_v65_second/results",
+        "arm_folder": null,
+        "cohort": "shared100"
+       },
+       "diagnostic": {
+        "results_root": "$CAMPAIGN/diagnostics",
+        "arm_folder": null
+       }
+      },
+      "v66": {
+       "primary": {
+        "results_root": "$CAMPAIGN/diagnostics/r50_v66_view/results",
+        "arm_folder": "v0_local_attribution_sign_resnet50v2_plain_t4p03e7_v64",
+        "cohort": "shared100"
+       },
+       "retest": {
+        "results_root": "$CAMPAIGN/diagnostics/r50_v66_view/results",
+        "arm_folder": "v0_local_attribution_sign_resnet50v2_plain_p_redraw_t4p03e7_v64",
+        "cohort": "shared100"
+       },
+       "diagnostic": {
+        "results_root": "$CAMPAIGN/diagnostics",
+        "arm_folder": null
+       }
+      }
+     },
+     "cohort": "all1000"
+    }
+   },
+   "cohort": "all1000",
+   "retest_pairs": {
+    "v64": {
+     "primary": {
+      "arm": "P",
+      "run": "primary"
+     },
+     "retest": {
+      "arm": "P",
+      "run": "retest"
+     },
+     "cohort": "shared100"
+    },
+    "v65": {
+     "primary": {
+      "arm": "P",
+      "run": "primary"
+     },
+     "retest": {
+      "arm": "P",
+      "run": "retest"
+     },
+     "cohort": "shared100"
+    },
+    "v66": {
+     "primary": {
+      "arm": "P",
+      "run": "primary"
+     },
+     "retest": {
+      "arm": "P",
+      "run": "retest"
+     },
+     "cohort": "shared100"
+    }
+   }
+  }
+ },
+ "declared_roots": {
+  "out_v64": "$CAMPAIGN/out_v64",
+  "out_v65": "$CAMPAIGN/out_v65",
+  "diagnostics": "$CAMPAIGN/diagnostics",
+  "out_v66": "$CAMPAIGN/out_v66"
+ }
+}

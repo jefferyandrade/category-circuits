@@ -1,0 +1,7 @@
+# The tests and the statistics (Python 3.11; numpy, pandas and scipy at the versions the analyses ran with).
+numpy==2.1.0
+pandas==2.2.2
+scipy==1.17.0
+pytest>=8
+# The parquet tables of Fig. 5.
+pyarrow==19.0.0

@@ -1,0 +1,1001 @@
+category,wnid,class_name,animate,dog,superordinate,block50,depth
+0,n01440764,tench,1,0,aquatic_vertebrate.n.01,aquatic_vertebrate.n.01,16
+1,n01443537,goldfish,1,0,aquatic_vertebrate.n.01,aquatic_vertebrate.n.01,16
+2,n01484850,great white shark,1,0,aquatic_vertebrate.n.01,aquatic_vertebrate.n.01,15
+3,n01491361,tiger shark,1,0,aquatic_vertebrate.n.01,aquatic_vertebrate.n.01,15
+4,n01494475,hammerhead,1,0,aquatic_vertebrate.n.01,aquatic_vertebrate.n.01,14
+5,n01496331,electric ray,1,0,aquatic_vertebrate.n.01,aquatic_vertebrate.n.01,14
+6,n01498041,stingray,1,0,aquatic_vertebrate.n.01,aquatic_vertebrate.n.01,14
+7,n01514668,cock,1,0,bird.n.01,cock.n.05,10
+8,n01514859,hen,1,0,bird.n.01,hen.n.02,10
+9,n01518878,ostrich,1,0,bird.n.01,ratite.n.01,11
+10,n01530575,brambling,1,0,bird.n.01,passerine.n.01,13
+11,n01531178,goldfinch,1,0,bird.n.01,passerine.n.01,13
+12,n01532829,house finch,1,0,bird.n.01,passerine.n.01,13
+13,n01534433,junco,1,0,bird.n.01,passerine.n.01,13
+14,n01537544,indigo bunting,1,0,bird.n.01,passerine.n.01,14
+15,n01558993,robin,1,0,bird.n.01,passerine.n.01,13
+16,n01560419,bulbul,1,0,bird.n.01,passerine.n.01,14
+17,n01580077,jay,1,0,bird.n.01,passerine.n.01,13
+18,n01582220,magpie,1,0,bird.n.01,passerine.n.01,13
+19,n01592084,chickadee,1,0,bird.n.01,passerine.n.01,13
+20,n01601694,water ouzel,1,0,bird.n.01,passerine.n.01,12
+21,n01608432,kite,1,0,bird.n.01,bird_of_prey.n.01,12
+22,n01614925,bald eagle,1,0,bird.n.01,bird_of_prey.n.01,12
+23,n01616318,vulture,1,0,bird.n.01,bird_of_prey.n.01,11
+24,n01622779,great grey owl,1,0,bird.n.01,bird_of_prey.n.01,12
+25,n01629819,European fire salamander,1,0,amphibian.n.03,amphibian.n.03,11
+26,n01630670,common newt,1,0,amphibian.n.03,amphibian.n.03,12
+27,n01631663,eft,1,0,amphibian.n.03,amphibian.n.03,12
+28,n01632458,spotted salamander,1,0,amphibian.n.03,amphibian.n.03,12
+29,n01632777,axolotl,1,0,amphibian.n.03,amphibian.n.03,12
+30,n01641577,bullfrog,1,0,amphibian.n.03,amphibian.n.03,12
+31,n01644373,tree frog,1,0,amphibian.n.03,amphibian.n.03,11
+32,n01644900,tailed frog,1,0,amphibian.n.03,amphibian.n.03,11
+33,n01664065,loggerhead,1,0,reptile.n.01,reptile.n.01,14
+34,n01665541,leatherback turtle,1,0,reptile.n.01,reptile.n.01,14
+35,n01667114,mud turtle,1,0,reptile.n.01,reptile.n.01,13
+36,n01667778,terrapin,1,0,reptile.n.01,reptile.n.01,13
+37,n01669191,box turtle,1,0,reptile.n.01,reptile.n.01,13
+38,n01675722,banded gecko,1,0,reptile.n.01,reptile.n.01,14
+39,n01677366,common iguana,1,0,reptile.n.01,reptile.n.01,14
+40,n01682714,American chameleon,1,0,reptile.n.01,reptile.n.01,14
+41,n01685808,whiptail,1,0,reptile.n.01,reptile.n.01,14
+42,n01687978,agama,1,0,reptile.n.01,reptile.n.01,14
+43,n01688243,frilled lizard,1,0,reptile.n.01,reptile.n.01,14
+44,n01689811,alligator lizard,1,0,reptile.n.01,reptile.n.01,14
+45,n01692333,Gila monster,1,0,reptile.n.01,reptile.n.01,14
+46,n01693334,green lizard,1,0,reptile.n.01,reptile.n.01,14
+47,n01694178,African chameleon,1,0,reptile.n.01,reptile.n.01,14
+48,n01695060,Komodo dragon,1,0,reptile.n.01,reptile.n.01,14
+49,n01697457,African crocodile,1,0,reptile.n.01,reptile.n.01,13
+50,n01698640,American alligator,1,0,reptile.n.01,reptile.n.01,13
+51,n01704323,triceratops,1,0,reptile.n.01,reptile.n.01,15
+52,n01728572,thunder snake,1,0,reptile.n.01,reptile.n.01,13
+53,n01728920,ringneck snake,1,0,reptile.n.01,reptile.n.01,13
+54,n01729322,hognose snake,1,0,reptile.n.01,reptile.n.01,13
+55,n01729977,green snake,1,0,reptile.n.01,reptile.n.01,13
+56,n01734418,king snake,1,0,reptile.n.01,reptile.n.01,13
+57,n01735189,garter snake,1,0,reptile.n.01,reptile.n.01,13
+58,n01737021,water snake,1,0,reptile.n.01,reptile.n.01,13
+59,n01739381,vine snake,1,0,reptile.n.01,reptile.n.01,13
+60,n01740131,night snake,1,0,reptile.n.01,reptile.n.01,13
+61,n01742172,boa constrictor,1,0,reptile.n.01,reptile.n.01,14
+62,n01744401,rock python,1,0,reptile.n.01,reptile.n.01,15
+63,n01748264,Indian cobra,1,0,reptile.n.01,reptile.n.01,14
+64,n01749939,green mamba,1,0,reptile.n.01,reptile.n.01,15
+65,n01751748,sea snake,1,0,reptile.n.01,reptile.n.01,12
+66,n01753488,horned viper,1,0,reptile.n.01,reptile.n.01,13
+67,n01755581,diamondback,1,0,reptile.n.01,reptile.n.01,15
+68,n01756291,sidewinder,1,0,reptile.n.01,reptile.n.01,15
+69,n01768244,trilobite,1,0,invertebrate.n.01,arthropod.n.01,9
+70,n01770081,harvestman,1,0,invertebrate.n.01,arthropod.n.01,10
+71,n01770393,scorpion,1,0,invertebrate.n.01,arthropod.n.01,10
+72,n01773157,black and gold garden spider,1,0,invertebrate.n.01,arthropod.n.01,11
+73,n01773549,barn spider,1,0,invertebrate.n.01,arthropod.n.01,11
+74,n01773797,garden spider,1,0,invertebrate.n.01,arthropod.n.01,11
+75,n01774384,black widow,1,0,invertebrate.n.01,arthropod.n.01,11
+76,n01774750,tarantula,1,0,invertebrate.n.01,arthropod.n.01,11
+77,n01775062,wolf spider,1,0,invertebrate.n.01,arthropod.n.01,11
+78,n01776313,tick,1,0,invertebrate.n.01,arthropod.n.01,11
+79,n01784675,centipede,1,0,invertebrate.n.01,arthropod.n.01,9
+80,n01795545,black grouse,1,0,bird.n.01,gallinaceous_bird.n.01,13
+81,n01796340,ptarmigan,1,0,bird.n.01,gallinaceous_bird.n.01,13
+82,n01797886,ruffed grouse,1,0,bird.n.01,gallinaceous_bird.n.01,13
+83,n01798484,prairie chicken,1,0,bird.n.01,gallinaceous_bird.n.01,13
+84,n01806143,peacock,1,0,bird.n.01,gallinaceous_bird.n.01,15
+85,n01806567,quail,1,0,bird.n.01,gallinaceous_bird.n.01,13
+86,n01807496,partridge,1,0,bird.n.01,gallinaceous_bird.n.01,13
+87,n01817953,African grey,1,0,bird.n.01,parrot.n.01,11
+88,n01818515,macaw,1,0,bird.n.01,parrot.n.01,11
+89,n01819313,sulphur-crested cockatoo,1,0,bird.n.01,parrot.n.01,12
+90,n01820546,lorikeet,1,0,bird.n.01,parrot.n.01,12
+91,n01824575,coucal,1,0,bird.n.01,cuculiform_bird.n.01,12
+92,n01828970,bee eater,1,0,bird.n.01,coraciiform_bird.n.01,11
+93,n01829413,hornbill,1,0,bird.n.01,coraciiform_bird.n.01,11
+94,n01833805,hummingbird,1,0,bird.n.01,apodiform_bird.n.01,11
+95,n01843065,jacamar,1,0,bird.n.01,piciform_bird.n.01,11
+96,n01843383,toucan,1,0,bird.n.01,piciform_bird.n.01,11
+97,n01847000,drake,1,0,bird.n.01,aquatic_bird.n.01,14
+98,n01855032,red-breasted merganser,1,0,bird.n.01,aquatic_bird.n.01,16
+99,n01855672,goose,1,0,bird.n.01,aquatic_bird.n.01,13
+100,n01860187,black swan,1,0,bird.n.01,aquatic_bird.n.01,12
+101,n01871265,tusker,1,0,mammal.n.01,tusker.n.01,10
+102,n01872401,echidna,1,0,mammal.n.01,prototherian.n.01,12
+103,n01873310,platypus,1,0,mammal.n.01,prototherian.n.01,12
+104,n01877812,wallaby,1,0,mammal.n.01,metatherian.n.01,13
+105,n01882714,koala,1,0,mammal.n.01,metatherian.n.01,13
+106,n01883070,wombat,1,0,mammal.n.01,metatherian.n.01,12
+107,n01910747,jellyfish,1,0,invertebrate.n.01,coelenterate.n.01,9
+108,n01914609,sea anemone,1,0,invertebrate.n.01,coelenterate.n.01,10
+109,n01917289,brain coral,1,0,invertebrate.n.01,coelenterate.n.01,12
+110,n01924916,flatworm,1,0,invertebrate.n.01,worm.n.01,9
+111,n01930112,nematode,1,0,invertebrate.n.01,worm.n.01,9
+112,n01943899,conch,1,0,invertebrate.n.01,mollusk.n.01,10
+113,n01944390,snail,1,0,invertebrate.n.01,mollusk.n.01,10
+114,n01945685,slug,1,0,invertebrate.n.01,mollusk.n.01,10
+115,n01950731,sea slug,1,0,invertebrate.n.01,mollusk.n.01,10
+116,n01955084,chiton,1,0,invertebrate.n.01,mollusk.n.01,9
+117,n01968897,chambered nautilus,1,0,invertebrate.n.01,mollusk.n.01,10
+118,n01978287,Dungeness crab,1,0,invertebrate.n.01,arthropod.n.01,12
+119,n01978455,rock crab,1,0,invertebrate.n.01,arthropod.n.01,12
+120,n01980166,fiddler crab,1,0,invertebrate.n.01,arthropod.n.01,12
+121,n01981276,king crab,1,0,invertebrate.n.01,arthropod.n.01,12
+122,n01983481,American lobster,1,0,invertebrate.n.01,arthropod.n.01,13
+123,n01984695,spiny lobster,1,0,invertebrate.n.01,arthropod.n.01,12
+124,n01985128,crayfish,1,0,invertebrate.n.01,arthropod.n.01,11
+125,n01986214,hermit crab,1,0,invertebrate.n.01,arthropod.n.01,11
+126,n01990800,isopod,1,0,invertebrate.n.01,arthropod.n.01,11
+127,n02002556,white stork,1,0,bird.n.01,aquatic_bird.n.01,13
+128,n02002724,black stork,1,0,bird.n.01,aquatic_bird.n.01,13
+129,n02006656,spoonbill,1,0,bird.n.01,aquatic_bird.n.01,12
+130,n02007558,flamingo,1,0,bird.n.01,aquatic_bird.n.01,12
+131,n02009229,little blue heron,1,0,bird.n.01,aquatic_bird.n.01,13
+132,n02009912,American egret,1,0,bird.n.01,aquatic_bird.n.01,14
+133,n02011460,bittern,1,0,bird.n.01,aquatic_bird.n.01,13
+134,n02012849,crane,1,0,bird.n.01,aquatic_bird.n.01,12
+135,n02013706,limpkin,1,0,bird.n.01,aquatic_bird.n.01,12
+136,n02017213,European gallinule,1,0,bird.n.01,aquatic_bird.n.01,13
+137,n02018207,American coot,1,0,bird.n.01,aquatic_bird.n.01,14
+138,n02018795,bustard,1,0,bird.n.01,aquatic_bird.n.01,12
+139,n02025239,ruddy turnstone,1,0,bird.n.01,aquatic_bird.n.01,15
+140,n02027492,red-backed sandpiper,1,0,bird.n.01,aquatic_bird.n.01,14
+141,n02028035,redshank,1,0,bird.n.01,aquatic_bird.n.01,14
+142,n02033041,dowitcher,1,0,bird.n.01,aquatic_bird.n.01,14
+143,n02037110,oystercatcher,1,0,bird.n.01,aquatic_bird.n.01,13
+144,n02051845,pelican,1,0,bird.n.01,aquatic_bird.n.01,13
+145,n02056570,king penguin,1,0,bird.n.01,aquatic_bird.n.01,14
+146,n02058221,albatross,1,0,bird.n.01,aquatic_bird.n.01,13
+147,n02066245,grey whale,1,0,mammal.n.01,aquatic_mammal.n.01,15
+148,n02071294,killer whale,1,0,mammal.n.01,aquatic_mammal.n.01,16
+149,n02074367,dugong,1,0,mammal.n.01,aquatic_mammal.n.01,13
+150,n02077923,sea lion,1,0,mammal.n.01,aquatic_mammal.n.01,15
+151,n02085620,Chihuahua,1,1,mammal.n.01,toy_dog.n.01,15
+152,n02085782,Japanese spaniel,1,1,mammal.n.01,toy_dog.n.01,15
+153,n02085936,Maltese dog,1,1,mammal.n.01,toy_dog.n.01,15
+154,n02086079,Pekinese,1,1,mammal.n.01,toy_dog.n.01,15
+155,n02086240,Shih-Tzu,1,1,mammal.n.01,toy_dog.n.01,15
+156,n02086646,Blenheim spaniel,1,1,mammal.n.01,toy_dog.n.01,17
+157,n02086910,papillon,1,1,mammal.n.01,toy_dog.n.01,16
+158,n02087046,toy terrier,1,1,mammal.n.01,toy_dog.n.01,15
+159,n02087394,Rhodesian ridgeback,1,1,mammal.n.01,rhodesian_ridgeback.n.01,15
+160,n02088094,Afghan hound,1,1,mammal.n.01,hound.n.01,16
+161,n02088238,basset,1,1,mammal.n.01,hound.n.01,16
+162,n02088364,beagle,1,1,mammal.n.01,hound.n.01,16
+163,n02088466,bloodhound,1,1,mammal.n.01,hound.n.01,16
+164,n02088632,bluetick,1,1,mammal.n.01,hound.n.01,16
+165,n02089078,black-and-tan coonhound,1,1,mammal.n.01,hound.n.01,17
+166,n02089867,Walker hound,1,1,mammal.n.01,hound.n.01,17
+167,n02089973,English foxhound,1,1,mammal.n.01,hound.n.01,17
+168,n02090379,redbone,1,1,mammal.n.01,hound.n.01,16
+169,n02090622,borzoi,1,1,mammal.n.01,hound.n.01,17
+170,n02090721,Irish wolfhound,1,1,mammal.n.01,hound.n.01,17
+171,n02091032,Italian greyhound,1,1,mammal.n.01,hound.n.01,17
+172,n02091134,whippet,1,1,mammal.n.01,hound.n.01,17
+173,n02091244,Ibizan hound,1,1,mammal.n.01,hound.n.01,16
+174,n02091467,Norwegian elkhound,1,1,mammal.n.01,hound.n.01,16
+175,n02091635,otterhound,1,1,mammal.n.01,hound.n.01,16
+176,n02091831,Saluki,1,1,mammal.n.01,hound.n.01,16
+177,n02092002,Scottish deerhound,1,1,mammal.n.01,hound.n.01,16
+178,n02092339,Weimaraner,1,1,mammal.n.01,hound.n.01,16
+179,n02093256,Staffordshire bullterrier,1,1,mammal.n.01,terrier.n.01,17
+180,n02093428,American Staffordshire terrier,1,1,mammal.n.01,terrier.n.01,17
+181,n02093647,Bedlington terrier,1,1,mammal.n.01,terrier.n.01,16
+182,n02093754,Border terrier,1,1,mammal.n.01,terrier.n.01,16
+183,n02093859,Kerry blue terrier,1,1,mammal.n.01,terrier.n.01,16
+184,n02093991,Irish terrier,1,1,mammal.n.01,terrier.n.01,16
+185,n02094114,Norfolk terrier,1,1,mammal.n.01,terrier.n.01,16
+186,n02094258,Norwich terrier,1,1,mammal.n.01,terrier.n.01,16
+187,n02094433,Yorkshire terrier,1,1,mammal.n.01,terrier.n.01,16
+188,n02095314,wire-haired fox terrier,1,1,mammal.n.01,terrier.n.01,17
+189,n02095570,Lakeland terrier,1,1,mammal.n.01,terrier.n.01,17
+190,n02095889,Sealyham terrier,1,1,mammal.n.01,terrier.n.01,18
+191,n02096051,Airedale,1,1,mammal.n.01,terrier.n.01,16
+192,n02096177,cairn,1,1,mammal.n.01,terrier.n.01,16
+193,n02096294,Australian terrier,1,1,mammal.n.01,terrier.n.01,16
+194,n02096437,Dandie Dinmont,1,1,mammal.n.01,terrier.n.01,16
+195,n02096585,Boston bull,1,1,mammal.n.01,terrier.n.01,16
+196,n02097047,miniature schnauzer,1,1,mammal.n.01,terrier.n.01,17
+197,n02097130,giant schnauzer,1,1,mammal.n.01,terrier.n.01,17
+198,n02097209,standard schnauzer,1,1,mammal.n.01,terrier.n.01,17
+199,n02097298,Scotch terrier,1,1,mammal.n.01,terrier.n.01,16
+200,n02097474,Tibetan terrier,1,1,mammal.n.01,terrier.n.01,16
+201,n02097658,silky terrier,1,1,mammal.n.01,terrier.n.01,16
+202,n02098105,soft-coated wheaten terrier,1,1,mammal.n.01,terrier.n.01,16
+203,n02098286,West Highland white terrier,1,1,mammal.n.01,terrier.n.01,16
+204,n02098413,Lhasa,1,1,mammal.n.01,terrier.n.01,16
+205,n02099267,flat-coated retriever,1,1,mammal.n.01,sporting_dog.n.01,17
+206,n02099429,curly-coated retriever,1,1,mammal.n.01,sporting_dog.n.01,17
+207,n02099601,golden retriever,1,1,mammal.n.01,sporting_dog.n.01,17
+208,n02099712,Labrador retriever,1,1,mammal.n.01,sporting_dog.n.01,17
+209,n02099849,Chesapeake Bay retriever,1,1,mammal.n.01,sporting_dog.n.01,17
+210,n02100236,German short-haired pointer,1,1,mammal.n.01,sporting_dog.n.01,17
+211,n02100583,vizsla,1,1,mammal.n.01,sporting_dog.n.01,17
+212,n02100735,English setter,1,1,mammal.n.01,sporting_dog.n.01,17
+213,n02100877,Irish setter,1,1,mammal.n.01,sporting_dog.n.01,17
+214,n02101006,Gordon setter,1,1,mammal.n.01,sporting_dog.n.01,17
+215,n02101388,Brittany spaniel,1,1,mammal.n.01,sporting_dog.n.01,17
+216,n02101556,clumber,1,1,mammal.n.01,sporting_dog.n.01,17
+217,n02102040,English springer,1,1,mammal.n.01,sporting_dog.n.01,18
+218,n02102177,Welsh springer spaniel,1,1,mammal.n.01,sporting_dog.n.01,18
+219,n02102318,cocker spaniel,1,1,mammal.n.01,sporting_dog.n.01,17
+220,n02102480,Sussex spaniel,1,1,mammal.n.01,sporting_dog.n.01,17
+221,n02102973,Irish water spaniel,1,1,mammal.n.01,sporting_dog.n.01,18
+222,n02104029,kuvasz,1,1,mammal.n.01,working_dog.n.01,16
+223,n02104365,schipperke,1,1,mammal.n.01,working_dog.n.01,16
+224,n02105056,groenendael,1,1,mammal.n.01,working_dog.n.01,17
+225,n02105162,malinois,1,1,mammal.n.01,working_dog.n.01,17
+226,n02105251,briard,1,1,mammal.n.01,working_dog.n.01,16
+227,n02105412,kelpie,1,1,mammal.n.01,working_dog.n.01,16
+228,n02105505,komondor,1,1,mammal.n.01,working_dog.n.01,16
+229,n02105641,Old English sheepdog,1,1,mammal.n.01,working_dog.n.01,16
+230,n02105855,Shetland sheepdog,1,1,mammal.n.01,working_dog.n.01,16
+231,n02106030,collie,1,1,mammal.n.01,working_dog.n.01,16
+232,n02106166,Border collie,1,1,mammal.n.01,working_dog.n.01,16
+233,n02106382,Bouvier des Flandres,1,1,mammal.n.01,working_dog.n.01,16
+234,n02106550,Rottweiler,1,1,mammal.n.01,working_dog.n.01,16
+235,n02106662,German shepherd,1,1,mammal.n.01,working_dog.n.01,16
+236,n02107142,Doberman,1,1,mammal.n.01,working_dog.n.01,17
+237,n02107312,miniature pinscher,1,1,mammal.n.01,working_dog.n.01,17
+238,n02107574,Greater Swiss Mountain dog,1,1,mammal.n.01,working_dog.n.01,16
+239,n02107683,Bernese mountain dog,1,1,mammal.n.01,working_dog.n.01,16
+240,n02107908,Appenzeller,1,1,mammal.n.01,working_dog.n.01,16
+241,n02108000,EntleBucher,1,1,mammal.n.01,working_dog.n.01,16
+242,n02108089,boxer,1,1,mammal.n.01,working_dog.n.01,15
+243,n02108422,bull mastiff,1,1,mammal.n.01,working_dog.n.01,15
+244,n02108551,Tibetan mastiff,1,1,mammal.n.01,working_dog.n.01,16
+245,n02108915,French bulldog,1,1,mammal.n.01,working_dog.n.01,16
+246,n02109047,Great Dane,1,1,mammal.n.01,working_dog.n.01,15
+247,n02109525,Saint Bernard,1,1,mammal.n.01,working_dog.n.01,15
+248,n02109961,Eskimo dog,1,1,mammal.n.01,working_dog.n.01,15
+249,n02110063,malamute,1,1,mammal.n.01,working_dog.n.01,16
+250,n02110185,Siberian husky,1,1,mammal.n.01,working_dog.n.01,16
+251,n02110341,dalmatian,1,1,mammal.n.01,dalmatian.n.02,14
+252,n02110627,affenpinscher,1,1,mammal.n.01,working_dog.n.01,17
+253,n02110806,basenji,1,1,mammal.n.01,basenji.n.01,14
+254,n02110958,pug,1,1,mammal.n.01,pug.n.01,14
+255,n02111129,Leonberg,1,1,mammal.n.01,leonberg.n.01,14
+256,n02111277,Newfoundland,1,1,mammal.n.01,newfoundland.n.01,14
+257,n02111500,Great Pyrenees,1,1,mammal.n.01,great_pyrenees.n.01,14
+258,n02111889,Samoyed,1,1,mammal.n.01,spitz.n.01,15
+259,n02112018,Pomeranian,1,1,mammal.n.01,spitz.n.01,15
+260,n02112137,chow,1,1,mammal.n.01,spitz.n.01,15
+261,n02112350,keeshond,1,1,mammal.n.01,spitz.n.01,15
+262,n02112706,Brabancon griffon,1,1,mammal.n.01,griffon.n.02,15
+263,n02113023,Pembroke,1,1,mammal.n.01,corgi.n.01,15
+264,n02113186,Cardigan,1,1,mammal.n.01,corgi.n.01,15
+265,n02113624,toy poodle,1,1,mammal.n.01,poodle.n.01,15
+266,n02113712,miniature poodle,1,1,mammal.n.01,poodle.n.01,15
+267,n02113799,standard poodle,1,1,mammal.n.01,poodle.n.01,15
+268,n02113978,Mexican hairless,1,1,mammal.n.01,mexican_hairless.n.01,14
+269,n02114367,timber wolf,1,0,mammal.n.01,wolf.n.01,14
+270,n02114548,white wolf,1,0,mammal.n.01,wolf.n.01,14
+271,n02114712,red wolf,1,0,mammal.n.01,wolf.n.01,14
+272,n02114855,coyote,1,0,mammal.n.01,wolf.n.01,14
+273,n02115641,dingo,1,0,mammal.n.01,wild_dog.n.01,14
+274,n02115913,dhole,1,0,mammal.n.01,wild_dog.n.01,14
+275,n02116738,African hunting dog,1,0,mammal.n.01,wild_dog.n.01,14
+276,n02117135,hyena,1,0,mammal.n.01,hyena.n.01,13
+277,n02119022,red fox,1,0,mammal.n.01,fox.n.01,14
+278,n02119789,kit fox,1,0,mammal.n.01,fox.n.01,14
+279,n02120079,Arctic fox,1,0,mammal.n.01,fox.n.01,14
+280,n02120505,grey fox,1,0,mammal.n.01,fox.n.01,14
+281,n02123045,tabby,1,0,mammal.n.01,feline.n.01,15
+282,n02123159,tiger cat,1,0,mammal.n.01,feline.n.01,15
+283,n02123394,Persian cat,1,0,mammal.n.01,feline.n.01,15
+284,n02123597,Siamese cat,1,0,mammal.n.01,feline.n.01,15
+285,n02124075,Egyptian cat,1,0,mammal.n.01,feline.n.01,15
+286,n02125311,cougar,1,0,mammal.n.01,feline.n.01,15
+287,n02127052,lynx,1,0,mammal.n.01,feline.n.01,15
+288,n02128385,leopard,1,0,mammal.n.01,feline.n.01,14
+289,n02128757,snow leopard,1,0,mammal.n.01,feline.n.01,14
+290,n02128925,jaguar,1,0,mammal.n.01,feline.n.01,14
+291,n02129165,lion,1,0,mammal.n.01,feline.n.01,14
+292,n02129604,tiger,1,0,mammal.n.01,feline.n.01,14
+293,n02130308,cheetah,1,0,mammal.n.01,feline.n.01,14
+294,n02132136,brown bear,1,0,mammal.n.01,bear.n.01,13
+295,n02133161,American black bear,1,0,mammal.n.01,bear.n.01,13
+296,n02134084,ice bear,1,0,mammal.n.01,bear.n.01,13
+297,n02134418,sloth bear,1,0,mammal.n.01,bear.n.01,13
+298,n02137549,mongoose,1,0,mammal.n.01,viverrine.n.01,13
+299,n02138441,meerkat,1,0,mammal.n.01,viverrine.n.01,13
+300,n02165105,tiger beetle,1,0,invertebrate.n.01,arthropod.n.01,11
+301,n02165456,ladybug,1,0,invertebrate.n.01,arthropod.n.01,11
+302,n02167151,ground beetle,1,0,invertebrate.n.01,arthropod.n.01,11
+303,n02168699,long-horned beetle,1,0,invertebrate.n.01,arthropod.n.01,11
+304,n02169497,leaf beetle,1,0,invertebrate.n.01,arthropod.n.01,11
+305,n02172182,dung beetle,1,0,invertebrate.n.01,arthropod.n.01,13
+306,n02174001,rhinoceros beetle,1,0,invertebrate.n.01,arthropod.n.01,13
+307,n02177972,weevil,1,0,invertebrate.n.01,arthropod.n.01,11
+308,n02190166,fly,1,0,invertebrate.n.01,arthropod.n.01,11
+309,n02206856,bee,1,0,invertebrate.n.01,arthropod.n.01,11
+310,n02219486,ant,1,0,invertebrate.n.01,arthropod.n.01,11
+311,n02226429,grasshopper,1,0,invertebrate.n.01,arthropod.n.01,11
+312,n02229544,cricket,1,0,invertebrate.n.01,arthropod.n.01,11
+313,n02231487,walking stick,1,0,invertebrate.n.01,arthropod.n.01,11
+314,n02233338,cockroach,1,0,invertebrate.n.01,arthropod.n.01,11
+315,n02236044,mantis,1,0,invertebrate.n.01,arthropod.n.01,11
+316,n02256656,cicada,1,0,invertebrate.n.01,arthropod.n.01,11
+317,n02259212,leafhopper,1,0,invertebrate.n.01,arthropod.n.01,11
+318,n02264363,lacewing,1,0,invertebrate.n.01,arthropod.n.01,11
+319,n02268443,dragonfly,1,0,invertebrate.n.01,arthropod.n.01,11
+320,n02268853,damselfly,1,0,invertebrate.n.01,arthropod.n.01,11
+321,n02276258,admiral,1,0,invertebrate.n.01,arthropod.n.01,13
+322,n02277742,ringlet,1,0,invertebrate.n.01,arthropod.n.01,12
+323,n02279972,monarch,1,0,invertebrate.n.01,arthropod.n.01,13
+324,n02280649,cabbage butterfly,1,0,invertebrate.n.01,arthropod.n.01,13
+325,n02281406,sulphur butterfly,1,0,invertebrate.n.01,arthropod.n.01,12
+326,n02281787,lycaenid,1,0,invertebrate.n.01,arthropod.n.01,12
+327,n02317335,starfish,1,0,invertebrate.n.01,echinoderm.n.01,9
+328,n02319095,sea urchin,1,0,invertebrate.n.01,echinoderm.n.01,9
+329,n02321529,sea cucumber,1,0,invertebrate.n.01,echinoderm.n.01,9
+330,n02325366,wood rabbit,1,0,mammal.n.01,lagomorph.n.01,14
+331,n02326432,hare,1,0,mammal.n.01,lagomorph.n.01,13
+332,n02328150,Angora,1,0,mammal.n.01,lagomorph.n.01,14
+333,n02342885,hamster,1,0,mammal.n.01,rodent.n.01,12
+334,n02346627,porcupine,1,0,mammal.n.01,rodent.n.01,12
+335,n02356798,fox squirrel,1,0,mammal.n.01,rodent.n.01,14
+336,n02361337,marmot,1,0,mammal.n.01,rodent.n.01,12
+337,n02363005,beaver,1,0,mammal.n.01,rodent.n.01,12
+338,n02364673,guinea pig,1,0,mammal.n.01,rodent.n.01,13
+339,n02389026,sorrel,1,0,mammal.n.01,ungulate.n.01,15
+340,n02391049,zebra,1,0,mammal.n.01,ungulate.n.01,14
+341,n02395406,hog,1,0,mammal.n.01,ungulate.n.01,14
+342,n02396427,wild boar,1,0,mammal.n.01,ungulate.n.01,14
+343,n02397096,warthog,1,0,mammal.n.01,ungulate.n.01,14
+344,n02398521,hippopotamus,1,0,mammal.n.01,ungulate.n.01,13
+345,n02403003,ox,1,0,mammal.n.01,ungulate.n.01,17
+346,n02408429,water buffalo,1,0,mammal.n.01,ungulate.n.01,16
+347,n02410509,bison,1,0,mammal.n.01,ungulate.n.01,15
+348,n02412080,ram,1,0,mammal.n.01,ungulate.n.01,16
+349,n02415577,bighorn,1,0,mammal.n.01,ungulate.n.01,17
+350,n02417914,ibex,1,0,mammal.n.01,ungulate.n.01,17
+351,n02422106,hartebeest,1,0,mammal.n.01,ungulate.n.01,16
+352,n02422699,impala,1,0,mammal.n.01,ungulate.n.01,16
+353,n02423022,gazelle,1,0,mammal.n.01,ungulate.n.01,16
+354,n02437312,Arabian camel,1,0,mammal.n.01,ungulate.n.01,14
+355,n02437616,llama,1,0,mammal.n.01,ungulate.n.01,13
+356,n02441942,weasel,1,0,mammal.n.01,musteline_mammal.n.01,13
+357,n02442845,mink,1,0,mammal.n.01,musteline_mammal.n.01,13
+358,n02443114,polecat,1,0,mammal.n.01,musteline_mammal.n.01,13
+359,n02443484,black-footed ferret,1,0,mammal.n.01,musteline_mammal.n.01,13
+360,n02444819,otter,1,0,mammal.n.01,musteline_mammal.n.01,13
+361,n02445715,skunk,1,0,mammal.n.01,musteline_mammal.n.01,13
+362,n02447366,badger,1,0,mammal.n.01,musteline_mammal.n.01,13
+363,n02454379,armadillo,1,0,mammal.n.01,edentate.n.01,12
+364,n02457408,three-toed sloth,1,0,mammal.n.01,edentate.n.01,13
+365,n02480495,orangutan,1,0,mammal.n.01,primate.n.02,15
+366,n02480855,gorilla,1,0,mammal.n.01,primate.n.02,15
+367,n02481823,chimpanzee,1,0,mammal.n.01,primate.n.02,15
+368,n02483362,gibbon,1,0,mammal.n.01,primate.n.02,15
+369,n02483708,siamang,1,0,mammal.n.01,primate.n.02,15
+370,n02484975,guenon,1,0,mammal.n.01,primate.n.02,14
+371,n02486261,patas,1,0,mammal.n.01,primate.n.02,14
+372,n02486410,baboon,1,0,mammal.n.01,primate.n.02,14
+373,n02487347,macaque,1,0,mammal.n.01,primate.n.02,14
+374,n02488291,langur,1,0,mammal.n.01,primate.n.02,14
+375,n02488702,colobus,1,0,mammal.n.01,primate.n.02,14
+376,n02489166,proboscis monkey,1,0,mammal.n.01,primate.n.02,14
+377,n02490219,marmoset,1,0,mammal.n.01,primate.n.02,14
+378,n02492035,capuchin,1,0,mammal.n.01,primate.n.02,14
+379,n02492660,howler monkey,1,0,mammal.n.01,primate.n.02,14
+380,n02493509,titi,1,0,mammal.n.01,primate.n.02,14
+381,n02493793,spider monkey,1,0,mammal.n.01,primate.n.02,14
+382,n02494079,squirrel monkey,1,0,mammal.n.01,primate.n.02,14
+383,n02497673,Madagascar cat,1,0,mammal.n.01,primate.n.02,13
+384,n02500267,indri,1,0,mammal.n.01,primate.n.02,13
+385,n02504013,Indian elephant,1,0,mammal.n.01,pachyderm.n.01,13
+386,n02504458,African elephant,1,0,mammal.n.01,pachyderm.n.01,13
+387,n02509815,lesser panda,1,0,mammal.n.01,procyonid.n.01,13
+388,n02510455,giant panda,1,0,mammal.n.01,procyonid.n.01,13
+389,n02514041,barracouta,1,0,aquatic_vertebrate.n.01,aquatic_vertebrate.n.01,12
+390,n02526121,eel,1,0,aquatic_vertebrate.n.01,aquatic_vertebrate.n.01,14
+391,n02536864,coho,1,0,aquatic_vertebrate.n.01,aquatic_vertebrate.n.01,16
+392,n02606052,rock beauty,1,0,aquatic_vertebrate.n.01,aquatic_vertebrate.n.01,16
+393,n02607072,anemone fish,1,0,aquatic_vertebrate.n.01,aquatic_vertebrate.n.01,16
+394,n02640242,sturgeon,1,0,aquatic_vertebrate.n.01,aquatic_vertebrate.n.01,14
+395,n02641379,gar,1,0,aquatic_vertebrate.n.01,aquatic_vertebrate.n.01,14
+396,n02643566,lionfish,1,0,aquatic_vertebrate.n.01,aquatic_vertebrate.n.01,16
+397,n02655020,puffer,1,0,aquatic_vertebrate.n.01,aquatic_vertebrate.n.01,15
+398,n02666196,abacus,0,0,device.n.01,machine.n.01,9
+399,n02667093,abaya,0,0,commodity.n.01,clothing.n.01,10
+400,n02669723,academic gown,0,0,commodity.n.01,clothing.n.01,10
+401,n02672831,accordion,0,0,device.n.01,musical_instrument.n.01,10
+402,n02676566,acoustic guitar,0,0,device.n.01,musical_instrument.n.01,10
+403,n02687172,aircraft carrier,0,0,conveyance.n.03,craft.n.02,12
+404,n02690373,airliner,0,0,conveyance.n.03,craft.n.02,12
+405,n02692877,airship,0,0,conveyance.n.03,craft.n.02,11
+406,n02699494,altar,0,0,structure.n.01,altar.n.02,6
+407,n02701002,ambulance,0,0,conveyance.n.03,wheeled_vehicle.n.01,12
+408,n02704792,amphibian,0,0,conveyance.n.03,wheeled_vehicle.n.01,11
+409,n02708093,analog clock,0,0,device.n.01,instrument.n.01,11
+410,n02727426,apiary,0,0,structure.n.01,building.n.01,9
+411,n02730930,apron,0,0,commodity.n.01,clothing.n.01,9
+412,n02747177,ashcan,0,0,container.n.01,container.n.01,8
+413,n02749479,assault rifle,0,0,device.n.01,instrument.n.01,15
+414,n02769748,backpack,0,0,container.n.01,container.n.01,8
+415,n02776631,bakery,0,0,structure.n.01,establishment.n.04,10
+416,n02777292,balance beam,0,0,equipment.n.01,equipment.n.01,9
+417,n02782093,balloon,0,0,conveyance.n.03,craft.n.02,11
+418,n02783161,ballpoint,0,0,implement.n.01,implement.n.01,9
+419,n02786058,Band Aid,0,0,covering.n.02,covering.n.02,10
+420,n02787622,banjo,0,0,device.n.01,musical_instrument.n.01,9
+421,n02788148,bannister,0,0,structure.n.01,obstruction.n.01,8
+422,n02790996,barbell,0,0,equipment.n.01,equipment.n.01,9
+423,n02791124,barber chair,0,0,furnishing.n.02,furnishing.n.02,10
+424,n02791270,barbershop,0,0,structure.n.01,establishment.n.04,10
+425,n02793495,barn,0,0,structure.n.01,building.n.01,8
+426,n02794156,barometer,0,0,device.n.01,instrument.n.01,9
+427,n02795169,barrel,0,0,container.n.01,container.n.01,8
+428,n02797295,barrow,0,0,conveyance.n.03,wheeled_vehicle.n.01,10
+429,n02799071,baseball,0,0,equipment.n.01,equipment.n.01,9
+430,n02802426,basketball,0,0,equipment.n.01,equipment.n.01,9
+431,n02804414,bassinet,0,0,furnishing.n.02,furnishing.n.02,9
+432,n02804610,bassoon,0,0,device.n.01,musical_instrument.n.01,12
+433,n02807133,bathing cap,0,0,commodity.n.01,clothing.n.01,10
+434,n02808304,bath towel,0,0,commodity.n.01,drygoods.n.01,10
+435,n02808440,bathtub,0,0,container.n.01,container.n.01,8
+436,n02814533,beach wagon,0,0,conveyance.n.03,wheeled_vehicle.n.01,12
+437,n02814860,beacon,0,0,structure.n.01,tower.n.01,7
+438,n02815834,beaker,0,0,container.n.01,container.n.01,9
+439,n02817516,bearskin,0,0,commodity.n.01,clothing.n.01,10
+440,n02823428,beer bottle,0,0,container.n.01,container.n.01,9
+441,n02823750,beer glass,0,0,container.n.01,container.n.01,8
+442,n02825657,bell cote,0,0,covering.n.02,covering.n.02,8
+443,n02834397,bib,0,0,fabric.n.01,fabric.n.01,7
+444,n02835271,bicycle-built-for-two,0,0,conveyance.n.03,wheeled_vehicle.n.01,10
+445,n02837789,bikini,0,0,commodity.n.01,clothing.n.01,10
+446,n02840245,binder,0,0,covering.n.02,covering.n.02,7
+447,n02841315,binoculars,0,0,device.n.01,instrument.n.01,9
+448,n02843684,birdhouse,0,0,covering.n.02,covering.n.02,8
+449,n02859443,boathouse,0,0,structure.n.01,building.n.01,9
+450,n02860847,bobsled,0,0,conveyance.n.03,sled.n.01,9
+451,n02865351,bolo tie,0,0,commodity.n.01,clothing.n.01,11
+452,n02869837,bonnet,0,0,commodity.n.01,clothing.n.01,10
+453,n02870880,bookcase,0,0,furnishing.n.02,furnishing.n.02,8
+454,n02871525,bookshop,0,0,structure.n.01,establishment.n.04,10
+455,n02877765,bottlecap,0,0,covering.n.02,covering.n.02,8
+456,n02879718,bow,0,0,device.n.01,instrument.n.01,9
+457,n02883205,bow tie,0,0,commodity.n.01,clothing.n.01,11
+458,n02892201,brass,0,0,structure.n.01,memorial.n.03,7
+459,n02892767,brassiere,0,0,commodity.n.01,clothing.n.01,10
+460,n02894605,breakwater,0,0,structure.n.01,obstruction.n.01,8
+461,n02895154,breastplate,0,0,covering.n.02,covering.n.02,10
+462,n02906734,broom,0,0,implement.n.01,implement.n.01,8
+463,n02909870,bucket,0,0,container.n.01,container.n.01,8
+464,n02910353,buckle,0,0,device.n.01,restraint.n.06,9
+465,n02916936,bulletproof vest,0,0,commodity.n.01,clothing.n.01,10
+466,n02917067,bullet train,0,0,conveyance.n.03,public_transport.n.01,10
+467,n02927161,butcher shop,0,0,structure.n.01,establishment.n.04,10
+468,n02930766,cab,0,0,conveyance.n.03,wheeled_vehicle.n.01,12
+469,n02939185,caldron,0,0,implement.n.01,implement.n.01,11
+470,n02948072,candle,0,0,device.n.01,source_of_illumination.n.01,9
+471,n02950826,cannon,0,0,device.n.01,instrument.n.01,10
+472,n02951358,canoe,0,0,conveyance.n.03,craft.n.02,12
+473,n02951585,can opener,0,0,implement.n.01,implement.n.01,10
+474,n02963159,cardigan,0,0,commodity.n.01,clothing.n.01,10
+475,n02965783,car mirror,0,0,device.n.01,reflector.n.01,9
+476,n02966193,carousel,0,0,device.n.01,mechanism.n.05,10
+477,n02966687,carpenter's kit,0,0,equipment.n.01,equipment.n.01,9
+478,n02971356,carton,0,0,container.n.01,container.n.01,8
+479,n02974003,car wheel,0,0,device.n.01,mechanism.n.05,11
+480,n02977058,cash machine,0,0,device.n.01,machine.n.01,8
+481,n02978881,cassette,0,0,container.n.01,container.n.01,7
+482,n02979186,cassette player,0,0,equipment.n.01,equipment.n.01,8
+483,n02980441,castle,0,0,structure.n.01,defensive_structure.n.01,8
+484,n02981792,catamaran,0,0,conveyance.n.03,craft.n.02,12
+485,n02988304,CD player,0,0,equipment.n.01,equipment.n.01,8
+486,n02992211,cello,0,0,device.n.01,musical_instrument.n.01,10
+487,n02992529,cellular telephone,0,0,equipment.n.01,equipment.n.01,10
+488,n02999410,chain,0,0,connection.n.03,connection.n.03,9
+489,n03000134,chainlink fence,0,0,structure.n.01,obstruction.n.01,9
+490,n03000247,chain mail,0,0,covering.n.02,covering.n.02,9
+491,n03000684,chain saw,0,0,device.n.01,machine.n.01,10
+492,n03014705,chest,0,0,container.n.01,container.n.01,8
+493,n03016953,chiffonier,0,0,furnishing.n.02,furnishing.n.02,9
+494,n03017168,chime,0,0,device.n.01,musical_instrument.n.01,9
+495,n03018349,china cabinet,0,0,furnishing.n.02,furnishing.n.02,9
+496,n03026506,Christmas stocking,0,0,commodity.n.01,clothing.n.01,11
+497,n03028079,church,0,0,structure.n.01,building.n.01,8
+498,n03032252,cinema,0,0,structure.n.01,building.n.01,8
+499,n03041632,cleaver,0,0,implement.n.01,implement.n.01,12
+500,n03042490,cliff dwelling,0,0,structure.n.01,housing.n.01,8
+501,n03045698,cloak,0,0,covering.n.02,covering.n.02,6
+502,n03047690,clog,0,0,covering.n.02,covering.n.02,7
+503,n03062245,cocktail shaker,0,0,container.n.01,container.n.01,8
+504,n03063599,coffee mug,0,0,container.n.01,container.n.01,10
+505,n03063689,coffeepot,0,0,implement.n.01,implement.n.01,11
+506,n03065424,coil,0,0,structure.n.01,coil.n.01,6
+507,n03075370,combination lock,0,0,device.n.01,restraint.n.06,10
+508,n03085013,computer keyboard,0,0,equipment.n.01,equipment.n.01,10
+509,n03089624,confectionery,0,0,structure.n.01,establishment.n.04,10
+510,n03095699,container ship,0,0,conveyance.n.03,craft.n.02,12
+511,n03100240,convertible,0,0,conveyance.n.03,wheeled_vehicle.n.01,12
+512,n03109150,corkscrew,0,0,implement.n.01,implement.n.01,11
+513,n03110669,cornet,0,0,device.n.01,musical_instrument.n.01,10
+514,n03124043,cowboy boot,0,0,covering.n.02,covering.n.02,8
+515,n03124170,cowboy hat,0,0,commodity.n.01,clothing.n.01,10
+516,n03125729,cradle,0,0,furnishing.n.02,furnishing.n.02,9
+517,n03126707,crane,0,0,device.n.01,lifting_device.n.01,8
+518,n03127747,crash helmet,0,0,commodity.n.01,clothing.n.01,10
+519,n03127925,crate,0,0,container.n.01,container.n.01,8
+520,n03131574,crib,0,0,furnishing.n.02,furnishing.n.02,9
+521,n03133878,Crock Pot,0,0,implement.n.01,implement.n.01,11
+522,n03134739,croquet ball,0,0,equipment.n.01,equipment.n.01,9
+523,n03141823,crutch,0,0,implement.n.01,implement.n.01,9
+524,n03146219,cuirass,0,0,covering.n.02,covering.n.02,9
+525,n03160309,dam,0,0,structure.n.01,obstruction.n.01,8
+526,n03179701,desk,0,0,furnishing.n.02,furnishing.n.02,9
+527,n03180011,desktop computer,0,0,device.n.01,machine.n.01,11
+528,n03187595,dial telephone,0,0,equipment.n.01,equipment.n.01,9
+529,n03188531,diaper,0,0,commodity.n.01,clothing.n.01,9
+530,n03196217,digital clock,0,0,device.n.01,instrument.n.01,11
+531,n03197337,digital watch,0,0,device.n.01,instrument.n.01,11
+532,n03201208,dining table,0,0,furnishing.n.02,furnishing.n.02,9
+533,n03207743,dishrag,0,0,fabric.n.01,fabric.n.01,7
+534,n03207941,dishwasher,0,0,commodity.n.01,durables.n.01,11
+535,n03208938,disk brake,0,0,device.n.01,restraint.n.06,11
+536,n03216828,dock,0,0,structure.n.01,landing.n.02,7
+537,n03218198,dogsled,0,0,conveyance.n.03,sled.n.01,9
+538,n03220513,dome,0,0,covering.n.02,covering.n.02,8
+539,n03223299,doormat,0,0,covering.n.02,covering.n.02,8
+540,n03240683,drilling platform,0,0,equipment.n.01,equipment.n.01,10
+541,n03249569,drum,0,0,device.n.01,musical_instrument.n.01,9
+542,n03250847,drumstick,0,0,implement.n.01,implement.n.01,8
+543,n03255030,dumbbell,0,0,equipment.n.01,equipment.n.01,9
+544,n03259280,Dutch oven,0,0,commodity.n.01,durables.n.01,12
+545,n03271574,electric fan,0,0,device.n.01,fan.n.01,8
+546,n03272010,electric guitar,0,0,device.n.01,musical_instrument.n.01,10
+547,n03272562,electric locomotive,0,0,conveyance.n.03,wheeled_vehicle.n.01,11
+548,n03290653,entertainment center,0,0,furnishing.n.02,furnishing.n.02,9
+549,n03291819,envelope,0,0,container.n.01,container.n.01,7
+550,n03297495,espresso maker,0,0,commodity.n.01,durables.n.01,12
+551,n03314780,face powder,0,0,toiletry.n.01,toiletry.n.01,9
+552,n03325584,feather boa,0,0,commodity.n.01,clothing.n.01,10
+553,n03337140,file,0,0,furnishing.n.02,furnishing.n.02,9
+554,n03344393,fireboat,0,0,conveyance.n.03,craft.n.02,11
+555,n03345487,fire engine,0,0,conveyance.n.03,wheeled_vehicle.n.01,12
+556,n03347037,fire screen,0,0,covering.n.02,covering.n.02,8
+557,n03355925,flagpole,0,0,implement.n.01,implement.n.01,9
+558,n03372029,flute,0,0,device.n.01,musical_instrument.n.01,10
+559,n03376595,folding chair,0,0,furnishing.n.02,furnishing.n.02,10
+560,n03379051,football helmet,0,0,commodity.n.01,clothing.n.01,10
+561,n03384352,forklift,0,0,conveyance.n.03,wheeled_vehicle.n.01,10
+562,n03388043,fountain,0,0,structure.n.01,fountain.n.01,6
+563,n03388183,fountain pen,0,0,implement.n.01,implement.n.01,9
+564,n03388549,four-poster,0,0,furnishing.n.02,furnishing.n.02,10
+565,n03393912,freight car,0,0,conveyance.n.03,wheeled_vehicle.n.01,10
+566,n03394916,French horn,0,0,device.n.01,musical_instrument.n.01,10
+567,n03400231,frying pan,0,0,implement.n.01,implement.n.01,11
+568,n03404251,fur coat,0,0,commodity.n.01,clothing.n.01,11
+569,n03417042,garbage truck,0,0,conveyance.n.03,wheeled_vehicle.n.01,12
+570,n03424325,gasmask,0,0,covering.n.02,covering.n.02,8
+571,n03425413,gas pump,0,0,device.n.01,mechanism.n.05,10
+572,n03443371,goblet,0,0,container.n.01,container.n.01,8
+573,n03444034,go-kart,0,0,conveyance.n.03,wheeled_vehicle.n.01,11
+574,n03445777,golf ball,0,0,equipment.n.01,equipment.n.01,9
+575,n03445924,golfcart,0,0,conveyance.n.03,wheeled_vehicle.n.01,11
+576,n03447447,gondola,0,0,conveyance.n.03,craft.n.02,11
+577,n03447721,gong,0,0,device.n.01,musical_instrument.n.01,9
+578,n03450230,gown,0,0,commodity.n.01,clothing.n.01,10
+579,n03452741,grand piano,0,0,device.n.01,musical_instrument.n.01,10
+580,n03457902,greenhouse,0,0,structure.n.01,building.n.01,7
+581,n03459775,grille,0,0,structure.n.01,obstruction.n.01,9
+582,n03461385,grocery store,0,0,structure.n.01,establishment.n.04,10
+583,n03467068,guillotine,0,0,device.n.01,instrument.n.01,9
+584,n03476684,hair slide,0,0,device.n.01,restraint.n.06,10
+585,n03476991,hair spray,0,0,toiletry.n.01,toiletry.n.01,7
+586,n03478589,half track,0,0,conveyance.n.03,wheeled_vehicle.n.01,11
+587,n03481172,hammer,0,0,implement.n.01,implement.n.01,9
+588,n03482405,hamper,0,0,container.n.01,container.n.01,8
+589,n03483316,hand blower,0,0,commodity.n.01,durables.n.01,10
+590,n03485407,hand-held computer,0,0,device.n.01,machine.n.01,12
+591,n03485794,handkerchief,0,0,fabric.n.01,fabric.n.01,7
+592,n03492542,hard disc,0,0,device.n.01,memory_device.n.01,9
+593,n03494278,harmonica,0,0,device.n.01,musical_instrument.n.01,10
+594,n03495258,harp,0,0,device.n.01,musical_instrument.n.01,10
+595,n03496892,harvester,0,0,device.n.01,machine.n.01,9
+596,n03498962,hatchet,0,0,implement.n.01,implement.n.01,12
+597,n03527444,holster,0,0,covering.n.02,covering.n.02,8
+598,n03529860,home theater,0,0,structure.n.01,building.n.01,8
+599,n03530642,honeycomb,0,0,structure.n.01,supporting_structure.n.01,8
+600,n03532672,hook,0,0,device.n.01,mechanism.n.05,9
+601,n03534580,hoopskirt,0,0,commodity.n.01,clothing.n.01,10
+602,n03535780,horizontal bar,0,0,equipment.n.01,equipment.n.01,9
+603,n03538406,horse cart,0,0,conveyance.n.03,wheeled_vehicle.n.01,11
+604,n03544143,hourglass,0,0,device.n.01,instrument.n.01,11
+605,n03584254,iPod,0,0,equipment.n.01,equipment.n.01,11
+606,n03584829,iron,0,0,commodity.n.01,durables.n.01,10
+607,n03590841,jack-o'-lantern,0,0,device.n.01,source_of_illumination.n.01,10
+608,n03594734,jean,0,0,commodity.n.01,clothing.n.01,10
+609,n03594945,jeep,0,0,conveyance.n.03,wheeled_vehicle.n.01,12
+610,n03595614,jersey,0,0,commodity.n.01,clothing.n.01,10
+611,n03598930,jigsaw puzzle,0,0,equipment.n.01,equipment.n.01,10
+612,n03599486,jinrikisha,0,0,conveyance.n.03,wheeled_vehicle.n.01,11
+613,n03602883,joystick,0,0,equipment.n.01,equipment.n.01,10
+614,n03617480,kimono,0,0,commodity.n.01,clothing.n.01,10
+615,n03623198,knee pad,0,0,commodity.n.01,clothing.n.01,9
+616,n03627232,knot,0,0,device.n.01,restraint.n.06,9
+617,n03630383,lab coat,0,0,commodity.n.01,clothing.n.01,11
+618,n03633091,ladle,0,0,container.n.01,container.n.01,8
+619,n03637318,lampshade,0,0,covering.n.02,covering.n.02,8
+620,n03642806,laptop,0,0,device.n.01,machine.n.01,12
+621,n03649909,lawn mower,0,0,implement.n.01,implement.n.01,9
+622,n03657121,lens cap,0,0,covering.n.02,covering.n.02,8
+623,n03658185,letter opener,0,0,implement.n.01,implement.n.01,12
+624,n03661043,library,0,0,structure.n.01,building.n.01,7
+625,n03662601,lifeboat,0,0,conveyance.n.03,craft.n.02,12
+626,n03666591,lighter,0,0,device.n.01,lighter.n.02,7
+627,n03670208,limousine,0,0,conveyance.n.03,wheeled_vehicle.n.01,12
+628,n03673027,liner,0,0,conveyance.n.03,craft.n.02,12
+629,n03676483,lipstick,0,0,toiletry.n.01,toiletry.n.01,9
+630,n03680355,Loafer,0,0,covering.n.02,covering.n.02,8
+631,n03690938,lotion,0,0,toiletry.n.01,toiletry.n.01,7
+632,n03691459,loudspeaker,0,0,device.n.01,electrical_device.n.01,10
+633,n03692522,loupe,0,0,device.n.01,instrument.n.01,13
+634,n03697007,lumbermill,0,0,structure.n.01,building_complex.n.01,9
+635,n03706229,magnetic compass,0,0,device.n.01,instrument.n.01,10
+636,n03709823,mailbag,0,0,container.n.01,container.n.01,8
+637,n03710193,mailbox,0,0,container.n.01,container.n.01,8
+638,n03710637,maillot,0,0,commodity.n.01,clothing.n.01,11
+639,n03710721,maillot,0,0,commodity.n.01,clothing.n.01,10
+640,n03717622,manhole cover,0,0,covering.n.02,covering.n.02,7
+641,n03720891,maraca,0,0,device.n.01,musical_instrument.n.01,9
+642,n03721384,marimba,0,0,device.n.01,musical_instrument.n.01,9
+643,n03724870,mask,0,0,commodity.n.01,clothing.n.01,10
+644,n03729826,matchstick,0,0,implement.n.01,implement.n.01,8
+645,n03733131,maypole,0,0,device.n.01,support.n.10,11
+646,n03733281,maze,0,0,system.n.01,system.n.01,7
+647,n03733805,measuring cup,0,0,container.n.01,container.n.01,8
+648,n03742115,medicine chest,0,0,furnishing.n.02,furnishing.n.02,9
+649,n03743016,megalith,0,0,structure.n.01,memorial.n.03,7
+650,n03759954,microphone,0,0,device.n.01,electrical_device.n.01,10
+651,n03761084,microwave,0,0,commodity.n.01,durables.n.01,11
+652,n03763968,military uniform,0,0,commodity.n.01,clothing.n.01,9
+653,n03764736,milk can,0,0,container.n.01,container.n.01,8
+654,n03769881,minibus,0,0,conveyance.n.03,public_transport.n.01,9
+655,n03770439,miniskirt,0,0,commodity.n.01,clothing.n.01,10
+656,n03770679,minivan,0,0,conveyance.n.03,wheeled_vehicle.n.01,14
+657,n03773504,missile,0,0,device.n.01,instrument.n.01,9
+658,n03775071,mitten,0,0,commodity.n.01,clothing.n.01,10
+659,n03775546,mixing bowl,0,0,article.n.02,article.n.02,11
+660,n03776460,mobile home,0,0,conveyance.n.03,wheeled_vehicle.n.01,10
+661,n03777568,Model T,0,0,conveyance.n.03,wheeled_vehicle.n.01,12
+662,n03777754,modem,0,0,equipment.n.01,equipment.n.01,8
+663,n03781244,monastery,0,0,structure.n.01,housing.n.01,11
+664,n03782006,monitor,0,0,equipment.n.01,equipment.n.01,8
+665,n03785016,moped,0,0,conveyance.n.03,wheeled_vehicle.n.01,13
+666,n03786901,mortar,0,0,container.n.01,container.n.01,8
+667,n03787032,mortarboard,0,0,commodity.n.01,clothing.n.01,10
+668,n03788195,mosque,0,0,structure.n.01,building.n.01,8
+669,n03788365,mosquito net,0,0,covering.n.02,covering.n.02,8
+670,n03791053,motor scooter,0,0,conveyance.n.03,wheeled_vehicle.n.01,9
+671,n03792782,mountain bike,0,0,conveyance.n.03,wheeled_vehicle.n.01,10
+672,n03792972,mountain tent,0,0,structure.n.01,shelter.n.01,8
+673,n03793489,mouse,0,0,device.n.01,electronic_device.n.01,8
+674,n03794056,mousetrap,0,0,device.n.01,trap.n.01,8
+675,n03796401,moving van,0,0,conveyance.n.03,wheeled_vehicle.n.01,13
+676,n03803284,muzzle,0,0,device.n.01,restraint.n.06,8
+677,n03804744,nail,0,0,device.n.01,restraint.n.06,9
+678,n03814639,neck brace,0,0,device.n.01,strengthener.n.01,9
+679,n03814906,necklace,0,0,decoration.n.01,decoration.n.01,8
+680,n03825788,nipple,0,0,covering.n.02,covering.n.02,8
+681,n03832673,notebook,0,0,device.n.01,machine.n.01,12
+682,n03837869,obelisk,0,0,structure.n.01,column.n.06,7
+683,n03838899,oboe,0,0,device.n.01,musical_instrument.n.01,12
+684,n03840681,ocarina,0,0,device.n.01,musical_instrument.n.01,9
+685,n03841143,odometer,0,0,device.n.01,instrument.n.01,10
+686,n03843555,oil filter,0,0,device.n.01,filter.n.01,8
+687,n03854065,organ,0,0,device.n.01,musical_instrument.n.01,9
+688,n03857828,oscilloscope,0,0,equipment.n.01,equipment.n.01,8
+689,n03866082,overskirt,0,0,commodity.n.01,clothing.n.01,10
+690,n03868242,oxcart,0,0,conveyance.n.03,wheeled_vehicle.n.01,11
+691,n03868863,oxygen mask,0,0,device.n.01,breathing_device.n.01,8
+692,n03871628,packet,0,0,container.n.01,container.n.01,8
+693,n03873416,paddle,0,0,implement.n.01,implement.n.01,8
+694,n03874293,paddlewheel,0,0,device.n.01,mechanism.n.05,11
+695,n03874599,padlock,0,0,device.n.01,restraint.n.06,10
+696,n03876231,paintbrush,0,0,implement.n.01,implement.n.01,8
+697,n03877472,pajama,0,0,commodity.n.01,clothing.n.01,9
+698,n03877845,palace,0,0,structure.n.01,housing.n.01,10
+699,n03884397,panpipe,0,0,device.n.01,musical_instrument.n.01,10
+700,n03887697,paper towel,0,0,fabric.n.01,fabric.n.01,8
+701,n03888257,parachute,0,0,equipment.n.01,equipment.n.01,8
+702,n03888605,parallel bars,0,0,equipment.n.01,equipment.n.01,9
+703,n03891251,park bench,0,0,furnishing.n.02,furnishing.n.02,10
+704,n03891332,parking meter,0,0,device.n.01,instrument.n.01,11
+705,n03895866,passenger car,0,0,conveyance.n.03,wheeled_vehicle.n.01,10
+706,n03899768,patio,0,0,structure.n.01,area.n.05,7
+707,n03902125,pay-phone,0,0,equipment.n.01,equipment.n.01,9
+708,n03903868,pedestal,0,0,structure.n.01,supporting_structure.n.01,8
+709,n03908618,pencil box,0,0,container.n.01,container.n.01,8
+710,n03908714,pencil sharpener,0,0,implement.n.01,implement.n.01,8
+711,n03916031,perfume,0,0,toiletry.n.01,toiletry.n.01,7
+712,n03920288,Petri dish,0,0,article.n.02,article.n.02,10
+713,n03924679,photocopier,0,0,equipment.n.01,equipment.n.01,9
+714,n03929660,pick,0,0,device.n.01,pick.n.05,7
+715,n03929855,pickelhaube,0,0,covering.n.02,covering.n.02,11
+716,n03930313,picket fence,0,0,structure.n.01,obstruction.n.01,9
+717,n03930630,pickup,0,0,conveyance.n.03,wheeled_vehicle.n.01,12
+718,n03933933,pier,0,0,device.n.01,support.n.10,8
+719,n03935335,piggy bank,0,0,container.n.01,container.n.01,8
+720,n03937543,pill bottle,0,0,container.n.01,container.n.01,9
+721,n03938244,pillow,0,0,padding.n.01,padding.n.01,7
+722,n03942813,ping-pong ball,0,0,equipment.n.01,equipment.n.01,9
+723,n03944341,pinwheel,0,0,device.n.01,mechanism.n.05,11
+724,n03947888,pirate,0,0,conveyance.n.03,craft.n.02,11
+725,n03950228,pitcher,0,0,container.n.01,container.n.01,8
+726,n03954731,plane,0,0,implement.n.01,implement.n.01,11
+727,n03956157,planetarium,0,0,structure.n.01,building.n.01,7
+728,n03958227,plastic bag,0,0,container.n.01,container.n.01,8
+729,n03961711,plate rack,0,0,structure.n.01,supporting_structure.n.01,9
+730,n03967562,plow,0,0,implement.n.01,implement.n.01,8
+731,n03970156,plunger,0,0,implement.n.01,implement.n.01,9
+732,n03976467,Polaroid camera,0,0,equipment.n.01,equipment.n.01,9
+733,n03976657,pole,0,0,implement.n.01,implement.n.01,8
+734,n03977966,police van,0,0,conveyance.n.03,wheeled_vehicle.n.01,13
+735,n03980874,poncho,0,0,commodity.n.01,clothing.n.01,11
+736,n03982430,pool table,0,0,furnishing.n.02,furnishing.n.02,9
+737,n03983396,pop bottle,0,0,container.n.01,container.n.01,9
+738,n03991062,pot,0,0,container.n.01,container.n.01,7
+739,n03992509,potter's wheel,0,0,device.n.01,mechanism.n.05,11
+740,n03995372,power drill,0,0,device.n.01,machine.n.01,9
+741,n03998194,prayer rug,0,0,covering.n.02,covering.n.02,8
+742,n04004767,printer,0,0,device.n.01,machine.n.01,9
+743,n04005630,prison,0,0,structure.n.01,establishment.n.04,10
+744,n04008634,projectile,0,0,device.n.01,instrument.n.01,9
+745,n04009552,projector,0,0,device.n.01,instrument.n.01,9
+746,n04019541,puck,0,0,device.n.01,mechanism.n.05,11
+747,n04023962,punching bag,0,0,equipment.n.01,equipment.n.01,9
+748,n04026417,purse,0,0,container.n.01,container.n.01,8
+749,n04033901,quill,0,0,implement.n.01,implement.n.01,9
+750,n04033995,quilt,0,0,covering.n.02,covering.n.02,8
+751,n04037443,racer,0,0,conveyance.n.03,wheeled_vehicle.n.01,12
+752,n04039381,racket,0,0,implement.n.01,implement.n.01,8
+753,n04040759,radiator,0,0,device.n.01,mechanism.n.05,8
+754,n04041544,radio,0,0,system.n.01,system.n.01,8
+755,n04044716,radio telescope,0,0,device.n.01,instrument.n.01,12
+756,n04049303,rain barrel,0,0,container.n.01,container.n.01,11
+757,n04065272,recreational vehicle,0,0,conveyance.n.03,wheeled_vehicle.n.01,10
+758,n04067472,reel,0,0,device.n.01,mechanism.n.05,10
+759,n04069434,reflex camera,0,0,equipment.n.01,equipment.n.01,9
+760,n04070727,refrigerator,0,0,commodity.n.01,durables.n.01,11
+761,n04074963,remote control,0,0,device.n.01,remote_control.n.01,7
+762,n04081281,restaurant,0,0,structure.n.01,building.n.01,7
+763,n04086273,revolver,0,0,device.n.01,instrument.n.01,12
+764,n04090263,rifle,0,0,device.n.01,instrument.n.01,11
+765,n04099969,rocking chair,0,0,furnishing.n.02,furnishing.n.02,10
+766,n04111531,rotisserie,0,0,commodity.n.01,durables.n.01,12
+767,n04116512,rubber eraser,0,0,implement.n.01,implement.n.01,8
+768,n04118538,rugby ball,0,0,equipment.n.01,equipment.n.01,9
+769,n04118776,rule,0,0,device.n.01,instrument.n.01,10
+770,n04120489,running shoe,0,0,covering.n.02,covering.n.02,8
+771,n04125021,safe,0,0,container.n.01,container.n.01,9
+772,n04127249,safety pin,0,0,device.n.01,restraint.n.06,10
+773,n04131690,saltshaker,0,0,container.n.01,container.n.01,8
+774,n04133789,sandal,0,0,covering.n.02,covering.n.02,8
+775,n04136333,sarong,0,0,commodity.n.01,clothing.n.01,10
+776,n04141076,sax,0,0,device.n.01,musical_instrument.n.01,12
+777,n04141327,scabbard,0,0,covering.n.02,covering.n.02,8
+778,n04141975,scale,0,0,device.n.01,instrument.n.01,9
+779,n04146614,school bus,0,0,conveyance.n.03,public_transport.n.01,9
+780,n04147183,schooner,0,0,conveyance.n.03,craft.n.02,11
+781,n04149813,scoreboard,0,0,structure.n.01,signboard.n.01,7
+782,n04152593,screen,0,0,device.n.01,electronic_device.n.01,9
+783,n04153751,screw,0,0,device.n.01,restraint.n.06,9
+784,n04154565,screwdriver,0,0,implement.n.01,implement.n.01,9
+785,n04162706,seat belt,0,0,commodity.n.01,clothing.n.01,11
+786,n04179913,sewing machine,0,0,commodity.n.01,durables.n.01,10
+787,n04192698,shield,0,0,covering.n.02,covering.n.02,8
+788,n04200800,shoe shop,0,0,structure.n.01,establishment.n.04,10
+789,n04201297,shoji,0,0,covering.n.02,covering.n.02,7
+790,n04204238,shopping basket,0,0,container.n.01,container.n.01,8
+791,n04204347,shopping cart,0,0,conveyance.n.03,wheeled_vehicle.n.01,10
+792,n04208210,shovel,0,0,implement.n.01,implement.n.01,9
+793,n04209133,shower cap,0,0,commodity.n.01,clothing.n.01,10
+794,n04209239,shower curtain,0,0,covering.n.02,covering.n.02,9
+795,n04228054,ski,0,0,device.n.01,runner.n.09,8
+796,n04229816,ski mask,0,0,covering.n.02,covering.n.02,9
+797,n04235860,sleeping bag,0,0,container.n.01,container.n.01,8
+798,n04238763,slide rule,0,0,device.n.01,machine.n.01,10
+799,n04239074,sliding door,0,0,structure.n.01,obstruction.n.01,10
+800,n04243546,slot,0,0,device.n.01,machine.n.01,9
+801,n04251144,snorkel,0,0,device.n.01,breathing_device.n.01,8
+802,n04252077,snowmobile,0,0,conveyance.n.03,wheeled_vehicle.n.01,11
+803,n04252225,snowplow,0,0,conveyance.n.03,wheeled_vehicle.n.01,11
+804,n04254120,soap dispenser,0,0,container.n.01,container.n.01,8
+805,n04254680,soccer ball,0,0,equipment.n.01,equipment.n.01,9
+806,n04254777,sock,0,0,commodity.n.01,clothing.n.01,10
+807,n04258138,solar dish,0,0,device.n.01,reflector.n.01,8
+808,n04259630,sombrero,0,0,commodity.n.01,clothing.n.01,10
+809,n04263257,soup bowl,0,0,article.n.02,article.n.02,11
+810,n04264628,space bar,0,0,implement.n.01,implement.n.01,10
+811,n04265275,space heater,0,0,device.n.01,heater.n.01,8
+812,n04266014,space shuttle,0,0,conveyance.n.03,craft.n.02,10
+813,n04270147,spatula,0,0,implement.n.01,implement.n.01,11
+814,n04273569,speedboat,0,0,conveyance.n.03,craft.n.02,12
+815,n04275548,spider web,0,0,device.n.01,trap.n.01,9
+816,n04277352,spindle,0,0,implement.n.01,implement.n.01,8
+817,n04285008,sports car,0,0,conveyance.n.03,wheeled_vehicle.n.01,12
+818,n04286575,spotlight,0,0,device.n.01,source_of_illumination.n.01,9
+819,n04296562,stage,0,0,surface.n.01,surface.n.01,8
+820,n04310018,steam locomotive,0,0,conveyance.n.03,wheeled_vehicle.n.01,11
+821,n04311004,steel arch bridge,0,0,structure.n.01,bridge.n.01,7
+822,n04311174,steel drum,0,0,device.n.01,musical_instrument.n.01,9
+823,n04317175,stethoscope,0,0,device.n.01,instrument.n.01,9
+824,n04325704,stole,0,0,commodity.n.01,clothing.n.01,10
+825,n04326547,stone wall,0,0,structure.n.01,obstruction.n.01,9
+826,n04328186,stopwatch,0,0,device.n.01,instrument.n.01,11
+827,n04330267,stove,0,0,device.n.01,heater.n.01,8
+828,n04332243,strainer,0,0,device.n.01,filter.n.01,8
+829,n04335435,streetcar,0,0,conveyance.n.03,wheeled_vehicle.n.01,10
+830,n04336792,stretcher,0,0,conveyance.n.03,litter.n.03,8
+831,n04344873,studio couch,0,0,furnishing.n.02,furnishing.n.02,11
+832,n04346328,stupa,0,0,structure.n.01,building.n.01,9
+833,n04347754,submarine,0,0,conveyance.n.03,craft.n.02,13
+834,n04350905,suit,0,0,commodity.n.01,clothing.n.01,9
+835,n04355338,sundial,0,0,device.n.01,instrument.n.01,10
+836,n04355933,sunglass,0,0,device.n.01,optical_device.n.01,10
+837,n04356056,sunglasses,0,0,device.n.01,instrument.n.01,10
+838,n04357314,sunscreen,0,0,toiletry.n.01,toiletry.n.01,8
+839,n04366367,suspension bridge,0,0,structure.n.01,bridge.n.01,7
+840,n04367480,swab,0,0,implement.n.01,implement.n.01,8
+841,n04370456,sweatshirt,0,0,commodity.n.01,clothing.n.01,11
+842,n04371430,swimming trunks,0,0,commodity.n.01,clothing.n.01,10
+843,n04371774,swing,0,0,device.n.01,mechanism.n.05,9
+844,n04372370,switch,0,0,device.n.01,mechanism.n.05,9
+845,n04376876,syringe,0,0,device.n.01,instrument.n.01,9
+846,n04380533,table lamp,0,0,furnishing.n.02,furnishing.n.02,9
+847,n04389033,tank,0,0,conveyance.n.03,wheeled_vehicle.n.01,11
+848,n04392985,tape player,0,0,equipment.n.01,equipment.n.01,8
+849,n04398044,teapot,0,0,implement.n.01,implement.n.01,11
+850,n04399382,teddy,0,0,plaything.n.01,plaything.n.01,6
+851,n04404412,television,0,0,system.n.01,system.n.01,9
+852,n04409515,tennis ball,0,0,equipment.n.01,equipment.n.01,9
+853,n04417672,thatch,0,0,covering.n.02,covering.n.02,8
+854,n04418357,theater curtain,0,0,covering.n.02,covering.n.02,9
+855,n04423845,thimble,0,0,covering.n.02,covering.n.02,8
+856,n04428191,thresher,0,0,device.n.01,machine.n.01,9
+857,n04429376,throne,0,0,furnishing.n.02,furnishing.n.02,11
+858,n04435653,tile roof,0,0,covering.n.02,covering.n.02,8
+859,n04442312,toaster,0,0,commodity.n.01,durables.n.01,11
+860,n04443257,tobacco shop,0,0,structure.n.01,establishment.n.04,10
+861,n04447861,toilet seat,0,0,furnishing.n.02,furnishing.n.02,9
+862,n04456115,torch,0,0,device.n.01,source_of_illumination.n.01,9
+863,n04458633,totem pole,0,0,decoration.n.01,decoration.n.01,8
+864,n04461696,tow truck,0,0,conveyance.n.03,wheeled_vehicle.n.01,12
+865,n04462240,toyshop,0,0,structure.n.01,establishment.n.04,10
+866,n04465501,tractor,0,0,conveyance.n.03,wheeled_vehicle.n.01,10
+867,n04467665,trailer truck,0,0,conveyance.n.03,wheeled_vehicle.n.01,12
+868,n04476259,tray,0,0,container.n.01,container.n.01,8
+869,n04479046,trench coat,0,0,commodity.n.01,clothing.n.01,12
+870,n04482393,tricycle,0,0,conveyance.n.03,wheeled_vehicle.n.01,9
+871,n04483307,trimaran,0,0,conveyance.n.03,craft.n.02,12
+872,n04485082,tripod,0,0,device.n.01,support.n.10,9
+873,n04486054,triumphal arch,0,0,structure.n.01,arch.n.04,7
+874,n04487081,trolleybus,0,0,conveyance.n.03,public_transport.n.01,9
+875,n04487394,trombone,0,0,device.n.01,musical_instrument.n.01,10
+876,n04493381,tub,0,0,container.n.01,container.n.01,8
+877,n04501370,turnstile,0,0,structure.n.01,obstruction.n.01,10
+878,n04505470,typewriter keyboard,0,0,device.n.01,keyboard.n.01,8
+879,n04507155,umbrella,0,0,covering.n.02,covering.n.02,9
+880,n04509417,unicycle,0,0,conveyance.n.03,wheeled_vehicle.n.01,9
+881,n04515003,upright,0,0,device.n.01,musical_instrument.n.01,10
+882,n04517823,vacuum,0,0,commodity.n.01,durables.n.01,10
+883,n04522168,vase,0,0,container.n.01,container.n.01,9
+884,n04523525,vault,0,0,covering.n.02,covering.n.02,8
+885,n04525038,velvet,0,0,fabric.n.01,fabric.n.01,6
+886,n04525305,vending machine,0,0,device.n.01,machine.n.01,9
+887,n04532106,vestment,0,0,commodity.n.01,clothing.n.01,10
+888,n04532670,viaduct,0,0,structure.n.01,bridge.n.01,7
+889,n04536866,violin,0,0,device.n.01,musical_instrument.n.01,10
+890,n04540053,volleyball,0,0,equipment.n.01,equipment.n.01,9
+891,n04542943,waffle iron,0,0,commodity.n.01,durables.n.01,11
+892,n04548280,wall clock,0,0,device.n.01,instrument.n.01,11
+893,n04548362,wallet,0,0,container.n.01,container.n.01,8
+894,n04550184,wardrobe,0,0,furnishing.n.02,furnishing.n.02,8
+895,n04552348,warplane,0,0,conveyance.n.03,craft.n.02,11
+896,n04553703,washbasin,0,0,container.n.01,container.n.01,9
+897,n04554684,washer,0,0,commodity.n.01,durables.n.01,11
+898,n04557648,water bottle,0,0,container.n.01,container.n.01,9
+899,n04560804,water jug,0,0,container.n.01,container.n.01,10
+900,n04562935,water tower,0,0,container.n.01,container.n.01,10
+901,n04579145,whiskey jug,0,0,container.n.01,container.n.01,10
+902,n04579432,whistle,0,0,device.n.01,acoustic_device.n.01,8
+903,n04584207,wig,0,0,commodity.n.01,clothing.n.01,10
+904,n04589890,window screen,0,0,covering.n.02,covering.n.02,8
+905,n04590129,window shade,0,0,covering.n.02,covering.n.02,9
+906,n04591157,Windsor tie,0,0,commodity.n.01,clothing.n.01,11
+907,n04591713,wine bottle,0,0,container.n.01,container.n.01,9
+908,n04592741,wing,0,0,device.n.01,airfoil.n.01,8
+909,n04596742,wok,0,0,implement.n.01,implement.n.01,11
+910,n04597913,wooden spoon,0,0,article.n.02,article.n.02,10
+911,n04599235,wool,0,0,fabric.n.01,fabric.n.01,6
+912,n04604644,worm fence,0,0,structure.n.01,obstruction.n.01,10
+913,n04606251,wreck,0,0,conveyance.n.03,craft.n.02,11
+914,n04612504,yawl,0,0,conveyance.n.03,craft.n.02,12
+915,n04613696,yurt,0,0,structure.n.01,housing.n.01,8
+916,n06359193,web site,0,0,device.n.01,machine.n.01,9
+917,n06596364,comic book,0,0,creation.n.02,creation.n.02,10
+918,n06785654,crossword puzzle,0,0,equipment.n.01,equipment.n.01,10
+919,n06794110,street sign,0,0,abstraction.n.06,abstraction.n.06,4
+920,n06874185,traffic light,0,0,abstraction.n.06,abstraction.n.06,6
+921,n07248320,book jacket,0,0,covering.n.02,covering.n.02,8
+922,n07565083,menu,0,0,matter.n.03,matter.n.03,6
+923,n07579787,plate,0,0,matter.n.03,matter.n.03,8
+924,n07583066,guacamole,0,0,matter.n.03,matter.n.03,10
+925,n07584110,consomme,0,0,matter.n.03,matter.n.03,8
+926,n07590611,hot pot,0,0,matter.n.03,matter.n.03,8
+927,n07613480,trifle,0,0,matter.n.03,matter.n.03,9
+928,n07614500,ice cream,0,0,matter.n.03,matter.n.03,9
+929,n07615774,ice lolly,0,0,matter.n.03,matter.n.03,9
+930,n07684084,French loaf,0,0,matter.n.03,matter.n.03,9
+931,n07693725,bagel,0,0,matter.n.03,matter.n.03,9
+932,n07695742,pretzel,0,0,matter.n.03,matter.n.03,9
+933,n07697313,cheeseburger,0,0,matter.n.03,matter.n.03,10
+934,n07697537,hotdog,0,0,matter.n.03,matter.n.03,9
+935,n07711569,mashed potato,0,0,matter.n.03,matter.n.03,9
+936,n07714571,head cabbage,0,0,matter.n.03,matter.n.03,9
+937,n07714990,broccoli,0,0,matter.n.03,matter.n.03,8
+938,n07715103,cauliflower,0,0,matter.n.03,matter.n.03,8
+939,n07716358,zucchini,0,0,matter.n.03,matter.n.03,9
+940,n07716906,spaghetti squash,0,0,matter.n.03,matter.n.03,9
+941,n07717410,acorn squash,0,0,matter.n.03,matter.n.03,9
+942,n07717556,butternut squash,0,0,matter.n.03,matter.n.03,9
+943,n07718472,cucumber,0,0,matter.n.03,matter.n.03,7
+944,n07718747,artichoke,0,0,matter.n.03,matter.n.03,7
+945,n07720875,bell pepper,0,0,matter.n.03,matter.n.03,10
+946,n07730033,cardoon,0,0,matter.n.03,matter.n.03,7
+947,n07734744,mushroom,0,0,matter.n.03,matter.n.03,7
+948,n07742313,Granny Smith,0,0,natural_object.n.01,natural_object.n.01,12
+949,n07745940,strawberry,0,0,natural_object.n.01,natural_object.n.01,11
+950,n07747607,orange,0,0,natural_object.n.01,natural_object.n.01,11
+951,n07749582,lemon,0,0,natural_object.n.01,natural_object.n.01,11
+952,n07753113,fig,0,0,natural_object.n.01,natural_object.n.01,10
+953,n07753275,pineapple,0,0,natural_object.n.01,natural_object.n.01,10
+954,n07753592,banana,0,0,natural_object.n.01,natural_object.n.01,10
+955,n07754684,jackfruit,0,0,natural_object.n.01,natural_object.n.01,10
+956,n07760859,custard apple,0,0,natural_object.n.01,natural_object.n.01,10
+957,n07768694,pomegranate,0,0,natural_object.n.01,natural_object.n.01,10
+958,n07802026,hay,0,0,matter.n.03,matter.n.03,7
+959,n07831146,carbonara,0,0,matter.n.03,matter.n.03,11
+960,n07836838,chocolate sauce,0,0,matter.n.03,matter.n.03,10
+961,n07860988,dough,0,0,matter.n.03,matter.n.03,7
+962,n07871810,meat loaf,0,0,matter.n.03,matter.n.03,9
+963,n07873807,pizza,0,0,matter.n.03,matter.n.03,7
+964,n07875152,potpie,0,0,matter.n.03,matter.n.03,7
+965,n07880968,burrito,0,0,matter.n.03,matter.n.03,7
+966,n07892512,red wine,0,0,abstraction.n.06,abstraction.n.06,10
+967,n07920052,espresso,0,0,abstraction.n.06,abstraction.n.06,9
+968,n07930864,cup,0,0,abstraction.n.06,abstraction.n.06,11
+969,n07932039,eggnog,0,0,abstraction.n.06,abstraction.n.06,11
+970,n09193705,alp,0,0,geological_formation.n.01,geological_formation.n.01,6
+971,n09229709,bubble,0,0,abstraction.n.06,abstraction.n.06,8
+972,n09246464,cliff,0,0,geological_formation.n.01,geological_formation.n.01,4
+973,n09256479,coral reef,0,0,geological_formation.n.01,geological_formation.n.01,7
+974,n09288635,geyser,0,0,geological_formation.n.01,geological_formation.n.01,5
+975,n09332890,lakeside,0,0,geological_formation.n.01,geological_formation.n.01,5
+976,n09399592,promontory,0,0,geological_formation.n.01,geological_formation.n.01,5
+977,n09421951,sandbar,0,0,natural_object.n.01,natural_object.n.01,8
+978,n09428293,seashore,0,0,geological_formation.n.01,geological_formation.n.01,5
+979,n09468604,valley,0,0,geological_formation.n.01,geological_formation.n.01,5
+980,n09472597,volcano,0,0,geological_formation.n.01,geological_formation.n.01,6
+981,n09835506,ballplayer,1,0,person.n.01,person.n.01,9
+982,n10148035,groom,1,0,person.n.01,person.n.01,10
+983,n10565667,scuba diver,1,0,person.n.01,person.n.01,9
+984,n11879895,rapeseed,0,0,natural_object.n.01,natural_object.n.01,11
+985,n11939491,daisy,0,0,plant.n.02,plant.n.02,11
+986,n12057211,yellow lady's slipper,0,0,plant.n.02,plant.n.02,13
+987,n12144580,corn,0,0,natural_object.n.01,natural_object.n.01,12
+988,n12267677,acorn,0,0,natural_object.n.01,natural_object.n.01,9
+989,n12620546,hip,0,0,natural_object.n.01,natural_object.n.01,9
+990,n12768682,buckeye,0,0,natural_object.n.01,natural_object.n.01,10
+991,n12985857,coral fungus,0,0,fungus.n.01,fungus.n.01,7
+992,n12998815,agaric,0,0,fungus.n.01,fungus.n.01,8
+993,n13037406,gyromitra,0,0,fungus.n.01,fungus.n.01,7
+994,n13040303,stinkhorn,0,0,fungus.n.01,fungus.n.01,7
+995,n13044778,earthstar,0,0,fungus.n.01,fungus.n.01,7
+996,n13052670,hen-of-the-woods,0,0,fungus.n.01,fungus.n.01,7
+997,n13054560,bolete,0,0,fungus.n.01,fungus.n.01,7
+998,n13133613,ear,0,0,natural_object.n.01,natural_object.n.01,9
+999,n15075141,toilet tissue,0,0,abstraction.n.06,abstraction.n.06,8

@@ -1,0 +1,11 @@
+arm,metric,estimate,ci_low,ci_high,n_categories,seed,n_resamples,unit,method
+P,native_density,0.0870609010736756,0.08539365209844121,0.0888035769953997,1000,0,10000,category,percentile category bootstrap (10000 resamples)
+SA-H,native_density,0.07600229843246617,0.07415427174757365,0.07792396104134336,1000,0,10000,category,percentile category bootstrap (10000 resamples)
+SA-G,native_density,0.07117134622964295,0.06727701551128726,0.07510492544666067,1000,0,10000,category,percentile category bootstrap (10000 resamples)
+SG,native_density,0.09382005746660169,0.09249993998806481,0.09516712078654051,1000,0,10000,category,percentile category bootstrap (10000 resamples)
+SF,native_density,0.07933464941948078,0.0780746135460168,0.08067650232489117,1000,0,10000,category,percentile category bootstrap (10000 resamples)
+P,corrected_accuracy_drop,4.802762762765941,4.4714489489521325,5.139616016019232,1000,0,10000,category,percentile category bootstrap (10000 resamples)
+SA-H,corrected_accuracy_drop,21.47931731732132,20.487301951956038,22.548131331335206,1000,0,10000,category,percentile category bootstrap (10000 resamples)
+SA-G,corrected_accuracy_drop,22.988988988993203,22.19777042042449,23.8016736236278,1000,0,10000,category,percentile category bootstrap (10000 resamples)
+SG,corrected_accuracy_drop,6.999261261265014,6.615860060063821,7.395076126129825,1000,0,10000,category,percentile category bootstrap (10000 resamples)
+SF,corrected_accuracy_drop,6.371939939943458,6.027763563567128,6.7265550550585065,1000,0,10000,category,percentile category bootstrap (10000 resamples)

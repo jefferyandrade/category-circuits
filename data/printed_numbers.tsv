@@ -1,0 +1,175 @@
+macro	printed	sections	what
+CoreAlexAccDrop	4.8	00_abstract;21_faithful_circuits_sign	2.1 AlexNet method comparison, all 1,000 categories (Fig 3A)
+CoreAlexAccDropHi	5.1	21_faithful_circuits_sign	2.1 AlexNet method comparison, all 1,000 categories (Fig 3A)
+CoreAlexAccDropLo	4.5	21_faithful_circuits_sign	2.1 AlexNet method comparison, all 1,000 categories (Fig 3A)
+CoreAlexKeptPct	8.7	00_abstract;12_methods;21_faithful_circuits_sign	2.1 AlexNet method comparison, all 1,000 categories (Fig 3A)
+CoreAlexKeptPctHi	8.9	21_faithful_circuits_sign	2.1 AlexNet method comparison, all 1,000 categories (Fig 3A)
+CoreAlexKeptPctLo	8.5	21_faithful_circuits_sign	2.1 AlexNet method comparison, all 1,000 categories (Fig 3A)
+CoreAlexWindowShare	0.095	12_methods	2.1 AlexNet method comparison, all 1,000 categories (Fig 3A)
+MCAccDropSAG	23.0	21_faithful_circuits_sign	2.1 AlexNet method comparison, all 1,000 categories (Fig 3A)
+MCAccDropSAH	21.5	00_abstract;21_faithful_circuits_sign	2.1 AlexNet method comparison, all 1,000 categories (Fig 3A)
+MCDiffAccSAGAbs	18.2	21_faithful_circuits_sign	2.1 AlexNet method comparison, all 1,000 categories (Fig 3A)
+MCDiffAccSAGHi	19.0	21_faithful_circuits_sign	2.1 AlexNet method comparison, all 1,000 categories (Fig 3A)
+MCDiffAccSAGLo	17.4	21_faithful_circuits_sign	2.1 AlexNet method comparison, all 1,000 categories (Fig 3A)
+MCDiffAccSAHAbs	16.7	21_faithful_circuits_sign	2.1 AlexNet method comparison, all 1,000 categories (Fig 3A)
+MCDiffAccSAHHi	17.7	21_faithful_circuits_sign	2.1 AlexNet method comparison, all 1,000 categories (Fig 3A)
+MCDiffAccSAHLo	15.7	21_faithful_circuits_sign	2.1 AlexNet method comparison, all 1,000 categories (Fig 3A)
+MCDiffAccSG	+2.2	21_faithful_circuits_sign	2.1 AlexNet method comparison, all 1,000 categories (Fig 3A)
+MCDiffAccSGHi	2.5	21_faithful_circuits_sign	2.1 AlexNet method comparison, all 1,000 categories (Fig 3A)
+MCDiffAccSGLo	1.9	21_faithful_circuits_sign	2.1 AlexNet method comparison, all 1,000 categories (Fig 3A)
+ResADenseAccuracy	86.3	21_faithful_circuits_sign	2.1 AlexNet method comparison, all 1,000 categories (Fig 3A)
+ResAResNetEighteenAccDiff	+20.6	21_faithful_circuits_sign	2.1 sign effect in VGG-11 and ResNet-18
+ResAVggAccDiff	+10.5	21_faithful_circuits_sign	2.1 sign effect in VGG-11 and ResNet-18
+ResAResNetFiftyAccDiff	+20.6	21_faithful_circuits_sign	ResNet-50 V2 E/I-pooled comparison (Fig 3B)
+ResAResNetFiftyN	96	13_figures_tables	ResNet-50 V2 E/I-pooled comparison (Fig 3B)
+ResAFrontierRPOneAccuracyDiff	13.5	21_faithful_circuits_sign	Fig 3A second-threshold frontier
+ResAFrontierRPOneAccuracyMargHi	14.3	21_faithful_circuits_sign	Fig 3A second-threshold frontier
+ResAFrontierRPOneAccuracyMargLo	12.7	21_faithful_circuits_sign	Fig 3A second-threshold frontier
+ResAFrontierSAHAccuracyDiff	14.6	21_faithful_circuits_sign	Fig 3A second-threshold frontier
+ResAFrontierSAHAccuracyMargHi	15.6	21_faithful_circuits_sign	Fig 3A second-threshold frontier
+ResAFrontierSAHAccuracyMargLo	13.6	21_faithful_circuits_sign	Fig 3A second-threshold frontier
+SignRatioMeansPooledFcSix	0.688	21_faithful_circuits_sign	Fig 3C inhibitory-to-excitatory kept ratio
+SignRatioMeansPooledFcSixHi	0.703	21_faithful_circuits_sign	Fig 3C inhibitory-to-excitatory kept ratio
+SignRatioMeansPooledFcSixLo	0.670	21_faithful_circuits_sign	Fig 3C inhibitory-to-excitatory kept ratio
+SignRatioMeansSeparateFcSix	1.204	21_faithful_circuits_sign	Fig 3C inhibitory-to-excitatory kept ratio
+SignRatioMeansSeparateFcSixHi	1.212	21_faithful_circuits_sign	Fig 3C inhibitory-to-excitatory kept ratio
+SignRatioMeansSeparateFcSixLo	1.197	21_faithful_circuits_sign	Fig 3C inhibitory-to-excitatory kept ratio
+SignNegAbsPctHi	60	21_faithful_circuits_sign	Weight counts by sign (2.1 control)
+SignNegAbsPctLo	54	21_faithful_circuits_sign	Weight counts by sign (2.1 control)
+SignNegCountPctHi	58	21_faithful_circuits_sign	Weight counts by sign (2.1 control)
+SignNegCountPctLo	52	21_faithful_circuits_sign	Weight counts by sign (2.1 control)
+CoreResNetEighteenAccDrop	4.1	21_faithful_circuits_sign	Table 1 kept and drop, shared categories
+CoreResNetFiftyVTwoAccDrop	5.4	21_faithful_circuits_sign	Table 1 kept and drop, shared categories
+ResAVTwoCategories	99	12_methods;13_figures_tables;21_faithful_circuits_sign;22_shared_early_specific_late;23_parting_and_tree;tables/table1	Table 1 kept and drop, shared categories
+DensMeanConvOne	0.992	22_shared_early_specific_late	Fig 4A kept fraction by layer
+DensMeanFcSix	0.047	22_shared_early_specific_late	Fig 4A kept fraction by layer
+ShareJConvOne	0.984	22_shared_early_specific_late	Fig 4B overlap and excess overlap, AlexNet
+ShareJFcSeven	0.101	22_shared_early_specific_late	Fig 4B overlap and excess overlap, AlexNet
+ShareJFcSix	0.137	22_shared_early_specific_late	Fig 4B overlap and excess overlap, AlexNet
+ShareJZeroFcSeven	0.036	22_shared_early_specific_late	Fig 4B overlap and excess overlap, AlexNet
+ShareJZeroFcSix	0.021	22_shared_early_specific_late	Fig 4B overlap and excess overlap, AlexNet
+ShareMagShareConvFive	70	22_shared_early_specific_late	Fig 4B overlap and excess overlap, AlexNet
+ShareMagShareFcSix	44	22_shared_early_specific_late	Fig 4B overlap and excess overlap, AlexNet
+ShareUConvFour	0.194	22_shared_early_specific_late	Fig 4B overlap and excess overlap, AlexNet
+ShareUConvFourHi	0.202	22_shared_early_specific_late	Fig 4B overlap and excess overlap, AlexNet
+ShareUConvFourLo	0.187	22_shared_early_specific_late	Fig 4B overlap and excess overlap, AlexNet
+InDivCrossBlockFcSix	0.41	22_shared_early_specific_late	Fig 4C input divergence within/across blocks
+InDivWithinBlockFcSix	0.20	22_shared_early_specific_late	Fig 4C input divergence within/across blocks
+ShareSignBNFlipPctResEighteen	0.08	12_methods;13_figures_tables	Fig 4D sharing by sign, four networks
+ShareSignBNFlipPctResFifty	0.4	12_methods;13_figures_tables	Fig 4D sharing by sign, four networks
+ShareSignHolmInhLessKeptResFifty	13	22_shared_early_specific_late	Fig 4D sharing by sign, four networks
+ShareSignHolmInhResEighteen	5	22_shared_early_specific_late	Fig 4D sharing by sign, four networks
+ShareSignHolmInhResFifty	25	22_shared_early_specific_late	Fig 4D sharing by sign, four networks
+ShareSignHolmInhVgg	7	22_shared_early_specific_late	Fig 4D sharing by sign, four networks
+ShareSignInhMinusExcAlexMax	0.031	22_shared_early_specific_late	Fig 4D sharing by sign, four networks
+ShareSignKeptExcResFiftyMax	0.427	22_shared_early_specific_late	Fig 4D sharing by sign, four networks
+ShareSignKeptInhResFiftyMax	0.422	22_shared_early_specific_late	Fig 4D sharing by sign, four networks
+ShareSignLayersResEighteen	20	22_shared_early_specific_late	Fig 4D sharing by sign, four networks
+ShareSignLayersResFifty	53	22_shared_early_specific_late	Fig 4D sharing by sign, four networks
+ShareSignLayersVgg	8	22_shared_early_specific_late	Fig 4D sharing by sign, four networks
+AnimEffConvOne	0.000	23_parting_and_tree	Fig 5A-B animacy, AlexNet
+AnimEffFcSeven	0.402	23_parting_and_tree	Fig 5A-B animacy, AlexNet
+AnimNAnimate	401	12_methods;13_figures_tables	Fig 5A-B animacy, AlexNet
+AnimNInanimate	599	12_methods;13_figures_tables	Fig 5A-B animacy, AlexNet
+ResCAnimacyEnvelopeBins	10	23_parting_and_tree	Fig 5A-B animacy, AlexNet
+ResCAnimacyEnvelopeExceedConvFive	7	23_parting_and_tree	Fig 5A-B animacy, AlexNet
+ResCAnimacyEnvelopeExceedFcSix	10	23_parting_and_tree	Fig 5A-B animacy, AlexNet
+ResCAnimacyHolmPMax	0.0014	23_parting_and_tree	Fig 5A-B animacy, AlexNet
+ResCAnimacyPermutationPConvOne	0.62	23_parting_and_tree	Fig 5A-B animacy, AlexNet
+ResCAnimacyLatePermPMax	2e-4	23_parting_and_tree	Fig 5C animacy, other three networks
+ResCAnimacyResNetEighteenProjectionP	0.055	23_parting_and_tree	Fig 5C animacy, other three networks
+ResCAnimacyResNetFiftyVTwoFirstConvP	0.06	23_parting_and_tree	Fig 5C animacy, other three networks
+ResCAnimacyResNetFiftyVTwoLatePMax	3e-4	23_parting_and_tree	Fig 5C animacy, other three networks
+AnimNSizeLabelled	775	12_methods;24_last_stage	2.4 real-world size
+ResCSizeAnimFcSeven	+0.47	24_last_stage	2.4 real-world size
+ResCSizeAnimFcSevenHi	0.78	24_last_stage	2.4 real-world size
+ResCSizeAnimFcSevenLo	0.17	24_last_stage	2.4 real-world size
+ResCSizeAnimFcSevenPHolm	0.04	24_last_stage	2.4 real-world size
+ResCSizeAnimFcSix	+0.46	24_last_stage	2.4 real-world size
+ResCSizeAnimFcSixHi	0.75	24_last_stage	2.4 real-world size
+ResCSizeAnimFcSixLo	0.17	24_last_stage	2.4 real-world size
+ResCSizeConvFourEligible	751	12_methods	2.4 real-world size
+CapActFcSix	0.38	23_parting_and_tree	Fig 6A-B tree share, AlexNet wiring vs mean representations
+CapDiffFcSeven	+0.18	23_parting_and_tree	Fig 6A-B tree share, AlexNet wiring vs mean representations
+CapDiffFcSevenHi	+0.20	23_parting_and_tree	Fig 6A-B tree share, AlexNet wiring vs mean representations
+CapDiffFcSevenLo	+0.17	23_parting_and_tree	Fig 6A-B tree share, AlexNet wiring vs mean representations
+CapDiffFcSix	+0.19	23_parting_and_tree	Fig 6A-B tree share, AlexNet wiring vs mean representations
+CapDiffFcSixHi	+0.20	23_parting_and_tree	Fig 6A-B tree share, AlexNet wiring vs mean representations
+CapDiffFcSixLo	+0.18	23_parting_and_tree	Fig 6A-B tree share, AlexNet wiring vs mean representations
+CapPartActFcSeven	0.08	24_last_stage	Fig 6A-B tree share, AlexNet wiring vs mean representations
+CapPartActFcSix	0.06	24_last_stage	Fig 6A-B tree share, AlexNet wiring vs mean representations
+CapPartWireFcSeven	0.37	24_last_stage	Fig 6A-B tree share, AlexNet wiring vs mean representations
+CapPartWireFcSevenHi	0.40	24_last_stage	Fig 6A-B tree share, AlexNet wiring vs mean representations
+CapPartWireFcSevenLo	0.34	24_last_stage	Fig 6A-B tree share, AlexNet wiring vs mean representations
+CapPartWireFcSix	0.35	24_last_stage	Fig 6A-B tree share, AlexNet wiring vs mean representations
+CapPartWireFcSixHi	0.38	24_last_stage	Fig 6A-B tree share, AlexNet wiring vs mean representations
+CapPartWireFcSixLo	0.32	24_last_stage	Fig 6A-B tree share, AlexNet wiring vs mean representations
+CapRelabelN	1,000	12_methods	Fig 6A-B tree share, AlexNet wiring vs mean representations
+CapUntrainedMax	0.12	23_parting_and_tree	Fig 6A-B tree share, AlexNet wiring vs mean representations
+CapWireFcSix	0.57	23_parting_and_tree	Fig 6A-B tree share, AlexNet wiring vs mean representations
+ResCPartingLayers	81	12_methods;22_shared_early_specific_late;23_parting_and_tree	Sparsity vs tree share across networks
+ResCPartingRho	-0.89	23_parting_and_tree	Sparsity vs tree share across networks
+ResCPartingRhoBeyondDepth	-0.56	23_parting_and_tree	Sparsity vs tree share across networks
+ResCPartingRhoLayerSize	-0.92	22_shared_early_specific_late	Sparsity vs tree share across networks
+ResDAlexTreeBeyondOutputFcSeven	0.30	24_last_stage	Output control and cross-network convergence
+ResDAlexTreeBeyondOutputFcSix	0.27	24_last_stage	Output control and cross-network convergence
+ResDConvergenceBeyondTreeActHi	0.65	24_last_stage	Output control and cross-network convergence
+ResDConvergenceBeyondTreeActLo	0.25	24_last_stage	Output control and cross-network convergence
+ResDAlexTreeBeyondReadoutFcSeven	0.24	24_last_stage	Readout-weight control (2.4)
+ResDTreeBeyondReadoutLastHi	0.33	24_last_stage	Readout-weight control (2.4)
+ResDTreeBeyondReadoutLastLo	0.18	24_last_stage	Readout-weight control (2.4)
+ResENAll	1,000	12_methods;25_running_circuits	Running circuits, all 1,000 (Fig 7B)
+ResEWeightMinusImageFcSeven	+0.047	25_running_circuits	Running circuits, all 1,000 (Fig 7B)
+ResEWeightMinusImageFcSevenHi	0.068	25_running_circuits	Running circuits, all 1,000 (Fig 7B)
+ResEWeightMinusImageFcSevenLo	0.026	25_running_circuits	Running circuits, all 1,000 (Fig 7B)
+ResEWeightMinusImageFcSix	+0.191	25_running_circuits	Running circuits, all 1,000 (Fig 7B)
+ResEWeightMinusImageFcSixHi	0.205	25_running_circuits	Running circuits, all 1,000 (Fig 7B)
+ResEWeightMinusImageFcSixLo	0.177	25_running_circuits	Running circuits, all 1,000 (Fig 7B)
+ResERobustHeldOutFcSeven	+0.045	25_running_circuits	Held-out categories (2.5)
+ResERobustHeldOutFcSevenHi	0.069	25_running_circuits	Held-out categories (2.5)
+ResERobustHeldOutFcSevenLo	0.020	25_running_circuits	Held-out categories (2.5)
+ResERobustHeldOutFcSix	+0.191	25_running_circuits	Held-out categories (2.5)
+ResERobustHeldOutFcSixHi	0.207	25_running_circuits	Held-out categories (2.5)
+ResERobustHeldOutFcSixLo	0.175	25_running_circuits	Held-out categories (2.5)
+ResERobustHeldOutN	900	25_running_circuits	Held-out categories (2.5)
+ResERobustNoMammalN	782	23_parting_and_tree	Wiring without the mammals (2.3)
+ResEDepthResNetEighteenLastMinusImage	-0.349	25_running_circuits	Circuit activations across depth, four networks (Fig 7D)
+ResEDepthResNetFiftyVTwoLastMinusImage	-0.194	25_running_circuits	Circuit activations across depth, four networks (Fig 7D)
+ResEDepthVggFcSevenMinusImage	-0.019	25_running_circuits	Circuit activations across depth, four networks (Fig 7D)
+ResEDepthVggFcSixMinusImage	+0.245	25_running_circuits	Circuit activations across depth, four networks (Fig 7D)
+MethFullCircuitFcSeven	0.389	25_running_circuits	Exploratory whole-circuit reading (2.5)
+MethFullCircuitImageFcSeven	0.460	25_running_circuits	Exploratory whole-circuit reading (2.5)
+MethImagePanelImages	256	25_running_circuits	Exploratory whole-circuit reading (2.5)
+MethSliceImages	32	25_running_circuits	Exploratory whole-circuit reading (2.5)
+ResEFEightyOneAllComputationBeyondWiringFcSeven	0.052	25_running_circuits	Partials between circuit activations and wiring (Fig 7C)
+ResEFEightyOneAllComputationBeyondWiringFcSix	0.172	25_running_circuits	Partials between circuit activations and wiring (Fig 7C)
+ResEFEightyOneAllWiringBeyondComputationFcSeven	0.313	25_running_circuits	Partials between circuit activations and wiring (Fig 7C)
+ResEFEightyOneAllWiringBeyondComputationFcSix	0.178	25_running_circuits	Partials between circuit activations and wiring (Fig 7C)
+ResEPoolVggConvFiveTwoLocal	-0.033	25_running_circuits	Layer-type tests (width, pooling, skip, ReLU)
+ResEPoolVggConvFiveTwoLocalHi	0.089	25_running_circuits	Layer-type tests (width, pooling, skip, ReLU)
+ResEPoolVggConvFiveTwoLocalLo	-0.154	25_running_circuits	Layer-type tests (width, pooling, skip, ReLU)
+ResEPostReluAlexFcSixShared	+0.190	25_running_circuits	Layer-type tests (width, pooling, skip, ReLU)
+ResEPostReluAlexFcSixSharedHi	0.229	25_running_circuits	Layer-type tests (width, pooling, skip, ReLU)
+ResEPostReluAlexFcSixSharedLo	0.151	25_running_circuits	Layer-type tests (width, pooling, skip, ReLU)
+ResEPreReluAlexFcSix	+0.027	25_running_circuits	Layer-type tests (width, pooling, skip, ReLU)
+ResEPreReluAlexFcSixHi	0.078	25_running_circuits	Layer-type tests (width, pooling, skip, ReLU)
+ResEPreReluAlexFcSixLo	-0.023	25_running_circuits	Layer-type tests (width, pooling, skip, ReLU)
+ResEPreReluVggFcSix	-0.305	25_running_circuits	Layer-type tests (width, pooling, skip, ReLU)
+ResEPreReluVggFcSixHi	-0.135	25_running_circuits	Layer-type tests (width, pooling, skip, ReLU)
+ResEPreReluVggFcSixLo	-0.474	25_running_circuits	Layer-type tests (width, pooling, skip, ReLU)
+ResESkipResNetEighteenLast	-0.306	25_running_circuits	Layer-type tests (width, pooling, skip, ReLU)
+ResESkipResNetEighteenLastHi	-0.217	25_running_circuits	Layer-type tests (width, pooling, skip, ReLU)
+ResESkipResNetEighteenLastLo	-0.396	25_running_circuits	Layer-type tests (width, pooling, skip, ReLU)
+ResEWidthVggFcSixLead	+0.234	25_running_circuits	Layer-type tests (width, pooling, skip, ReLU)
+ResEWidthVggFcSixLeadHi	0.409	25_running_circuits	Layer-type tests (width, pooling, skip, ReLU)
+ResEWidthVggFcSixLeadLo	0.059	25_running_circuits	Layer-type tests (width, pooling, skip, ReLU)
+CoreNAlex	1,000	00_abstract;01_introduction;12_methods;13_figures_tables;21_faithful_circuits_sign;22_shared_early_specific_late;23_parting_and_tree;main_skeleton;tables/table1	Constants and design facts
+CoreNShared	100	00_abstract;12_methods;13_figures_tables;21_faithful_circuits_sign;23_parting_and_tree;25_running_circuits;tables/table1	Constants and design facts
+MethIntervalPct	95%	12_methods;tables/table1	Constants and design facts
+MethLadderRatio	0.85	12_methods	Constants and design facts
+MethLadderRungs	56	12_methods	Constants and design facts
+MethPriceAlex	1.5e-7	12_methods;13_figures_tables;21_faithful_circuits_sign	Constants and design facts
+MethSequentialAlpha	0.05	12_methods	Constants and design facts
+MethValidationPerCategory	50	12_methods	Constants and design facts
+ResCTreeBlockMaxCategories	50	12_methods	Constants and design facts
+ResDNAlex	1,000	24_last_stage	Constants and design facts

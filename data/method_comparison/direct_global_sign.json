@@ -1,0 +1,21 @@
+{
+  "estimate": 15.989727727728187,
+  "ci_low": 15.124051451451875,
+  "ci_high": 16.875503403403872,
+  "p": 9.999000099990002e-05,
+  "p_holm": null,
+  "family": "alexnet:direct_global_sign:unadjusted",
+  "unit": "category",
+  "effect_unit": "corrected-accuracy points",
+  "scope": "G",
+  "n_categories": 1000,
+  "n_units": 1000,
+  "n_blocks": 131,
+  "partial": false,
+  "method": "percentile category bootstrap; category sign-flip",
+  "metric": "corrected_accuracy_drop",
+  "contrast": "SA-G - SG",
+  "network": "alexnet",
+  "status": "done",
+  "reason": ""
+}

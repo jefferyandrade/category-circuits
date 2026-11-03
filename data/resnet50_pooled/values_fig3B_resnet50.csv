@@ -1,0 +1,6 @@
+network,arm_or_contrast,description,metric,unit,estimate,ci_low,ci_high,n_categories,ci_level,bootstrap_unit
+resnet50v2,P,E/I-separate,kept_pct,percent,31.549812989321143,30.67356243496929,32.452940116715546,96,0.95,category
+resnet50v2,P,E/I-separate,corrected_accuracy_drop,percentage_points,5.431306306308915,4.550632924593738,6.3383836961989815,96,0.95,category
+resnet50v2,SA-H,E/I-pooled within each layer,kept_pct,percent,42.042866358652,41.043810865232714,43.013472771632564,96,0.95,category
+resnet50v2,SA-H,E/I-pooled within each layer,corrected_accuracy_drop,percentage_points,26.05367867868584,23.525008341682042,28.70865709460199,96,0.95,category
+resnet50v2,SA-H - P,Paired extra corrected-accuracy loss with pooling,corrected_accuracy_drop,percentage_points,20.62237237237693,18.324068860531778,23.05393466383491,96,0.95,category

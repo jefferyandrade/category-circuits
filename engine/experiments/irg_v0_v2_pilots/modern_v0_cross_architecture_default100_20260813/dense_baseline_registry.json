@@ -1,0 +1,46 @@
+{
+  "schema": "irg_dense_baseline_registry_v2",
+  "entries": [
+    {
+      "architecture_family": "alexnet_conv_kernel_weight",
+      "model_id": "torchvision.alexnet.conv_kernel_weight.imagenet1k_v1",
+      "table_receipt_path": "$AUTHORS_STORE/circuit_explorer_artifacts/pruning_cluster_outputs/outputs/irg_v0_v2_pilots/20260728_commensurability_v1/canonical_dense_readout_table_kt/canonical_dense_readout_table_receipt.json",
+      "table_receipt_sha256": "dcac467dd97c3e10dd9ea20c80b648eb99ab2e10fce76add22b88a61e9714c03",
+      "population_calibration_receipt_path": "$AUTHORS_STORE/circuit_explorer_artifacts/pruning_cluster_outputs/outputs/irg_v0_v2_pilots/20260728_commensurability_v1/canonical_dense_population_calibration_alexnet_batched_v2_t43c/canonical_dense_population_calibration_receipt.json",
+      "population_calibration_receipt_sha256": "9b465b9584c8da33c2ecb69b0eb1c8d7e66078b30e7700aee54fbca679caad9a",
+      "population_calibration_health_path": "$AUTHORS_STORE/circuit_explorer_artifacts/pruning_cluster_outputs/outputs/irg_v0_v2_pilots/20260728_commensurability_v1/canonical_dense_population_calibration_alexnet_batched_v2_t43c/canonical_dense_population_calibration_health.json",
+      "population_calibration_health_sha256": "c8eafaf75f0c629170ba08f3b305be1a9d7f53bed71f701521981961808fa91a"
+    },
+    {
+      "architecture_family": "vgg11_conv_kernel_weight",
+      "model_id": "torchvision.vgg11.conv_kernel_weight.imagenet1k_v1",
+      "table_receipt_path": "$AUTHORS_STORE/circuit_explorer_artifacts/pruning_cluster_outputs/outputs/irg_v0_v2_pilots/20260728_commensurability_v1/canonical_dense_readout_table_vgg11_t42b_current/canonical_dense_readout_table_receipt.json",
+      "table_receipt_sha256": "b35c80ae459170bca45ac72666269a0473cdaa1bc02a13a246e83dc6094d5687",
+      "population_calibration_receipt_path": "$AUTHORS_STORE/circuit_explorer_artifacts/pruning_cluster_outputs/outputs/irg_v0_v2_pilots/20260728_commensurability_v1/canonical_dense_population_calibration_vgg11_batched_v2_t43c/canonical_dense_population_calibration_receipt.json",
+      "population_calibration_receipt_sha256": "07416daaae813db19e17aacd22b7c5750c948988509a7248f2d52fe0eb82ec0d",
+      "population_calibration_health_path": "$AUTHORS_STORE/circuit_explorer_artifacts/pruning_cluster_outputs/outputs/irg_v0_v2_pilots/20260728_commensurability_v1/canonical_dense_population_calibration_vgg11_batched_v2_t43c/canonical_dense_population_calibration_health.json",
+      "population_calibration_health_sha256": "02c12fcc8ae083a08ec40dab9450220c154b30f832503f608d2b7c161fb2ca80"
+    },
+    {
+      "architecture_family": "resnet50_conv_kernel_weight",
+      "model_id": "torchvision.resnet50.conv_kernel_weight.imagenet1k_v2",
+      "table_receipt_path": "$AUTHORS_STORE/circuit_explorer_artifacts/pruning_cluster_outputs/outputs/irg_v0_v2_pilots/20260728_commensurability_v1/canonical_dense_readout_table_resnet50_t42b_current/canonical_dense_readout_table_receipt.json",
+      "table_receipt_sha256": "254ce581e086062b41b468d4850c24536be00ac44b7153e94ada7a7945065085",
+      "population_calibration_receipt_path": "$AUTHORS_STORE/circuit_explorer_artifacts/pruning_cluster_outputs/outputs/irg_v0_v2_pilots/20260728_commensurability_v1/canonical_dense_population_calibration_resnet50_batched_v2_t43b/canonical_dense_population_calibration_receipt.json",
+      "population_calibration_receipt_sha256": "ed67d588cb64a9f105f3647dfb043c50001772a710a5a08e900d6aec40333b01",
+      "population_calibration_health_path": "$AUTHORS_STORE/circuit_explorer_artifacts/pruning_cluster_outputs/outputs/irg_v0_v2_pilots/20260728_commensurability_v1/canonical_dense_population_calibration_resnet50_batched_v2_t43b/canonical_dense_population_calibration_health.json",
+      "population_calibration_health_sha256": "f6cb2d37b495b5780f483da890f5cbc67a4f94f382588cf8d8080bba765781e3"
+    },
+    {
+      "architecture_family": "robust_resnet50_conv_kernel_weight",
+      "model_id": "robustbench.salman2020do_r50.conv_kernel_weight.imagenet_linf_4_255_v1",
+      "table_receipt_path": "$AUTHORS_STORE/circuit_explorer_artifacts/pruning_cluster_outputs/outputs/irg_v0_v2_pilots/20260728_commensurability_v1/canonical_dense_readout_table_robust_resnet50/canonical_dense_readout_table_receipt.json",
+      "table_receipt_sha256": "a2208603131d7050334e14c8a38d88b02080824a6a96092bbe3bc799e2f7ba0f",
+      "population_calibration_receipt_path": "$AUTHORS_STORE/circuit_explorer_artifacts/pruning_cluster_outputs/outputs/irg_v0_v2_pilots/20260728_commensurability_v1/canonical_dense_population_calibration_robust_resnet50_batched_v2_t43c/canonical_dense_population_calibration_receipt.json",
+      "population_calibration_receipt_sha256": "e5e98737dca74cd52d0de732bb72c47c8bc151c8fd51d6f01458154c1b36ca2a",
+      "population_calibration_health_path": "$AUTHORS_STORE/circuit_explorer_artifacts/pruning_cluster_outputs/outputs/irg_v0_v2_pilots/20260728_commensurability_v1/canonical_dense_population_calibration_robust_resnet50_batched_v2_t43c/canonical_dense_population_calibration_health.json",
+      "population_calibration_health_sha256": "6f788bb4921a97784fe7468f9736c7c938ca731e32246d41ab041e58d98723cb"
+    }
+  ],
+  "content_sha256": "402015dd3499a3d78a1651ad13ff134d216326cdd8541aed346d882877795576"
+}

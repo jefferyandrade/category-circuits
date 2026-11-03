@@ -1,0 +1,7 @@
+# Everything: the extraction engine, the readout-weight control and the statistics that read checkpoints.
+-r requirements.txt
+torch==2.7.1
+torchvision==0.22.1
+matplotlib==3.9.3
+# One numerical thread in the census of Fig. 4C.
+threadpoolctl==3.5.0
