@@ -4,10 +4,12 @@ main-path convolutions (projection shortcuts excluded; the stem convolution is a
 their relative depths.
 
 ``block_means`` computes them from a figure table's per-layer rows; ``main`` writes them for one panel of a figure
-table (default: the Fig. 4 table, panel C).
+table (default: the Fig. 4 table, panel C). The sums are exactly rounded (``math.fsum``), so the means do not depend
+on the Python version.
 """
 import argparse
 import csv
+import math
 import re
 import sys
 from pathlib import Path
@@ -30,8 +32,8 @@ def block_means(rows, panel):
             groups.setdefault(key,[]).append(row)
         for key,parts in groups.items():
             result.append(dict(panel=panel,network=net,layer='block_mean:'+key,quantity='block_mean',
-                value=repr(sum(float(q['value']) for q in parts)/len(parts)),
-                relative_depth=repr(sum(float(q['relative_depth']) for q in parts)/len(parts))))
+                value=repr(math.fsum(float(q['value']) for q in parts)/len(parts)),
+                relative_depth=repr(math.fsum(float(q['relative_depth']) for q in parts)/len(parts))))
     return result
 
 

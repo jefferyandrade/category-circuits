@@ -337,6 +337,7 @@ def parser():
 def main(argv=None):
     """Run the census with one numerical-library thread."""
     args = parser().parse_args(argv)
+    check_outputs(dirs=[Path(args.out)], inputs=[args.masks_root])
     from threadpoolctl import threadpool_limits
     with threadpool_limits(limits=1):
         print(run(args))
