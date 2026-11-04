@@ -19,7 +19,7 @@ Modes:
                  (layer_statistics.analyze_pair)
   aggregate-all  aggregate at every site of the network
 
-The plotted population is the shared 100 categories (99 in ResNet-50 V2). The defaults are the paper's settings:
+The plotted population is the shared 100 categories. The defaults are the paper's settings:
 64 shards, 1,000 category swaps, seed 0.
 Usage: layer_activations.py merge --network NET --out DIR --prototypes DENSE_DIR
        layer_activations.py aggregate-all --network NET --out DIR --taxonomy taxonomy/inputs/category_taxonomy.csv
@@ -402,7 +402,7 @@ def aggregate_all(args):
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('mode', choices=('merge', 'aggregate', 'aggregate-all'))
-    parser.add_argument('--network', required=True, choices=('alexnet', 'vgg11', 'resnet18', 'resnet50v2'))
+    parser.add_argument('--network', required=True, choices=('alexnet', 'vgg11', 'resnet18', 'resnet50v1'))
     parser.add_argument('--out', type=Path, required=True,
                         help='the folder holding run/NETWORK/shards; every output is written below it')
     parser.add_argument('--nshards', type=int, default=64, help='the number of image shards (merge)')

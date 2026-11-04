@@ -1,7 +1,6 @@
 """Animate-inanimate specificity of each layer's kept connections on the shared categories (Fig. 5, cross-network
 panel), with its label-permutation null and delete-one-category jackknife, computed from cell histograms of the
-incidence signatures: 5,000 permutations, 10,000 at the classifier layers and the ResNets' last stage, seeded by
-network and layer."""
+incidence signatures: 10,000 permutations at every layer, seeded by network and layer."""
 import zlib
 import numpy as np
 import pandas as pd
@@ -102,7 +101,7 @@ def animacy_specificity(lib, layers=None):
             pmf = hypergeom.pmf(xs, K, A, t)
             es2[t] = (pmf * s[t, xs] ** 2).sum() / max(pmf.sum(), 1e-300)
         struct = float(np.sqrt(max(0., (H * s**2).sum() / W - H.sum(axis=1) @ es2 / W)))
-        B = 10000 if stage in {'classifier', 'layer4'} else 5000
+        B = 10000
         seed = zlib.crc32(f'{lib.model}|{L}'.encode()) & 0xFFFFFFFF
         null, nc = null_statistics(words, mult, total, K, A, B, np.random.default_rng(seed), ordered=ordered)
         nm, ns = float(null.mean()), float(null.std(ddof=1))

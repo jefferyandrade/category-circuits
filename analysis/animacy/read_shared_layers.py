@@ -1,11 +1,10 @@
 """Print the stored per-layer animacy statistics of the four networks on the shared categories as JSON.
 
-``CC_SHARED_RUN`` names the folder of the stored run for AlexNet, VGG-11 and ResNet-18; ResNet-50 V2's sits in the
-sibling folder with the suffix ``_V2``. In each, ``handoff/`` holds the shared-category incidence package and
-``finalization_pkg/`` the output of ``run_shared_animacy.py`` (its ``--out``). For each network this prints its
-layer statistics (``finalization_pkg/semantic/semantic_layer_stats_<network>.parquet``), the layer manifest and
-per-category kept-connection counts of its incidence package and the statistics' metadata, with each file's sha256.
-No permutation is computed here.
+``CC_SHARED_RUN`` names the folder of the stored run of the four networks. Its ``handoff/`` holds the shared-category
+incidence package and ``finalization_pkg/`` the output of ``run_shared_animacy.py`` (its ``--out``). For each network
+this prints its layer statistics (``finalization_pkg/semantic/semantic_layer_stats_<network>.parquet``), the layer
+manifest and per-category kept-connection counts of its incidence package and the statistics' metadata, with each
+file's sha256. No permutation is computed here.
 
     CC_SHARED_RUN=RUN python analysis/animacy/read_shared_layers.py > LAYERS.json
 """
@@ -29,8 +28,7 @@ def main():
     base = Path(os.environ['CC_SHARED_RUN'])
     output = []
     for network in ['alexnet', 'vgg11', 'resnet18', 'resnet50']:
-        suffix = '_V2' if network == 'resnet50' else ''
-        root = base.with_name(base.name + suffix)
+        root = base
         stats_path = root / 'finalization_pkg/semantic' / ('semantic_layer_stats_' + network + '.parquet')
         manifest_path = root / 'handoff/layer_manifest.csv'
         counts_path = root / 'handoff/category_layer_counts.parquet'

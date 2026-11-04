@@ -24,7 +24,7 @@ work, and the restartable ones skip the records they already finished.
 | `arms.py`, `arms_config.json` | where each network's circuits are, by pruning method ("arm") and threshold, and which receipt fields the statistics read | throughout |
 | `circuit_masks.py`, `mask_gram.py` | the networks' weight layout and the checked mask reader; the exact count of kept weights each pair of circuits shares | throughout |
 | `method_contrasts.py` | the pruning methods' means and paired contrasts on AlexNet's 1,000 categories | 2.1, Fig. 3A |
-| `resnet50_pooled.py` | ResNet-50, E/I-separate against E/I-pooled pruning on the 96 categories where both circuits are complete: a per-category table read from the receipts, then the figure's rows | Fig. 3B |
+| `resnet50_pooled.py` | ResNet-50, E/I-separate against E/I-pooled pruning on the 99 categories where both circuits are complete: a per-category table read from the receipts, then the figure's rows | Fig. 3B |
 | `table1_stats.py` | each network's kept fraction and corrected-accuracy drop on the shared categories | Table 1 |
 | `sign_density.py`, `depth_trends.py` | the kept fraction of weights by sign, for each AlexNet layer and pruning method, and its trend over depth | Figs. 3C, 4A |
 | `sign_magnitude.py` | weight counts and sizes by sign in AlexNet's checkpoint | 2.1 |
@@ -101,9 +101,9 @@ Fig. 5 asks whether the circuits' kept connections prefer animate or inanimate c
 is kept by k_A of the n_A animate and k_I of the n_I inanimate categories' circuits; with p_A = k_A/n_A and
 p_I = k_I/n_I, its specificity is s = (p_A − p_I)/(p_A + p_I) and its participation q = (p_A + p_I)/2. The layer test
 compares the layer's mean |s| with a label-permutation null, which shuffles the animate and inanimate labels over the
-categories: 5,000 permutations, 10,000 at the classifier layers (and at the ResNets' last stage), each layer seeded by
-its network and name. AlexNet is tested on all 1,000 categories (401 animate, 599 inanimate); the cross-network panel
-uses the 99 categories extracted in every network (39 animate, 60 inanimate).
+categories, each layer seeded by its network and name. AlexNet is tested on all 1,000 categories (401 animate, 599
+inanimate), with 5,000 permutations and 10,000 at the classifier layers; the cross-network panel uses the 100
+categories extracted in every network (40 animate, 60 inanimate), with 10,000 permutations at every layer.
 
 | File | Computes | Paper |
 |---|---|---|
@@ -118,16 +118,14 @@ uses the 99 categories extracted in every network (39 animate, 60 inanimate).
 # AlexNet, all 1,000 categories (40 permutation streams, as in the paper)
 python analysis/animacy/run_alexnet_animacy.py statistics --library LIBRARY --out STATISTICS
 python analysis/animacy/run_alexnet_animacy.py tables --statistics STATISTICS --out TABLES
-# The four networks on the shared categories; ResNet-50 V2 has its own package, in the sibling folder SHARED_V2
+# The four networks on the shared categories
 python analysis/animacy/run_shared_animacy.py --incidence-package SHARED/handoff --out SHARED/finalization_pkg \
-    --models alexnet vgg11 resnet18
-python analysis/animacy/run_shared_animacy.py --incidence-package SHARED_V2/handoff --out SHARED_V2/finalization_pkg \
-    --models resnet50
+    --models alexnet vgg11 resnet18 resnet50
 CC_SHARED_RUN=SHARED python analysis/animacy/read_shared_layers.py > LAYERS.json
 python analysis/animacy/collect_shared_layers.py --layers LAYERS.json --density DENSITY.tsv --out ROWS.csv --checks CHECKS.json
 ```
 
-In each run folder, `handoff/` holds the incidence package and `finalization_pkg/` the statistics, the layout
+In the run folder, `handoff/` holds the incidence package and `finalization_pkg/` the statistics, the layout
 `read_shared_layers.py` reads. DENSITY.tsv holds each network's kept fractions by sign per layer, against which the
 collector checks the packages. The permutation draws depend on the number of streams (`--nproc`, 40 in the paper). `cell_histograms.py` compiles a
 small C++ loop into `analysis/animacy/scratch/` on first use; without a compiler a NumPy version gives the same result.
@@ -183,7 +181,7 @@ every tree share, and random groups of ten categories (seed 0) for the jackknife
 held-out categories. `layer_type_tests.py`'s docstring describes each reading and its inputs; CAPTURE_64 and
 CAPTURE_16 are the GPU passes described below, POOL5 the dense AlexNet's category means of fc6's input.
 
-The activations were captured on a GPU: torchvision AlexNet, VGG-11, ResNet-18 and ResNet-50 (V2 weights) in eval
+The activations were captured on a GPU: torchvision AlexNet, VGG-11, ResNet-18 and ResNet-50 (IMAGENET1K_V1 weights) in eval
 mode, every image of the ImageNet training set resized to 256 and center-cropped to 224, in 64 shards (each category's
 images whose position modulo 64 is the shard's number) and batches of up to 256 images of one category. Each image
 went once through the dense network; at each layer's site (its output after the ReLU, averaged over space in

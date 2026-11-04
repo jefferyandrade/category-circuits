@@ -165,7 +165,7 @@ def test_block_means_reproduce_the_shipped_panel():
     rows = panel_c()
     shipped = {(r["network"], r["layer"]): r for r in rows if r["quantity"] == "block_mean"}
     means = block_means.block_means(rows, "C")
-    assert len(means) == len(shipped) == 15
+    assert len(means) == len(shipped) == 16
     for m in means:
         r = shipped[(m["network"], m["layer"])]
         assert m["value"] == r["value"] and m["relative_depth"] == r["relative_depth"]
@@ -175,7 +175,7 @@ def test_shipped_differences_and_intervals_are_consistent():
     """Each difference from a reference is the observed mean minus the reference mean over the same pairs, and every
     jackknife interval is centred on its point."""
     rows = [r for r in panel_c() if r["quantity"] != "block_mean"]
-    assert len(rows) == 55
+    assert len(rows) == 56
     for r in rows:
         f = lambda key: float(r[key])
         if r["network"] == "alexnet":

@@ -31,7 +31,7 @@ def test_readout_control_summary_rebuilds_byte_for_byte(tmp_path):
     d = DATA / "readout_control"
     run(REPO / "analysis" / "readout_control" / "summarize.py", "--readout-out", d / "readout",
         "--outgeom-out", d / "output_geometry", "--out", out)
-    assert sha256(out) == "27662a7b1bddc9302b4d1a4bef41bb75f8b575b552873dd4aef9113f1e350e1e"
+    assert sha256(out) == "7636b7055e0f2d2ff10d8bc254d96e5486220e571cbbfd8904e2efe5f4b785f1"
     assert out.read_bytes() == (d / "SUMMARY_estimates.tsv").read_bytes()
 
 

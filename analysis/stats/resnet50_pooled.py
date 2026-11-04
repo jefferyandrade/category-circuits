@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fig. 3B: ResNet-50 (V2 weights), E/I-separate (P) against E/I-pooled (SA-H) pruning.
+"""Fig. 3B: ResNet-50 (V1 weights), E/I-separate (P) against E/I-pooled (SA-H) pruning.
 
 On the shared categories where both circuits are complete, the table gives each method's mean kept percentage and
 mean corrected-accuracy drop, and the paired SA-H - P difference in corrected-accuracy drop (the extra accuracy lost
@@ -15,9 +15,8 @@ Per category and method, from the circuit's receipt:
   circuit's on held-out images, 200 x (dense - circuit class-balanced binary accuracy), from the receipt's
   `terminal_dense_bce` and `terminal_final_bce`.
 
-Categories: ResNet-50's 99 shared categories (the 100 shared categories less 262, whose P extraction did not
-converge). There are no SA-H circuits for 20 and 30 (their calibration fit did not converge) or for 333 (its
-extraction did not finish), which leaves 96 pairs.
+Categories: the 100 shared categories. There is no SA-H circuit for 454 (its extraction stopped on a non-finite
+value), which leaves 99 pairs.
 
 Two steps: `receipts` reads the circuits' receipts into the per-category table, and `table` computes Fig. 3B's rows
 from it.
@@ -28,8 +27,8 @@ from it.
         --out data/resnet50_pooled/values_fig3B_resnet50.csv
 
 P_RESULTS and SAH_RESULTS are the circuit library's folders that hold
-`resnet50v2_tap_query<category>/<method folder>/receipt.json` for the P and the SA-H circuits (for P, the
-`results_root` that arms_config.json gives ResNet-50 V2's P circuits at price v66).
+`resnet50v1_tap_query<category>/<method folder>/receipt.json` for the P and the SA-H circuits (for P, the
+`results_root` that arms_config.json gives ResNet-50 V1's P circuits at price v66).
 """
 import argparse
 import csv
@@ -43,15 +42,15 @@ import sys
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "common"))
 from atomic_io import check_outputs, write_file
 
-NETWORK = 'resnet50v2'
+NETWORK = 'resnet50v1'
 TAU = 4.033e-7  # ResNet-50's loss threshold (Table 1)
 # The 100 shared categories (the shared100 column of taxonomy/inputs/CATEGORY_BLOCKS_cap50.tsv).
 SHARED_CATEGORIES = [round(i * 999 / 99) for i in range(100)]
-CATEGORIES = [category for category in SHARED_CATEGORIES if category != 262]
+CATEGORIES = SHARED_CATEGORIES
 # The circuit library's folder names: one folder per category, holding one folder per method at this threshold.
-CATEGORY_FOLDER = 'resnet50v2_tap_query{category}'
-METHOD_FOLDERS = {'P': 'v0_local_attribution_sign_resnet50v2_plain_t4p03e7_v64',
-                  'SA-H': 'v0_single_population_resnet50v2_plain_sah_t4p03e7_v64'}
+CATEGORY_FOLDER = 'resnet50v1_tap_query{category}'
+METHOD_FOLDERS = {'P': 'v0_local_attribution_sign_resnet50v1_plain_t4p03e7_v64',
+                  'SA-H': 'v0_single_population_resnet50v1_plain_sah_t4p03e7_v64'}
 # The receipt's name for each method's partition of connections into pruning queues.
 PARTITIONS = {'P': 'local_attribution_sign', 'SA-H': 'single_population'}
 DESCRIPTIONS = {'P': 'E/I-separate', 'SA-H': 'E/I-pooled within each layer'}

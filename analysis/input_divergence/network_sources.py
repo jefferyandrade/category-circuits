@@ -126,7 +126,7 @@ def load_network(network, catalog_network):
             gram = Path(meta['gram'])
             cats, expected = _gram_info(gram)
             lid = meta['layer_id']
-            if not set(cats).issubset(set(shared)) or len(cats) != (99 if network=='resnet50v2' else 100):
+            if not set(cats).issubset(set(shared)) or len(cats) != 100:
                 raise ValueError('the categories of the overlap Gram file are not the shared categories: '+str(gram))
         if categories is None:
             categories = cats

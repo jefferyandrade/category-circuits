@@ -11,10 +11,11 @@ Companion code and summary data for
 For every ImageNet category, the paper extracts a category circuit from a pretrained network: a mask over single
 weights, never retrained, that preserves the network's recognition of that category, tested on held-out images.
 Excitatory and inhibitory connections are pruned separately, in two queues that take turns, and a pruning step is kept
-only if a sequential test shows that its cost stays below a loss threshold. Circuits were extracted for all 1,000
-categories of AlexNet and for 100 shared categories of VGG-11 and ResNet-18 (99 of them in ResNet-50). The analyses
-then compare the circuits' wiring, and the activations they produce, with the networks' mean category representations
-against the WordNet category tree.
+only if a sequential test shows that its cost stays below a loss threshold. Circuits were extracted from torchvision's
+IMAGENET1K_V1 checkpoints: for all 1,000 categories of AlexNet and for 100 shared categories of VGG-11, ResNet-18 and
+ResNet-50. The analyses then compare the circuits' wiring, and the activations they produce, with the networks' mean
+category representations against the WordNet category tree. Results with ResNet-50's IMAGENET1K_V2 checkpoint, which
+this repository held until 4 Nov 2026, are kept as backup results in `supplement/resnet50_v2/`.
 
 ## Quick start
 
@@ -27,7 +28,7 @@ pip install -r requirements.txt
 python -m pytest -q tests
 ```
 
-The tests need no GPU, network access or circuit library, and take under a minute. They check 87 of the 174 numbers
+The tests need no GPU, network access or circuit library, and take under a minute. They check 87 of the 173 numbers
 the paper prints, and every number in Table 1, against the tables in `data/`. Method means and contrasts, accuracies
 and accuracy drops with their intervals, and the loss thresholds are recomputed from per-category results with the
 statistics code that produced the paper's numbers, and Fig. 3B's table byte for byte from per-category values read
@@ -45,6 +46,7 @@ engine/      the circuit-extraction engine that made the paper's circuits, with 
 analysis/    the statistics and the analyses behind every figure and printed number
 taxonomy/    the WordNet category tree and the script that builds it
 data/        summary tables behind the printed numbers, Table 1 and the figures
+supplement/  ResNet-50 IMAGENET1K_V2: the tables this repository held before the paper switched to IMAGENET1K_V1
 tests/       tests that recompute the paper's numbers from data/
 ```
 
@@ -63,7 +65,7 @@ tests/       tests that recompute the paper's numbers from data/
 | census | the pass over every training image that scores connections and tests each pruning step |
 | τ | a network's loss threshold for a pruning step (Table 1) |
 | price | the loss threshold τ a circuit was extracted at; in the configuration and the per-category tables, the threshold set (`v66`: the paper's thresholds) |
-| shared categories | the 100 categories extracted in every network (99 in ResNet-50) |
+| shared categories | the 100 categories extracted in every network |
 
 ## Where each result lives
 
@@ -91,6 +93,7 @@ tests/       tests that recompute the paper's numbers from data/
 | 2.3: the wiring against the mean representations without the mammals | `analysis/stats/tree_contrast.py --exclude-superordinate mammal.n.01` | `data/robustness/wiring_without_mammals.tsv` | the count and both intervals re-read; each difference and interval recomputed |
 | 2.5: layer width, pooling, skip path and ReLU | `analysis/circuit_activations/layer_type_tests.py` | `data/layer_types/` | intervals recomputed from the category deletions; differences re-read |
 | Table 1 | `analysis/stats/table1_stats.py`, `analysis/scripts/price_match.py` | `data/table1/`, `data/thresholds/` | every number |
+| Methods: ResNet-50's threshold, checked after the extraction | `analysis/scripts/price_match.py` | `data/thresholds/resnet50v1_check.csv` | recomputed |
 | Every number the paper prints | | `data/printed_numbers.tsv` | 87 recomputed or re-read |
 | The plotted values of Figs. 3–7 | | `data/figures/` (one table per figure) | |
 

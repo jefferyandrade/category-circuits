@@ -8,7 +8,7 @@
 # into a unit is multiplied by |that unit's readout weight to the target category|, so the late wiring could restate
 # the similarity of the categories' readout weights. Readout geometry = cosine similarity of the categories' readout
 # weight rows (signed, and of their absolute values) from the torchvision checkpoints the circuits were extracted from
-# (IMAGENET1K_V1; IMAGENET1K_V2 for ResNet-50). It runs analysis/stats/tree_contrast.py with the readout geometry in the
+# (all IMAGENET1K_V1). It runs analysis/stats/tree_contrast.py with the readout geometry in the
 # place of the mean category representations: W|A = the wiring's tree share beyond the readout geometry, A|W = the
 # reverse. Planted control: AlexNet fc7 with the readout rows shuffled across categories (the geometry's own share
 # should fall to chance). summarize.py then writes the summary table.
@@ -43,13 +43,13 @@ export OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 PYTHONDONTWRIT
 # Each network's gram folder (GD) and pairs folder (PD), as they are named below CC_AN_ROOT and CC_STATS_OUT.
 declare -A GD=([alexnet]=$SO/vj_inputs [vgg11]=$AN/out_v66_20261018T124435Z/s12_vgg11/grams
                [resnet18]=$AN/r18_s100_shadow_20261019T015315Z/s12_resnet18/grams
-               [resnet50v2]=$AN/r50_v66_view_20261018T233629Z/s12_resnet50v2/grams)
+               [resnet50v1]=$AN/r50_v66_view_20261018T160823Z/s12_resnet50v1/grams)
 declare -A PD=([alexnet]=$SO/vj_inputs [vgg11]=$SO/xnet_vgg11/pairs [resnet18]=$SO/xnet_resnet18/pairs
-               [resnet50v2]=$SO/xnet_resnet50v2/pairs)
+               [resnet50v1]=$SO/xnet_resnet50v1/pairs)
 declare -A CKPT=([alexnet]=$CK/alexnet-owt-7be5be79.pth [vgg11]=$CK/vgg11-8a719046.pth
-                 [resnet18]=$CK/resnet18-f37072fd.pth [resnet50v2]=$CK/resnet50-11ad3fa6.pth)
+                 [resnet18]=$CK/resnet18-f37072fd.pth [resnet50v1]=$CK/resnet50-0676ba61.pth)
 declare -A KEY=([alexnet]=classifier.6.weight [vgg11]=classifier.6.weight [resnet18]=fc.weight
-                [resnet50v2]=fc.weight)
+                [resnet50v1]=fc.weight)
 
 # The destination must overlap no input root, in either direction, before anything is written.
 real() { "$PY" -c 'import os, sys; print(os.path.realpath(sys.argv[1]))' "$1"; }
@@ -88,13 +88,13 @@ tc() {  # net layer kind inputs-name (partial outputs were moved aside before th
   echo "tc $4 $2 $3 exit $?"; }
 
 echo "start $(date -Is) host $(hostname) attempt $ATTEMPT"
-for net in alexnet vgg11 resnet18 resnet50v2; do gen $net $net || die "gen $net failed"; done
+for net in alexnet vgg11 resnet18 resnet50v1; do gen $net $net || die "gen $net failed"; done
 gen alexnet alexnet_shuf 0 || die "gen alexnet_shuf failed"
 TASKS=("alexnet fc7 abs alexnet" "alexnet fc7 signed alexnet" "alexnet fc7 abs alexnet_shuf"
        "alexnet fc6 abs alexnet" "alexnet fc6 signed alexnet" "alexnet conv5 abs alexnet" "alexnet conv5 signed alexnet")
 for L in fc7 fc6; do TASKS+=("vgg11 $L abs vgg11" "vgg11 $L signed vgg11"); done
 for L in stage4.block1.conv2 stage4.block0.conv2; do TASKS+=("resnet18 $L abs resnet18" "resnet18 $L signed resnet18"); done
-for L in stage4.block2.conv3 stage4.block1.conv3; do TASKS+=("resnet50v2 $L abs resnet50v2" "resnet50v2 $L signed resnet50v2"); done
+for L in stage4.block2.conv3 stage4.block1.conv3; do TASKS+=("resnet50v1 $L abs resnet50v1" "resnet50v1 $L signed resnet50v1"); done
 TODO=()
 for t in "${TASKS[@]}"; do
   set -- $t; o=$OUT/tc_$4_$2_$3

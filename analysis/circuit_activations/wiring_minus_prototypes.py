@@ -1,7 +1,7 @@
 """Wiring minus prototypes: the paired difference of two category-tree shares at one layer (Fig. 7D crossovers;
 Fig. 6, C-test rows).
 
-For each network layer of Fig. 6C (VGG-11 and the ResNets on the shared 100, 99 in ResNet-50 V2), the superordinate
+For each network layer of Fig. 6C (VGG-11 and the ResNets on the shared 100), the superordinate
 tree share of the wiring (W) minus that of the category prototypes (A), with a joint delete-one-category jackknife
 interval: each deletion removes the same category from both matrices and refits the node effects, while the
 full-data permutation means that tree_contrast.py recorded stay fixed, as in tree_contrast. The adjusted share is
@@ -77,7 +77,7 @@ def task_plan(plan, resnet50_plan):
     """Each (network, layer)'s tree_contrast.py arguments and output table, from the run plans.
 
     A plan is a JSON object whose tasks each record an id, the argv of one run and its output. The tree_contrast runs
-    on the training images are the tasks with ids tree_<network>_<layer>_train; ResNet-50 V2's are in its own plan.
+    on the training images are the tasks with ids tree_<network>_<layer>_train; ResNet-50 V1's are in its own plan.
     """
     tasks = {}
     for row in json.loads(Path(plan).read_text())['tasks']:
@@ -86,8 +86,8 @@ def task_plan(plan, resnet50_plan):
             tasks[(args['network'], args['layer'])] = dict(args=args, source_csv=row['output'])
     for row in json.loads(Path(resnet50_plan).read_text())['tasks']:
         args = arg_values(row['argv'])
-        if args.get('network') == 'resnet50v2' and '--trained-dir' in row['argv']:
-            key = ('resnet50v2', args['layer'])
+        if args.get('network') == 'resnet50v1' and '--trained-dir' in row['argv']:
+            key = ('resnet50v1', args['layer'])
             if key not in tasks:
                 tasks[key] = dict(args=args, source_csv=row['output'])
     return tasks
@@ -148,7 +148,7 @@ def differences(tasks, panel_path, out):
                                      % (key, lens))
         if result['difference'] != result['wiring'] - result['prototypes']:
             raise AssertionError('the difference is not the plotted W share minus the plotted A share')
-        expected_categories = 99 if key[0] == 'resnet50v2' else 100
+        expected_categories = 100
         if result['n_categories'] != expected_categories:
             raise AssertionError('category count differs from the shared categories: %s' % (key,))
         result.update(panel='C', quantity='difference', lens='W-A', level='superordinate',
@@ -165,7 +165,7 @@ def main(argv=None):
     parser.add_argument('--plan', type=Path, required=True,
                         help='the run plan of the tree_contrast.py runs (tasks tree_<network>_<layer>_train)')
     parser.add_argument('--resnet50-plan', type=Path, required=True,
-                        help="the run plan of ResNet-50 V2's tree_contrast.py runs")
+                        help="the run plan of ResNet-50 V1's tree_contrast.py runs")
     parser.add_argument('--panel', type=Path, required=True,
                         help='the plotted Fig. 6C values: network, layer, selector (JSON with the lens), value, source')
     parser.add_argument('--out', type=Path, required=True, help='the folder to write values_fig6C_difference.csv in')

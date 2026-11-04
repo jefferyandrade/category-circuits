@@ -3,13 +3,13 @@
 For each network, ``network_statistics`` reads the shared-category incidence package (``incidence_package``),
 computes the category-pair overlap of each layer, which also checks the package (``shared_overlap.overlap``), and the
 animate-inanimate specificity of each layer's kept connections with its label-permutation null
-(``shared_specificity``: 5,000 permutations, 10,000 at the classifier and last-stage layers, seeded by network and
-layer). It writes ``semantic/semantic_layer_stats_<network>.parquet`` with the curves and metadata beside it, and the
+(``shared_specificity``: 10,000 permutations at every layer, seeded by network and layer). It writes
+``semantic/semantic_layer_stats_<network>.parquet`` with the curves and metadata beside it, and the
 overlap statistics in ``overlap/``. A layer whose circuits keep no connection gets a row with status NOT_FORMED and no
 statistics.
 
-The paper's shared population has 99 categories (39 animate, 60 inanimate): the categories extracted in every
-network. ResNet-50 V2 has its own incidence package; run it separately with ``--models resnet50``.
+The paper's shared population has 100 categories (40 animate, 60 inanimate): the categories extracted in every
+network.
 
     python analysis/animacy/run_shared_animacy.py --incidence-package PACKAGE --out OUT
         [--models alexnet vgg11 resnet18 resnet50]
@@ -61,7 +61,7 @@ def network_statistics(incidence_package, out, model):
             stage = library.layer_manifest.set_index('layer').loc[L, 'stage']
             reason = 'No retained routes in this layer; animate–inanimate specificity is undefined'
             row = dict(model=model, layer=L, stage=stage, n_rows=0, total_mult=0.,
-                       B_perms=0, B_planned=10000 if stage in {'classifier', 'layer4'} else 5000,
+                       B_perms=0, B_planned=10000,
                        seed=zlib.crc32(f'{model}|{L}'.encode()) & 0xFFFFFFFF,
                        n_exceed_bins=0, semantic_status='NOT_FORMED', semantic_reason=reason)
             row.update({name: np.nan for name in numeric})

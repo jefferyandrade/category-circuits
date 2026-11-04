@@ -1,24 +1,24 @@
 layers,n,relation,controls,r,p
-main path,81,tree share ~ kept fraction,none,-0.8938798554652213,2.975566216865682e-29
-main path,81,tree share ~ kept fraction,layer size,-0.4374573987078801,4.957758679254016e-05
-main path,81,tree share ~ kept fraction,reliability,-0.4572778114370925,2.0064058270000803e-05
-main path,81,tree share ~ kept fraction,depth,-0.5599854697687411,6.638338877196476e-08
-main path,81,tree share ~ kept fraction,size and reliability,-0.28783542419675795,0.010104198181393912
-main path,81,tree share ~ kept fraction,"size, reliability and depth",-0.10323333256057628,0.36842989318725794
-main path,81,kept fraction ~ log_routes,none,-0.924170172986276,9.255265963127179e-35
-main path,81,tree share ~ log_routes,none,0.8820258264915345,1.5418715936507086e-27
-main path,81,kept fraction ~ reliability,none,-0.9017841011743452,1.6348401637777505e-30
-main path,81,tree share ~ reliability,none,0.8922990063233965,5.171944705951529e-29
-"parted (kept < 0.8), main path",46,tree share ~ kept fraction,none,-0.7253160653715695,1.1871918177588935e-08
-"parted (kept < 0.8), main path",46,tree share ~ kept fraction,layer size,-0.2586444562593327,0.08624571114302111
-"parted (kept < 0.8), main path",46,tree share ~ kept fraction,reliability,0.05485163706682627,0.7204396742574244
-"parted (kept < 0.8), main path",46,tree share ~ kept fraction,depth,-0.4862067541587782,0.0007086661944994655
-"parted (kept < 0.8), main path",46,tree share ~ kept fraction,size and reliability,0.06511903644797845,0.6745132700527678
-"parted (kept < 0.8), main path",46,tree share ~ kept fraction,"size, reliability and depth",0.03415687398215912,0.827861666699669
-"parted (kept < 0.8), main path",46,kept fraction ~ log_routes,none,-0.7730504674759182,3.0598321866213285e-10
-"parted (kept < 0.8), main path",46,tree share ~ log_routes,none,0.8153835853731206,5.2118874213833875e-12
-"parted (kept < 0.8), main path",46,kept fraction ~ reliability,none,-0.815972864631514,4.889403388870191e-12
-"parted (kept < 0.8), main path",46,tree share ~ reliability,none,0.9053962380511872,5.604234411294951e-18
+main path,81,tree share ~ kept fraction,none,-0.8871273712737128,2.9766368705432934e-28
+main path,81,tree share ~ kept fraction,layer size,-0.4208029981225199,0.00010164495674676988
+main path,81,tree share ~ kept fraction,reliability,-0.3294234488286257,0.00284652690712484
+main path,81,tree share ~ kept fraction,depth,-0.5243067984723498,5.986453647198757e-07
+main path,81,tree share ~ kept fraction,size and reliability,-0.20388430107295563,0.07150439493971605
+main path,81,tree share ~ kept fraction,"size, reliability and depth",-0.03373312872777529,0.7693720507251522
+main path,81,kept fraction ~ log_routes,none,-0.9231494541529804,1.5385967812480588e-34
+main path,81,tree share ~ log_routes,none,0.8766727232769173,7.99830391137164e-27
+main path,81,kept fraction ~ reliability,none,-0.9237127371273712,1.1633002157758317e-34
+main path,81,tree share ~ reliability,none,0.901174345076784,2.062678148099299e-30
+"parted (kept < 0.8), main path",47,tree share ~ kept fraction,none,-0.7635291396854763,4.338264511470514e-10
+"parted (kept < 0.8), main path",47,tree share ~ kept fraction,layer size,-0.3576730108874932,0.014669814159387408
+"parted (kept < 0.8), main path",47,tree share ~ kept fraction,reliability,-0.014053718027229253,0.92614326097757
+"parted (kept < 0.8), main path",47,tree share ~ kept fraction,depth,-0.5799715540270617,2.3973647621825896e-05
+"parted (kept < 0.8), main path",47,tree share ~ kept fraction,size and reliability,0.00058453923761921,0.9969593796092859
+"parted (kept < 0.8), main path",47,tree share ~ kept fraction,"size, reliability and depth",-0.10384562993617984,0.5023346804544704
+"parted (kept < 0.8), main path",47,kept fraction ~ log_routes,none,-0.7846723317645676,6.721250439861627e-11
+"parted (kept < 0.8), main path",47,tree share ~ log_routes,none,0.805669859868904,8.48038344228103e-12
+"parted (kept < 0.8), main path",47,kept fraction ~ reliability,none,-0.8685245143385754,2.5936334528590146e-15
+"parted (kept < 0.8), main path",47,tree share ~ reliability,none,0.875231267345051,8.592746722337425e-16
 "within alexnet, main path",7,tree share ~ kept fraction,none,-0.9642857142857141,0.0004541491691941827
 "within alexnet, main path",7,tree share ~ kept fraction,layer size,-0.8578164469184382,0.02888704122440965
 "within alexnet, main path",7,tree share ~ kept fraction,reliability,,
@@ -39,16 +39,16 @@ main path,81,tree share ~ reliability,none,0.8922990063233965,5.171944705951529e
 "within resnet18, main path",17,tree share ~ log_routes,none,0.8721311159226564,5.03038987112172e-06
 "within resnet18, main path",17,kept fraction ~ reliability,none,-0.9534313725490198,3.2849947662852607e-09
 "within resnet18, main path",17,tree share ~ reliability,none,0.877450980392157,3.71678490515902e-06
-"within resnet50v2, main path",49,tree share ~ kept fraction,none,-0.8948979591836734,4.372789738856303e-18
-"within resnet50v2, main path",49,tree share ~ kept fraction,layer size,-0.16955554263684947,0.2492735966258877
-"within resnet50v2, main path",49,tree share ~ kept fraction,reliability,-0.6190719773978282,2.7253609721813494e-06
-"within resnet50v2, main path",49,tree share ~ kept fraction,depth,-0.33536579173705916,0.019797408387856527
-"within resnet50v2, main path",49,tree share ~ kept fraction,size and reliability,-0.17666220922418188,0.2348756466365496
-"within resnet50v2, main path",49,tree share ~ kept fraction,"size, reliability and depth",-0.05119026811086929,0.7354716455624315
-"within resnet50v2, main path",49,kept fraction ~ log_routes,none,-0.9848761755913447,1.9440582776649556e-37
-"within resnet50v2, main path",49,tree share ~ log_routes,none,0.8953560253284003,3.966766059352712e-18
-"within resnet50v2, main path",49,kept fraction ~ reliability,none,-0.8561224489795918,4.497419247622626e-15
-"within resnet50v2, main path",49,tree share ~ reliability,none,0.8461224489795918,1.9428406937826712e-14
+"within resnet50v1, main path",49,tree share ~ kept fraction,none,-0.8766326530612245,1.5337325153470678e-16
+"within resnet50v1, main path",49,tree share ~ kept fraction,layer size,0.05965512918233533,0.687119378219767
+"within resnet50v1, main path",49,tree share ~ kept fraction,reliability,-0.4565879969208128,0.001106438676301652
+"within resnet50v1, main path",49,tree share ~ kept fraction,depth,-0.288027916763594,0.04712150336517256
+"within resnet50v1, main path",49,tree share ~ kept fraction,size and reliability,0.14551578052899594,0.3290890667150891
+"within resnet50v1, main path",49,tree share ~ kept fraction,"size, reliability and depth",0.22358472882646988,0.13526073725531215
+"within resnet50v1, main path",49,kept fraction ~ log_routes,none,-0.9869364782441167,6.364967089834317e-39
+"within resnet50v1, main path",49,tree share ~ log_routes,none,0.8926261243134773,7.04400723058362e-18
+"within resnet50v1, main path",49,kept fraction ~ reliability,none,-0.8915306122448978,8.831172291297891e-18
+"within resnet50v1, main path",49,tree share ~ reliability,none,0.8681632653061223,6.625718856974083e-16
 "within vgg11, main path",8,tree share ~ kept fraction,none,-0.8095238095238095,0.0149026676862301
 "within vgg11, main path",8,tree share ~ kept fraction,layer size,-0.6405126152203483,0.12118808449938544
 "within vgg11, main path",8,tree share ~ kept fraction,reliability,-0.31686212526223884,0.4886705602978202
@@ -59,23 +59,23 @@ main path,81,tree share ~ reliability,none,0.8922990063233965,5.171944705951529e
 "within vgg11, main path",8,tree share ~ log_routes,none,0.7319250547113999,0.03899827398782236
 "within vgg11, main path",8,kept fraction ~ reliability,none,-0.9761904761904763,3.3143960262001043e-05
 "within vgg11, main path",8,tree share ~ reliability,none,0.7857142857142858,0.020815127253525276
-"reliability >= 0.5, main path",36,tree share ~ kept fraction,none,-0.6270270270270271,4.274796934283834e-05
-"reliability >= 0.5, main path",36,tree share ~ kept fraction,layer size,-0.2058220710229003,0.2355474057751183
-"reliability >= 0.5, main path",36,tree share ~ kept fraction,reliability,0.258050195357223,0.13447592969597497
-"reliability >= 0.5, main path",36,tree share ~ kept fraction,depth,-0.4005428983638332,0.017108102180077796
-"reliability >= 0.5, main path",36,tree share ~ kept fraction,size and reliability,0.2550771816248722,0.14541506696361667
-"reliability >= 0.5, main path",36,tree share ~ kept fraction,"size, reliability and depth",0.16421908183248288,0.36113034653969267
-"reliability >= 0.5, main path",36,kept fraction ~ log_routes,none,-0.7437729184127425,2.0148633547679962e-07
-"reliability >= 0.5, main path",36,tree share ~ log_routes,none,0.7134175219192188,1.0413571750657226e-06
-"reliability >= 0.5, main path",36,kept fraction ~ reliability,none,-0.8275418275418277,4.843865549234349e-10
-"reliability >= 0.5, main path",36,tree share ~ reliability,none,0.84993564993565,5.4635771484489384e-11
-"reliability >= 0.8, main path",20,tree share ~ kept fraction,none,0.10676691729323311,0.6541415450094845
-"reliability >= 0.8, main path",20,tree share ~ kept fraction,layer size,0.28463443355637136,0.23756629727173256
-"reliability >= 0.8, main path",20,tree share ~ kept fraction,reliability,0.6266092041031788,0.004094320620011654
-"reliability >= 0.8, main path",20,tree share ~ kept fraction,depth,-0.03597443370685203,0.883755709764901
-"reliability >= 0.8, main path",20,tree share ~ kept fraction,size and reliability,0.6388144978441482,0.004321196168412814
-"reliability >= 0.8, main path",20,tree share ~ kept fraction,"size, reliability and depth",0.40093538929427913,0.1107248696840266
-"reliability >= 0.8, main path",20,kept fraction ~ log_routes,none,-0.6107232760205512,0.004233049070452262
-"reliability >= 0.8, main path",20,tree share ~ log_routes,none,0.18767017336048186,0.4281720716502484
-"reliability >= 0.8, main path",20,kept fraction ~ reliability,none,-0.7127819548872181,0.00042017538910877727
-"reliability >= 0.8, main path",20,tree share ~ reliability,none,0.4120300751879699,0.0710472186641245
+"reliability >= 0.5, main path",36,tree share ~ kept fraction,none,-0.6481338481338481,1.9198543952009254e-05
+"reliability >= 0.5, main path",36,tree share ~ kept fraction,layer size,-0.2699382801912774,0.11682258564821218
+"reliability >= 0.5, main path",36,tree share ~ kept fraction,reliability,0.17695728745781694,0.30918820018494875
+"reliability >= 0.5, main path",36,tree share ~ kept fraction,depth,-0.5672973038779849,0.000379769038452488
+"reliability >= 0.5, main path",36,tree share ~ kept fraction,size and reliability,0.18656439115107973,0.29075421525839124
+"reliability >= 0.5, main path",36,tree share ~ kept fraction,"size, reliability and depth",0.007400930600355478,0.9673945268197148
+"reliability >= 0.5, main path",36,kept fraction ~ log_routes,none,-0.7510003937683434,1.3173916855628215e-07
+"reliability >= 0.5, main path",36,tree share ~ log_routes,none,0.6916036872095873,2.9974618678628703e-06
+"reliability >= 0.5, main path",36,kept fraction ~ reliability,none,-0.898841698841699,9.904540905267843e-14
+"reliability >= 0.5, main path",36,tree share ~ reliability,none,0.7755469755469757,2.7765501492246697e-08
+"reliability >= 0.8, main path",24,tree share ~ kept fraction,none,-0.06782608695652173,0.7528351863688199
+"reliability >= 0.8, main path",24,tree share ~ kept fraction,layer size,0.3325677454497806,0.12101898040512844
+"reliability >= 0.8, main path",24,tree share ~ kept fraction,reliability,0.3419552389981418,0.11024744266747964
+"reliability >= 0.8, main path",24,tree share ~ kept fraction,depth,-0.29047143145460613,0.17876373450474253
+"reliability >= 0.8, main path",24,tree share ~ kept fraction,size and reliability,0.4208456181901831,0.05112905149432127
+"reliability >= 0.8, main path",24,tree share ~ kept fraction,"size, reliability and depth",0.20656172582660476,0.3689904717052862
+"reliability >= 0.8, main path",24,kept fraction ~ log_routes,none,-0.6899906947490742,0.0001908286593894158
+"reliability >= 0.8, main path",24,tree share ~ log_routes,none,0.4156136909701072,0.043402920623816184
+"reliability >= 0.8, main path",24,kept fraction ~ reliability,none,-0.8121739130434782,1.4412573127324264e-06
+"reliability >= 0.8, main path",24,tree share ~ reliability,none,0.31652173913043474,0.13183422455052596

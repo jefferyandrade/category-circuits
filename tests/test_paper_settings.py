@@ -23,8 +23,9 @@ NETWORKS = {
     "alexnet": "torchvision.alexnet.conv_kernel_weight.imagenet1k_v1",
     "vgg11": "torchvision.vgg11.conv_kernel_weight.imagenet1k_v1",
     "resnet18": "torchvision.resnet18.conv_kernel_weight.imagenet1k_v1",
-    "resnet50v2": "torchvision.resnet50.conv_kernel_weight.imagenet1k_v2",
+    "resnet50v1": "torchvision.resnet50.conv_kernel_weight.imagenet1k_v1",
 }
+PILOTED_ON = {"resnet50v1": "resnet50v2"}  # ResNet-50 took the threshold piloted on its IMAGENET1K_V2 checkpoint (Methods)
 
 
 def test_unset_settings_are_filled_and_explicit_ones_kept():
@@ -60,7 +61,7 @@ def test_default_thresholds_are_table_1s():
             net, rest = line.strip()[2:].split(":", 1)
             chosen[net.strip()] = float(rest.split("price")[1].split()[0])
     for net, model_id in NETWORKS.items():
-        assert float(paper_settings.PER_NETWORK[model_id]["IRG_SENSITIVITY_TAU"]) == chosen[net], net
+        assert float(paper_settings.PER_NETWORK[model_id]["IRG_SENSITIVITY_TAU"]) == chosen[PILOTED_ON.get(net, net)], net
 
 
 def _option_defaults(path):

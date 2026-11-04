@@ -22,5 +22,5 @@ untangling in deep networks carries taxonomic category structure.
   permits use, copying and distribution provided this notice is kept.
 - Category indices, WordNet ids and class names follow the ImageNet 2012 classification label set, as distributed with
   torchvision. No ImageNet images are included.
-- The networks are the pretrained torchvision checkpoints (AlexNet, VGG-11 and ResNet-18 `IMAGENET1K_V1`, ResNet-50
-  `IMAGENET1K_V2`), which are not redistributed here.
+- The networks are the pretrained torchvision checkpoints (AlexNet, VGG-11, ResNet-18 and ResNet-50, all
+  `IMAGENET1K_V1`), which are not redistributed here.

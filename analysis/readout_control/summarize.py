@@ -20,7 +20,7 @@ from atomic_io import check_outputs, publish_file
 
 LAYERS = (("alexnet", "conv5"), ("alexnet", "fc6"), ("alexnet", "fc7"), ("vgg11", "fc6"), ("vgg11", "fc7"),
           ("resnet18", "stage4.block0.conv2"), ("resnet18", "stage4.block1.conv2"),
-          ("resnet50v2", "stage4.block1.conv3"), ("resnet50v2", "stage4.block2.conv3"))
+          ("resnet50v1", "stage4.block1.conv3"), ("resnet50v1", "stage4.block2.conv3"))
 LEVELS = ("superordinate", "domain")
 COLUMNS = ("network", "layer", "lens", "level", "wiring", "lens_alone", "wiring_beyond_lens", "lens_beyond_wiring",
            "beyond/alone")

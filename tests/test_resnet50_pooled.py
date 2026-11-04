@@ -18,10 +18,10 @@ def test_fig3b_table_recomputes_byte_for_byte(tmp_path):
     assert out.read_bytes() == (DATA / "values_fig3B_resnet50.csv").read_bytes()
 
 
-def test_per_category_table_covers_the_96_complete_pairs():
+def test_per_category_table_covers_the_99_complete_pairs():
     by_arm = rp.read_per_category(DATA / "per_category.csv")
-    assert sorted(by_arm["P"]) == [c for c in rp.CATEGORIES if c not in (20, 30, 333)]
-    assert len(by_arm["SA-H"]) == 96
+    assert sorted(by_arm["P"]) == [c for c in rp.CATEGORIES if c != 454]
+    assert len(by_arm["SA-H"]) == 99
     # The dense network is the same for both methods.
     assert all(by_arm["P"][c]["dense_balanced_accuracy"] == by_arm["SA-H"][c]["dense_balanced_accuracy"]
                for c in by_arm["P"])

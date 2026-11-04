@@ -99,7 +99,7 @@ TABLE1 = {  # as printed: prunable weights, kept % [95%], dense, circuit, accura
     "alexnet": (56994496, (8.9, 8.3, 9.4), 85.1, 80.4, (4.7, 3.7, 5.7)),
     "vgg11": (128679936, (5.0, 4.9, 5.2), 90.2, 85.2, (5.0, 3.8, 6.2)),
     "resnet18": (11166912, (27.2, 26.4, 28.0), 92.2, 88.1, (4.1, 3.4, 4.8)),
-    "resnet50v2": (23454912, (31.4, 30.5, 32.3), 96.8, 91.4, (5.4, 4.6, 6.3)),
+    "resnet50v1": (23454912, (30.5, 29.8, 31.3), 94.4, 89.4, (5.0, 4.2, 5.8)),
 }
 
 
@@ -108,7 +108,7 @@ def test_table1(net):
     weights, kept, dense, circuit, lost = TABLE1[net]
     d = DATA / "table1"
     manifest = pd.read_csv(d / "layer_manifest.csv")
-    model = {"resnet50v2": "resnet50"}.get(net, net)
+    model = {"resnet50v1": "resnet50"}.get(net, net)
     assert int(manifest[manifest.model == model].eligible_route_count.sum()) == weights
     f = pd.read_csv(d / ("fidelity_%s.csv" % net)).sort_values("category_id")
     assert same_as_printed(100 * f.dense_acc.mean(), str(dense))
@@ -163,14 +163,14 @@ def test_fig4d_sharing_by_sign():
     d = pd.read_csv(DATA / "sign_sharing" / "sign_sharing_four_networks_holm.tsv", sep="\t")
     for net, g in d.groupby("network"):
         assert np.allclose(holm(g.p_two_sided), g.p_holm, rtol=1e-9, atol=0), net
-    for net, name in (("vgg11", "Vgg"), ("resnet18", "ResEighteen"), ("resnet50v2", "ResFifty")):
+    for net, name in (("vgg11", "Vgg"), ("resnet18", "ResEighteen"), ("resnet50v1", "ResFiftyVOne")):
         g = d[d.network == net]
         inh = g[(g.p_holm < 0.05) & (g.ie > 0)]
         check("ShareSignLayers" + name, len(g))
         check("ShareSignHolmInh" + name, len(inh))
-    g = d[d.network == "resnet50v2"]
+    g = d[d.network == "resnet50v1"]
     inh = g[(g.p_holm < 0.05) & (g.ie > 0)]
-    check("ShareSignHolmInhLessKeptResFifty", int((inh.dens_inh < inh.dens_exc).sum()))
+    check("ShareSignHolmInhLessKeptResFiftyVOne", int((inh.dens_inh < inh.dens_exc).sum()))
 
 
 def test_fig3a_frontier_and_fig3b_resnet50():
@@ -184,8 +184,8 @@ def test_fig3a_frontier_and_fig3b_resnet50():
     v = pd.read_csv(DATA / "resnet50_pooled" / "values_fig3B_resnet50.csv")
     drop = v[v.metric == "corrected_accuracy_drop"].set_index("arm_or_contrast")
     assert close(drop.estimate["SA-H - P"], drop.estimate["SA-H"] - drop.estimate["P"], 1e-9)
-    check("ResAResNetFiftyAccDiff", drop.estimate["SA-H - P"])
-    check("ResAResNetFiftyN", drop.n_categories["SA-H - P"])
+    check("ResAResNetFiftyVOneAccDiff", drop.estimate["SA-H - P"])
+    check("ResAResNetFiftyVOneN", drop.n_categories["SA-H - P"])
 
 
 # Fig. 6 and the readout-weight control ---------------------------------------------------------------------------------
@@ -207,14 +207,14 @@ def test_fig6_alexnet_tree_shares():
 
 def test_readout_control_macros():
     d = DATA / "readout_control" / "readout"
-    last = {"alexnet": "fc7", "vgg11": "fc7", "resnet18": "stage4.block1.conv2", "resnet50v2": "stage4.block2.conv3"}
+    last = {"alexnet": "fc7", "vgg11": "fc7", "resnet18": "stage4.block1.conv2", "resnet50v1": "stage4.block2.conv3"}
     beyond = {}
     for net, layer in last.items():
         t = pd.read_csv(d / ("tc_%s_%s_abs" % (net, layer)) / ("tree_contrast_%s.csv" % layer))
         beyond[net] = t[(t.level == "superordinate") & (t.lens == "W|A")].iloc[0].estimate
     check("ResDAlexTreeBeyondReadoutFcSeven", beyond["alexnet"])
-    check("ResDTreeBeyondReadoutLastLo", min(beyond.values()))
-    check("ResDTreeBeyondReadoutLastHi", max(beyond.values()))
+    check("ResDTreeBeyondReadoutLastLoVOne", min(beyond.values()))
+    check("ResDTreeBeyondReadoutLastHiVOne", max(beyond.values()))
 
 
 def test_table1_thresholds_from_the_pilots():
@@ -233,6 +233,22 @@ def test_table1_thresholds_from_the_pilots():
     assert chosen == {"vgg11": 1.768e-07, "resnet18": 5e-07, "resnet50v2": 4.033e-07}, chosen
 
 
+def test_resnet50v1_threshold_check():
+    """ResNet-50 (IMAGENET1K_V1) took the threshold piloted on its IMAGENET1K_V2 checkpoint (the pilots above). Checked
+    after the extraction on the same 21 pilot categories, its circuits' loss share (0.100) is within one standard
+    error of AlexNet's (0.108) under the same rule (Methods)."""
+    import re
+    import subprocess
+    r = subprocess.run([sys.executable, "-I", str(REPO / "analysis" / "scripts" / "price_match.py"),
+                        str(DATA / "thresholds" / "pilots_round1.csv"), str(DATA / "thresholds" / "pilots_round2.csv"),
+                        str(DATA / "thresholds" / "resnet50v1_check.csv")], capture_output=True, text=True)
+    assert r.returncode == 0, r.stderr
+    anchor = float(re.search(r"anchor AlexNet 1\.5e-7: share ([0-9.]+)", r.stdout).group(1))
+    v1 = re.search(r"-> resnet50v1_campaign: piloted price ([0-9.e-]+) \(share ([0-9.]+), within one SE", r.stdout)
+    assert v1 and float(v1.group(1)) == 4.033e-07, r.stdout
+    assert same_as_printed(anchor, "0.108") and same_as_printed(float(v1.group(2)), "0.100")
+
+
 # Section 2.3 -------------------------------------------------------------------------------------------------------------
 
 def test_section_2_3_sparsity_against_tree_structure():
@@ -243,10 +259,10 @@ def test_section_2_3_sparsity_against_tree_structure():
                         str(DATA / "parting" / "parting_tree.csv")], capture_output=True, text=True)
     assert r.returncode == 0, r.stderr
     main = next(line for line in r.stdout.splitlines() if line.startswith("main path"))
-    check("ResCPartingLayers", int(re.search(r"n=(\d+)", main).group(1)))
-    check("ResCPartingRho", float(re.search(r"tree~kept rho (-?[0-9.]+)", main).group(1)))
-    check("ResCPartingRhoBeyondDepth", float(re.search(r"tree~kept \| depth r (-?[0-9.]+)", main).group(1)))
+    check("ResCPartingLayersVOne", int(re.search(r"n=(\d+)", main).group(1)))
+    check("ResCPartingRhoVOne", float(re.search(r"tree~kept rho (-?[0-9.]+)", main).group(1)))
+    check("ResCPartingRhoBeyondDepthVOne", float(re.search(r"tree~kept \| depth r (-?[0-9.]+)", main).group(1)))
     controls = pd.read_csv(DATA / "parting" / "parting_controls.csv")
     size = controls[(controls.layers == "main path") & (controls.relation == "kept fraction ~ log_routes")
                     & (controls.controls == "none")].iloc[0]
-    check("ResCPartingRhoLayerSize", size.r)
+    check("ResCPartingRhoLayerSizeVOne", size.r)

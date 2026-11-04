@@ -16,7 +16,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from atomic_io import check_outputs, write_file
 
-RESNETS=('resnet18','resnet50v2')
+RESNETS=('resnet18','resnet50v1')
 
 
 def block_means(rows, panel):

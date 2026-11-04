@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Input divergence of the four networks on the shared categories (Fig. 4C, VGG-11 and the ResNets).
 
-For every pruned layer of AlexNet, VGG-11, ResNet-18 and ResNet-50 on the shared categories (100, or 99 in
-ResNet-50), this script reads the circuits' masks and the checkpoint's weights (``network_sources.py``) and computes,
+For every pruned layer of AlexNet, VGG-11, ResNet-18 and ResNet-50 on the shared categories (100 in every
+network), this script reads the circuits' masks and the checkpoint's weights (``network_sources.py``) and computes,
 with ``divergence_math.py``:
 
   observed      the mean input divergence over the pairs where it is defined, with a delete-one-category
@@ -50,9 +50,9 @@ ALEX = [('conv1', 'features.stage1.conv', 'unit_kernel_grain'),
         ('conv5', 'features.stage5.conv', 'unit_kernel_grain'),
         ('fc6', 'readout.hidden1', 'unit_fanin'),
         ('fc7', 'readout.hidden2', 'unit_fanin')]
-NETWORKS = ['alexnet', 'vgg11', 'resnet18', 'resnet50v2']
+NETWORKS = ['alexnet', 'vgg11', 'resnet18', 'resnet50v1']
 # Each network's kept percentage as Table 1 prints it: a check that the masks read are the paper's.
-TABLE1_KEPT_PERCENT = {'alexnet': '8.9', 'vgg11': '5.0', 'resnet18': '27.2', 'resnet50v2': '31.4'}
+TABLE1_KEPT_PERCENT = {'alexnet': '8.9', 'vgg11': '5.0', 'resnet18': '27.2', 'resnet50v1': '30.5'}
 N_LAYERS = 88
 
 
@@ -84,7 +84,7 @@ def build_catalog(workspace):
                     key: row[key] for key in ['dens_pos', 'dens_neg']}
     return dict(networks=networks, overlap_source=str(path),
         census_source=str(CENSUS),
-        n_categories=dict(alexnet=100, vgg11=100, resnet18=100, resnet50v2=99))
+        n_categories=dict(alexnet=100, vgg11=100, resnet18=100, resnet50v1=100))
 
 
 def check_printed(actual, printed):

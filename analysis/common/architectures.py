@@ -42,8 +42,8 @@ CHECKPOINTS = {
     "alexnet": "alexnet-owt-7be5be79.pth",
     "vgg11": "vgg11-8a719046.pth",
     "resnet18": "resnet18-f37072fd.pth",
-    "resnet50_v1": "resnet50-0676ba61.pth",  # IMAGENET1K_V1
-    "resnet50_v2": "resnet50-11ad3fa6.pth",  # IMAGENET1K_V2, the ResNet-50 of the paper
+    "resnet50_v1": "resnet50-0676ba61.pth",  # IMAGENET1K_V1, the ResNet-50 of the paper
+    "resnet50_v2": "resnet50-11ad3fa6.pth",  # IMAGENET1K_V2, the supplement's backup results
 }
 
 _VGG11_ROWS = (

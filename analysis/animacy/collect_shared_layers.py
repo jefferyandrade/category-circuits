@@ -24,7 +24,7 @@ FIELDS = ['network', 'layer', 'layer_index', 'n_layers', 'n_categories',
           'n_animate', 'n_inanimate', 'observed', 'null', 'excess', 'p',
           'p_holm', 'n_permutations', 'source']
 # Each network's kept percentage as Table 1 prints it.
-TABLE_DENSITY = {'alexnet': 8.9, 'vgg11': 5.0, 'resnet18': 27.2, 'resnet50': 31.4}
+TABLE_DENSITY = {'alexnet': 8.9, 'vgg11': 5.0, 'resnet18': 27.2, 'resnet50': 30.5}
 
 
 def rounded_equal(value, expected, places):
@@ -72,7 +72,7 @@ def build_rows(item):
     for i, layer in enumerate(item['layers']):
         row = stats[layer]
         rows.append(dict(zip(FIELDS, [
-            'resnet50v2' if item['network'] == 'resnet50' else item['network'], label(item['network'], layer), i + 1, len(item['layers']),
+            'resnet50v1' if item['network'] == 'resnet50' else item['network'], label(item['network'], layer), i + 1, len(item['layers']),
             densities[layer]['n_categories'], meta['n_animate'], meta['n_inanimate'],
             row['obs_mean_abs_s'], row['null_mean_abs_s'],
             row['obs_mean_abs_s'] - row['null_mean_abs_s'], row['p_perm'], adjusted[i],
@@ -109,7 +109,7 @@ def main():
         density = sum(r['mean_retained'] for r in item['density']) / sum(r['eligible_count'] for r in item['density'])
         per_layer = []
         for r in item['density']:
-            key = ('resnet50v2' if network == 'resnet50' else network, label(network, r['layer']))
+            key = ('resnet50v1' if network == 'resnet50' else network, label(network, r['layer']))
             if key not in density_ref:
                 per_layer.append({'layer': label(network, r['layer']), 'reference': 'absent'})
             else:

@@ -217,9 +217,9 @@ def stage(network, native):
 def stored_layers():
     """The per-layer statistics behind the panel, rebuilt from the table: one item per network, as stored."""
     items = []
-    for network in ("alexnet", "vgg11", "resnet18", "resnet50v2"):
+    for network in ("alexnet", "vgg11", "resnet18", "resnet50v1"):
         rows = sorted((r for r in CROSS_NETWORK if r["network"] == network), key=lambda r: int(r["layer_index"]))
-        model = "resnet50" if network == "resnet50v2" else network
+        model = "resnet50" if network == "resnet50v1" else network
         stats = [dict(model=model, layer=native_layer(network, r["layer"]),
                       stage=stage(network, native_layer(network, r["layer"])), total_mult=1.0,
                       B_perms=int(r["n_permutations"]), obs_mean_abs_s=float(r["observed"]),
@@ -248,11 +248,10 @@ def test_cross_network_rows_excess_and_within_network_holm():
 
 
 def test_cross_network_marks_permutations_and_depths():
-    """Filled points are Holm p < 0.05; B is 10,000 at the classifier and last-stage layers, else 5,000."""
+    """Filled points are Holm p < 0.05; B is 10,000 at every layer."""
     assert len(CROSS_NETWORK) == 88
     for r in CROSS_NETWORK:
-        native = native_layer(r["network"], r["layer"])
-        B = 10000 if stage(r["network"], native) in {"classifier", "layer4"} else 5000
+        B = 10000
         assert int(r["n_permutations"]) == B, (r["network"], r["layer"])
         count = float(r["p"]) * (B + 1)
         assert count == pytest.approx(round(count), abs=1e-6)
@@ -269,7 +268,7 @@ def test_resnet_block_means():
            [(b["network"], b["layer"], b["value"], b["relative_depth"]) for b in BLOCKS]
 
 
-TABLE1_KEPT = {"alexnet": 89, "vgg11": 50, "resnet18": 272, "resnet50": 314}   # per 1,000 connections
+TABLE1_KEPT = {"alexnet": 89, "vgg11": 50, "resnet18": 272, "resnet50": 305}   # per 1,000 connections
 
 
 def test_cross_network_rows_through_the_collectors(tmp_path):
@@ -279,7 +278,7 @@ def test_cross_network_rows_through_the_collectors(tmp_path):
     run = tmp_path / "run"
     manifests, counts = {}, {}
     for item in stored_layers():
-        root = run.with_name(run.name + ("_V2" if item["network"] == "resnet50" else ""))
+        root = run
         (root / "finalization_pkg/semantic").mkdir(parents=True, exist_ok=True)
         (root / "handoff").mkdir(parents=True, exist_ok=True)
         model = item["network"]
@@ -312,7 +311,7 @@ def test_cross_network_rows_through_the_collectors(tmp_path):
     checks = json.loads((tmp_path / "checks.json").read_text())
     assert all(v["kept_percent_matches_table1"] for v in checks["networks"].values())
     assert {n: v["table1_kept_percent"] for n, v in checks["networks"].items()} == \
-           {"alexnet": 8.9, "vgg11": 5.0, "resnet18": 27.2, "resnet50": 31.4}
+           {"alexnet": 8.9, "vgg11": 5.0, "resnet18": 27.2, "resnet50": 30.5}
 
 
 # The code end to end, on small synthetic circuits -------------------------------------------------------------------
@@ -422,7 +421,7 @@ def test_shared_category_statistics_end_to_end(tmp_path, monkeypatch):
         kept = kA + kI > 0
         pA, pI = kA[kept] / nA, kI[kept] / (K - nA)
         assert stats.loc[L, "obs_mean_abs_s"] == pytest.approx(np.mean(np.abs(pA - pI) / (pA + pI + 1e-9)), rel=1e-12)
-        assert stats.loc[L, "B_perms"] == (10000 if st == "classifier" else 5000)
+        assert stats.loc[L, "B_perms"] == 10000
         count = stats.loc[L, "p_perm"] * (stats.loc[L, "B_perms"] + 1)
         assert count == pytest.approx(round(count), abs=1e-6)
     assert (tmp_path / f"out/overlap/overlap_layer_stats_{model}.parquet").is_file()

@@ -29,7 +29,7 @@ def shares(path):
     return t.set_index("layer")[["share_adjusted", "n_categories"]]
 rows = []
 src = {"alexnet": (sorted(glob.glob(O + "/vj_inputs/gram_*.npz")), O + "/tree_share_wiring_v66/tree_share_wiring.csv")}
-for net in ("vgg11", "resnet18", "resnet50v2"):
+for net in ("vgg11", "resnet18", "resnet50v1"):
     src[net] = (sorted(glob.glob(O + "/xnet_%s/other/%s__gram_*.npz" % (net, net))), O + "/xnet_%s/tree_share_wiring/tree_share_wiring_%s.csv" % (net, net))
 for net, (grams, tsf) in src.items():
     ts = shares(tsf)
@@ -42,7 +42,7 @@ for net, (grams, tsf) in src.items():
                          n_categories_share=ts.n_categories.get(layer, np.nan)))
 d = pd.DataFrame(rows)
 # every layer of every network, each with a finite share
-EXPECTED = {"alexnet": 7, "vgg11": 8, "resnet18": 20, "resnet50v2": 53}
+EXPECTED = {"alexnet": 7, "vgg11": 8, "resnet18": 20, "resnet50v1": 53}
 got = d.groupby("network").size().to_dict()
 if got != EXPECTED or not np.isfinite(d.tree_share).all():
     raise SystemExit("incomplete layer set or missing shares: %s" % got)

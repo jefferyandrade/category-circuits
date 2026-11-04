@@ -38,7 +38,7 @@ R = Path(os.environ.get('CC_FIGURE_INPUTS', '.'))
 DEPTH = 'sign_sharing_four_networks_holm.tsv'
 STAGE = 'site_tree_shares.tsv'
 DIFFERENCE = 'values_fig6C_difference.csv'
-NETWORKS = ('alexnet', 'vgg11', 'resnet18', 'resnet50v2')
+NETWORKS = ('alexnet', 'vgg11', 'resnet18', 'resnet50v1')
 LAYERS = ("fc6", "fc7")
 PARTIAL_SHARES = ("computation_beyond_image", "computation_beyond_wiring",
                   "wiring_beyond_computation", "image_beyond_computation")
@@ -95,7 +95,7 @@ def running():
 def crossovers():
     output = [dict(panel='D-crossover', network='alexnet', layer='fc6',
         relative_depth=depths()['alexnet', 'fc6'], source='Fig. 6A', n_categories='1000')]
-    expected = {'vgg11': 'conv5_2', 'resnet18': 'stage4.block0.conv2', 'resnet50v2': 'stage4.block1.conv3'}
+    expected = {'vgg11': 'conv5_2', 'resnet18': 'stage4.block0.conv2', 'resnet50v1': 'stage4.block0.conv3'}
     source = read(R / DIFFERENCE)
     depth = depths()
     for net, layer in expected.items():

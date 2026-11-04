@@ -20,8 +20,8 @@ MCDiffAccSGLo	1.9	21_faithful_circuits_sign	2.1 AlexNet method comparison, all 1
 ResADenseAccuracy	86.3	21_faithful_circuits_sign	2.1 AlexNet method comparison, all 1,000 categories (Fig 3A)
 ResAResNetEighteenAccDiff	+20.6	21_faithful_circuits_sign	2.1 sign effect in VGG-11 and ResNet-18
 ResAVggAccDiff	+10.5	21_faithful_circuits_sign	2.1 sign effect in VGG-11 and ResNet-18
-ResAResNetFiftyAccDiff	+20.6	21_faithful_circuits_sign	ResNet-50 V2 E/I-pooled comparison (Fig 3B)
-ResAResNetFiftyN	96	13_figures_tables	ResNet-50 V2 E/I-pooled comparison (Fig 3B)
+ResAResNetFiftyVOneAccDiff	+23.7	21_faithful_circuits_sign	ResNet-50 V1 E/I-pooled comparison (Fig 3B)
+ResAResNetFiftyVOneN	99	13_figures_tables	ResNet-50 V1 E/I-pooled comparison (Fig 3B)
 ResAFrontierRPOneAccuracyDiff	13.5	21_faithful_circuits_sign	Fig 3A second-threshold frontier
 ResAFrontierRPOneAccuracyMargHi	14.3	21_faithful_circuits_sign	Fig 3A second-threshold frontier
 ResAFrontierRPOneAccuracyMargLo	12.7	21_faithful_circuits_sign	Fig 3A second-threshold frontier
@@ -39,8 +39,7 @@ SignNegAbsPctLo	54	21_faithful_circuits_sign	Weight counts by sign (2.1 control)
 SignNegCountPctHi	58	21_faithful_circuits_sign	Weight counts by sign (2.1 control)
 SignNegCountPctLo	52	21_faithful_circuits_sign	Weight counts by sign (2.1 control)
 CoreResNetEighteenAccDrop	4.1	21_faithful_circuits_sign	Table 1 kept and drop, shared categories
-CoreResNetFiftyVTwoAccDrop	5.4	21_faithful_circuits_sign	Table 1 kept and drop, shared categories
-ResAVTwoCategories	99	12_methods;13_figures_tables;21_faithful_circuits_sign;22_shared_early_specific_late;23_parting_and_tree;tables/table1	Table 1 kept and drop, shared categories
+CoreVggAccDrop	5.0	21_faithful_circuits_sign	Table 1 kept and drop, shared categories
 DensMeanConvOne	0.992	22_shared_early_specific_late	Fig 4A kept fraction by layer
 DensMeanFcSix	0.047	22_shared_early_specific_late	Fig 4A kept fraction by layer
 ShareJConvOne	0.984	22_shared_early_specific_late	Fig 4B overlap and excess overlap, AlexNet
@@ -56,16 +55,16 @@ ShareUConvFourLo	0.187	22_shared_early_specific_late	Fig 4B overlap and excess o
 InDivCrossBlockFcSix	0.41	22_shared_early_specific_late	Fig 4C input divergence within/across blocks
 InDivWithinBlockFcSix	0.20	22_shared_early_specific_late	Fig 4C input divergence within/across blocks
 ShareSignBNFlipPctResEighteen	0.08	12_methods;13_figures_tables	Fig 4D sharing by sign, four networks
-ShareSignBNFlipPctResFifty	0.4	12_methods;13_figures_tables	Fig 4D sharing by sign, four networks
-ShareSignHolmInhLessKeptResFifty	13	22_shared_early_specific_late	Fig 4D sharing by sign, four networks
+ShareSignBNFlipPctResFiftyVOne	1.6	12_methods;13_figures_tables	Fig 4D sharing by sign, four networks
+ShareSignHolmInhLessKeptResFiftyVOne	15	22_shared_early_specific_late	Fig 4D sharing by sign, four networks
 ShareSignHolmInhResEighteen	5	22_shared_early_specific_late	Fig 4D sharing by sign, four networks
-ShareSignHolmInhResFifty	25	22_shared_early_specific_late	Fig 4D sharing by sign, four networks
+ShareSignHolmInhResFiftyVOne	31	22_shared_early_specific_late	Fig 4D sharing by sign, four networks
 ShareSignHolmInhVgg	7	22_shared_early_specific_late	Fig 4D sharing by sign, four networks
 ShareSignInhMinusExcAlexMax	0.031	22_shared_early_specific_late	Fig 4D sharing by sign, four networks
-ShareSignKeptExcResFiftyMax	0.427	22_shared_early_specific_late	Fig 4D sharing by sign, four networks
-ShareSignKeptInhResFiftyMax	0.422	22_shared_early_specific_late	Fig 4D sharing by sign, four networks
+ShareSignKeptExcResFiftyVOneMax	0.429	22_shared_early_specific_late	Fig 4D sharing by sign, four networks
+ShareSignKeptInhResFiftyVOneMax	0.416	22_shared_early_specific_late	Fig 4D sharing by sign, four networks
 ShareSignLayersResEighteen	20	22_shared_early_specific_late	Fig 4D sharing by sign, four networks
-ShareSignLayersResFifty	53	22_shared_early_specific_late	Fig 4D sharing by sign, four networks
+ShareSignLayersResFiftyVOne	53	22_shared_early_specific_late	Fig 4D sharing by sign, four networks
 ShareSignLayersVgg	8	22_shared_early_specific_late	Fig 4D sharing by sign, four networks
 AnimEffConvOne	0.000	23_parting_and_tree	Fig 5A-B animacy, AlexNet
 AnimEffFcSeven	0.402	23_parting_and_tree	Fig 5A-B animacy, AlexNet
@@ -76,10 +75,10 @@ ResCAnimacyEnvelopeExceedConvFive	7	23_parting_and_tree	Fig 5A-B animacy, AlexNe
 ResCAnimacyEnvelopeExceedFcSix	10	23_parting_and_tree	Fig 5A-B animacy, AlexNet
 ResCAnimacyHolmPMax	0.0014	23_parting_and_tree	Fig 5A-B animacy, AlexNet
 ResCAnimacyPermutationPConvOne	0.62	23_parting_and_tree	Fig 5A-B animacy, AlexNet
-ResCAnimacyLatePermPMax	2e-4	23_parting_and_tree	Fig 5C animacy, other three networks
-ResCAnimacyResNetEighteenProjectionP	0.055	23_parting_and_tree	Fig 5C animacy, other three networks
-ResCAnimacyResNetFiftyVTwoFirstConvP	0.06	23_parting_and_tree	Fig 5C animacy, other three networks
-ResCAnimacyResNetFiftyVTwoLatePMax	3e-4	23_parting_and_tree	Fig 5C animacy, other three networks
+ResCAnimacyLatePermPMaxVOne	1e-4	23_parting_and_tree	Fig 5C animacy, other three networks
+ResCAnimacyResNetEighteenProjectionPVOne	0.058	23_parting_and_tree	Fig 5C animacy, other three networks
+ResCAnimacyResNetFiftyVOneFirstConvP	0.055	23_parting_and_tree	Fig 5C animacy, other three networks
+ResCAnimacyResNetFiftyVOneLatePMax	4e-4	23_parting_and_tree	Fig 5C animacy, other three networks
 AnimNSizeLabelled	775	12_methods;24_last_stage	2.4 real-world size
 ResCSizeAnimFcSeven	+0.47	24_last_stage	2.4 real-world size
 ResCSizeAnimFcSevenHi	0.78	24_last_stage	2.4 real-world size
@@ -107,17 +106,17 @@ CapPartWireFcSixLo	0.32	24_last_stage	Fig 6A-B tree share, AlexNet wiring vs mea
 CapRelabelN	1,000	12_methods	Fig 6A-B tree share, AlexNet wiring vs mean representations
 CapUntrainedMax	0.12	23_parting_and_tree	Fig 6A-B tree share, AlexNet wiring vs mean representations
 CapWireFcSix	0.57	23_parting_and_tree	Fig 6A-B tree share, AlexNet wiring vs mean representations
-ResCPartingLayers	81	12_methods;22_shared_early_specific_late;23_parting_and_tree	Sparsity vs tree share across networks
-ResCPartingRho	-0.89	23_parting_and_tree	Sparsity vs tree share across networks
-ResCPartingRhoBeyondDepth	-0.56	23_parting_and_tree	Sparsity vs tree share across networks
-ResCPartingRhoLayerSize	-0.92	22_shared_early_specific_late	Sparsity vs tree share across networks
+ResCPartingLayersVOne	81	12_methods;22_shared_early_specific_late;23_parting_and_tree	Sparsity vs tree share across networks
+ResCPartingRhoVOne	-0.89	23_parting_and_tree	Sparsity vs tree share across networks
+ResCPartingRhoBeyondDepthVOne	-0.52	23_parting_and_tree	Sparsity vs tree share across networks
+ResCPartingRhoLayerSizeVOne	-0.92	22_shared_early_specific_late	Sparsity vs tree share across networks
 ResDAlexTreeBeyondOutputFcSeven	0.30	24_last_stage	Output control and cross-network convergence
 ResDAlexTreeBeyondOutputFcSix	0.27	24_last_stage	Output control and cross-network convergence
-ResDConvergenceBeyondTreeActHi	0.65	24_last_stage	Output control and cross-network convergence
-ResDConvergenceBeyondTreeActLo	0.25	24_last_stage	Output control and cross-network convergence
+ResDConvergenceBeyondTreeActHiVOne	0.65	24_last_stage	Output control and cross-network convergence
+ResDConvergenceBeyondTreeActLoVOne	0.25	24_last_stage	Output control and cross-network convergence
 ResDAlexTreeBeyondReadoutFcSeven	0.24	24_last_stage	Readout-weight control (2.4)
-ResDTreeBeyondReadoutLastHi	0.33	24_last_stage	Readout-weight control (2.4)
-ResDTreeBeyondReadoutLastLo	0.18	24_last_stage	Readout-weight control (2.4)
+ResDTreeBeyondReadoutLastHiVOne	0.33	24_last_stage	Readout-weight control (2.4)
+ResDTreeBeyondReadoutLastLoVOne	0.22	24_last_stage	Readout-weight control (2.4)
 ResENAll	1,000	12_methods;25_running_circuits	Running circuits, all 1,000 (Fig 7B)
 ResEWeightMinusImageFcSeven	+0.047	25_running_circuits	Running circuits, all 1,000 (Fig 7B)
 ResEWeightMinusImageFcSevenHi	0.068	25_running_circuits	Running circuits, all 1,000 (Fig 7B)
@@ -134,7 +133,7 @@ ResERobustHeldOutFcSixLo	0.175	25_running_circuits	Held-out categories (2.5)
 ResERobustHeldOutN	900	25_running_circuits	Held-out categories (2.5)
 ResERobustNoMammalN	782	23_parting_and_tree	Wiring without the mammals (2.3)
 ResEDepthResNetEighteenLastMinusImage	-0.349	25_running_circuits	Circuit activations across depth, four networks (Fig 7D)
-ResEDepthResNetFiftyVTwoLastMinusImage	-0.194	25_running_circuits	Circuit activations across depth, four networks (Fig 7D)
+ResEDepthResNetFiftyVOneLastMinusImage	-0.317	25_running_circuits	Circuit activations across depth, four networks (Fig 7D)
 ResEDepthVggFcSevenMinusImage	-0.019	25_running_circuits	Circuit activations across depth, four networks (Fig 7D)
 ResEDepthVggFcSixMinusImage	+0.245	25_running_circuits	Circuit activations across depth, four networks (Fig 7D)
 MethFullCircuitFcSeven	0.389	25_running_circuits	Exploratory whole-circuit reading (2.5)
